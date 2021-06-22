@@ -1,6 +1,7 @@
 module.exports = {
     root          : true,
     env           : {
+        // https://github.com/vuejs/eslint-plugin-vue/blob/800182c70fa20df858a46f949313f80e03a0f2ac/lib/configs/base.js
         node : true
     },
     extends       : [
@@ -12,6 +13,7 @@ module.exports = {
         '@vue/standard'
     ],
     parserOptions : {
+        // https://github.com/vuejs/eslint-plugin-vue/blob/800182c70fa20df858a46f949313f80e03a0f2ac/lib/configs/base.js
         parser : 'babel-eslint'
     },
     rules         : {
