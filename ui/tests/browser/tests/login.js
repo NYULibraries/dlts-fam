@@ -36,5 +36,10 @@ suite( 'Login', function () {
             Login.login( INVALID_USERNAME, INVALID_PASSWORD );
             assert.equal( Login.feedback, INVALID_LOGIN_ERROR_MESSAGE );
         } );
+
+        test( 'Empty username + empty password', function () {
+            Login.login( '', '' );
+            assert.equal( Login.feedback, INVALID_LOGIN_ERROR_MESSAGE );
+        } );
     } );
 } );
