@@ -12,6 +12,11 @@ suite( 'Login', function () {
         Login.open();
     } );
 
+    test( 'Login with valid credentials takes user to Home', function () {
+        Login.login( USERNAME, PASSWORD );
+        assert.equal( Login.currentUrl, Login.baseUrl + '#/' );
+    } );
+
     suite( 'Login with invalid credentials results in the correct error message', function () {
         const INVALID_LOGIN_ERROR_MESSAGE = 'Invalid username and password combination';
         const INVALID_PASSWORD = '[INVALID PASSWORD]';
