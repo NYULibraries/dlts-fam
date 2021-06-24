@@ -15,7 +15,10 @@
                         {{ feedback }}
                     </div>
 
-                    <b-spinner v-if="showSpinner" />
+                    <b-spinner
+                        v-if="showSpinner"
+                        id="spinner"
+                    />
                 </b-col>
             </b-row>
 
