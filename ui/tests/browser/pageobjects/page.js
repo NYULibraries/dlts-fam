@@ -5,7 +5,9 @@ export default class Page {
         return browser.config.baseUrl;
     }
 
-    get currentUrl() { return browser.getUrl(); }
+    get currentUrl() {
+        return browser.getUrl();
+    }
 
     open( path ) {
         browser.url( path );
