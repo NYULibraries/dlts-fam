@@ -30,6 +30,11 @@ suite( 'Home', function () {
             Home.navbar.published.click();
             assert.equal( Home.currentUrl, Home.baseUrl + '#/published' );
         } );
+
+        test( 'Clicking "Logout" logs out the user and navigates to Login', function () {
+            Home.navbar.logout.click();
+            assert.equal( Home.currentUrl, Home.baseUrl + '#/login' );
+        } );
     } );
 
     test( 'Clicking "Create a finding aid" navigates to /create endpoint', function () {
