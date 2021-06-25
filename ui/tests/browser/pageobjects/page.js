@@ -9,7 +9,11 @@ export default class Page {
         return browser.getUrl();
     }
 
+    get fullPath() {
+        return this.baseUrl + this.path;
+    }
+
     open( path ) {
-        browser.url( path );
+        browser.url( this.path );
     }
 };

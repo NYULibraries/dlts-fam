@@ -14,6 +14,10 @@ class Login extends Page {
         return Login.PASSWORD;
     }
 
+    get path() {
+        return '#/login';
+    }
+
     get spinner() {
         return $( '#spinner' );
     }
@@ -47,10 +51,6 @@ class Login extends Page {
         this.spinner.waitForExist();
         // Wait for the spinner to disappear.
         this.spinner.waitForExist( { reverse : true } );
-    }
-
-    open() {
-        super.open( '/#/login' );
     }
 }
 

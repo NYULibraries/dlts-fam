@@ -22,8 +22,8 @@ class Home extends Page {
         return $( '#published-option' );
     }
 
-    open() {
-        super.open( '/#/' );
+    get path() {
+        return '#/';
     }
 }
 
