@@ -24,6 +24,7 @@ exports.config = {
     // will be called from there.
     //
     specs   : [
+        'tests/browser/tests/home.js',
         'tests/browser/tests/login.js',
     ],
     // Patterns to exclude.
@@ -31,6 +32,9 @@ exports.config = {
         // 'path/to/excluded/files'
     ],
     suites  : {
+        home : [
+            'tests/browser/tests/home.js',
+        ],
         login : [
             'tests/browser/tests/login.js',
         ],
