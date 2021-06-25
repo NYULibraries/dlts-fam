@@ -11,6 +11,27 @@ suite( 'Home', function () {
         Login.login();
     } );
 
+    suite( 'Navbar', function () {
+        test( `Current user is "${ Login.username }"`, function () {
+            assert.equal( Home.navbar.currentUser.getText(), Login.username );
+        } );
+
+        test( 'Clicking "Create FA" navigates to /create endpoint', function () {
+            Home.navbar.create.click();
+            assert.equal( Home.currentUrl, Home.baseUrl + '#/create' );
+        } );
+
+        test( 'Clicking "In-process FAs" navigates to /in-process endpoint', function () {
+            Home.navbar.inProcess.click();
+            assert.equal( Home.currentUrl, Home.baseUrl + '#/in-process' );
+        } );
+
+        test( 'Clicking "Published FAs" navigates to /published endpoint', function () {
+            Home.navbar.published.click();
+            assert.equal( Home.currentUrl, Home.baseUrl + '#/published' );
+        } );
+    } );
+
     test( 'Clicking "Create a finding aid" navigates to /create endpoint', function () {
         Home.createAFindingAidOption.click();
         assert.equal( Home.currentUrl, Home.baseUrl + '#/create' );

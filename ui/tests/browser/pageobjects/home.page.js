@@ -2,7 +2,14 @@
 
 import Page from './page';
 
+import Navbar from '../pageobjects/classes/navbar';
+
 class Home extends Page {
+    constructor() {
+        super();
+        this.navbar = new Navbar();
+    }
+
     get baseUrl() {
         return browser.config.baseUrl;
     }
