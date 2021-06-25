@@ -4,31 +4,28 @@ import { assert } from 'chai';
 
 import Login from '../pageobjects/login.page';
 
-const USERNAME = 'archivist';
-const PASSWORD = 'password';
-
 suite( 'Login', function () {
     setup( function () {
         Login.open();
     } );
 
     test( 'Login with valid credentials takes user to Home', function () {
-        Login.login( USERNAME, PASSWORD );
+        Login.login();
         assert.equal( Login.currentUrl, Login.baseUrl + '#/' );
     } );
 
     suite( 'Login with invalid credentials results in the correct error message', function () {
         const INVALID_LOGIN_ERROR_MESSAGE = 'Invalid username and password combination';
-        const INVALID_PASSWORD = '[INVALID PASSWORD]';
-        const INVALID_USERNAME = '[INVALID USERNAME]';
+        const INVALID_PASSWORD = Login.password + '[INVALID PASSWORD]';
+        const INVALID_USERNAME = Login.username + '[INVALID USERNAME]';
 
         test( 'Valid username + invalid password', function () {
-            Login.login( USERNAME, INVALID_PASSWORD );
+            Login.login( Login.username, INVALID_PASSWORD );
             assert.equal( Login.feedback, INVALID_LOGIN_ERROR_MESSAGE );
         } );
 
         test( 'Invalid username + valid password', function () {
-            Login.login( INVALID_USERNAME, PASSWORD );
+            Login.login( INVALID_USERNAME, Login.password );
             assert.equal( Login.feedback, INVALID_LOGIN_ERROR_MESSAGE );
         } );
 
