@@ -10,10 +10,6 @@ class Home extends Page {
         this.navbar = new Navbar();
     }
 
-    get baseUrl() {
-        return browser.config.baseUrl;
-    }
-
     get createAFindingAidOption() {
         return $( '#create-option' );
     }

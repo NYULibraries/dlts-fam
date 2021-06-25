@@ -6,10 +6,6 @@ class Login extends Page {
     static USERNAME = 'archivist';
     static PASSWORD = 'password';
 
-    get baseUrl() {
-        return browser.config.baseUrl;
-    }
-
     get feedback() {
         return $( '#feedback' ).getText();
     }
