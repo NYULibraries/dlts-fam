@@ -15,29 +15,39 @@
             >
                 <b-navbar-nav>
                     <b-nav-item
+                        id="home-navbar-item"
                         :to="{ name: 'home' }"
                         exact
                     >
                         Home
                     </b-nav-item>
-                    <b-nav-item :to="{ name: 'create' }">
+                    <b-nav-item
+                        id="create-navbar-item"
+                        :to="{ name: 'create' }">
                         Create FA
                     </b-nav-item>
-                    <b-nav-item :to="{ name: 'in-process' }">
+                    <b-nav-item
+                        id="in-process-navbar-item"
+                        :to="{ name: 'in-process' }">
                         In-process FAs
                     </b-nav-item>
-                    <b-nav-item :to="{ name: 'published' }">
+                    <b-nav-item
+                        id="published-navbar-item"
+                        :to="{ name: 'published' }">
                         Published FAs
                     </b-nav-item>
                 </b-navbar-nav>
 
                 <!-- Right aligned nav items -->
                 <b-navbar-nav class="ml-auto">
-                    <b-nav-text right>
+                    <b-nav-text
+                        id="current-user-navbar-text"
+                        right>
                         {{ currentUser }}
                     </b-nav-text>
 
                     <b-nav-item
+                        id="logout-navbar-item"
                         right
                         @click="logout"
                     >
