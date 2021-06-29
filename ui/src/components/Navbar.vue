@@ -23,17 +23,20 @@
                     </b-nav-item>
                     <b-nav-item
                         id="create-navbar-item"
-                        :to="{ name: 'create' }">
+                        :to="{ name: 'create' }"
+                    >
                         Create FA
                     </b-nav-item>
                     <b-nav-item
                         id="in-process-navbar-item"
-                        :to="{ name: 'in-process' }">
+                        :to="{ name: 'in-process' }"
+                    >
                         In-process FAs
                     </b-nav-item>
                     <b-nav-item
                         id="published-navbar-item"
-                        :to="{ name: 'published' }">
+                        :to="{ name: 'published' }"
+                    >
                         Published FAs
                     </b-nav-item>
                 </b-navbar-nav>
@@ -42,7 +45,8 @@
                 <b-navbar-nav class="ml-auto">
                     <b-nav-text
                         id="current-user-navbar-text"
-                        right>
+                        right
+                    >
                         {{ currentUser }}
                     </b-nav-text>
 
@@ -51,7 +55,7 @@
                         right
                         @click="logout"
                     >
-                        Logout
+                        Log Out
                     </b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
@@ -60,7 +64,7 @@
 </template>
 
 <script>
-import { mapActions, mapGetters } from 'vuex';
+import { mapGetters } from 'vuex';
 
 export default {
     computed : {
@@ -73,19 +77,9 @@ export default {
     methods : {
         async logout() {
             if ( this.currentUser ) {
-                await this.$sleep( 500 );
-
-                this.setCurrentUser( '' );
-                this.setFetchInitialPublishedFindingAidsMetadata( true );
-                this.$router.push( 'login' );
+                this.$router.push( 'logout' );
             }
         },
-        ...mapActions(
-            [
-                'setCurrentUser',
-                'setFetchInitialPublishedFindingAidsMetadata',
-            ],
-        ),
     },
 };
 </script>
