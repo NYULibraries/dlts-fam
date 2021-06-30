@@ -41,7 +41,7 @@ suite( 'Home', function () {
             const LOGOUT_IN_PROGRESS_MESSAGE = 'Logging out of the FAM...';
             waitUntil(
                 () => Logout.feedback === LOGOUT_IN_PROGRESS_MESSAGE,
-                'Logout page is not displaying "`{ LOGOUT_IN_PROGRESS_MESSAGE }`"',
+                `Logout page is not displaying "${ LOGOUT_IN_PROGRESS_MESSAGE }"`,
             );
 
             // Multiple spaces are apparently compressed into a single space in the $(...).getText() value.
