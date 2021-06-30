@@ -24,6 +24,7 @@ exports.config = {
     // will be called from there.
     //
     specs   : [
+        'tests/browser/tests/create-new-finding-aid.js',
         'tests/browser/tests/home.js',
         'tests/browser/tests/login.js',
         'tests/browser/tests/navbar.js',
@@ -33,6 +34,9 @@ exports.config = {
         // 'path/to/excluded/files'
     ],
     suites  : {
+        create : [
+            'tests/browser/tests/create-new-finding-aid.js',
+        ],
         home : [
             'tests/browser/tests/home.js',
         ],
