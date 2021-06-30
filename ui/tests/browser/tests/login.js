@@ -3,10 +3,21 @@
 import { assert } from 'chai';
 
 import Login from '../pageobjects/login.page';
+import Logout from '../pageobjects/logout.page';
+import {  getCurrentUrl, waitUntil } from '../util';
 
 suite( 'Login', function () {
     setup( function () {
         Login.open();
+    } );
+
+    teardown( function () {
+        Logout.open();
+
+        waitUntil(
+            () => getCurrentUrl() === Login.fullPath,
+            'User was not redirected to Login',
+        );
     } );
 
     test( 'Login with valid credentials takes user to Home', function () {
