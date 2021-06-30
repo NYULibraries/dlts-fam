@@ -1,6 +1,8 @@
 /* global browser:false $:false $$:false */
 
+import Login from './login.page';
 import Page from './page';
+import { getCurrentUrl, waitUntil } from '../util';
 
 class Logout extends Page {
     get feedback() {
@@ -13,6 +15,15 @@ class Logout extends Page {
 
     get spinner() {
         return $( '#spinner' );
+    }
+
+    logout() {
+        browser.url( this.path );
+
+        waitUntil(
+            () => getCurrentUrl() === Login.fullPath,
+            'User was not redirected to Login',
+        );
     }
 }
 
