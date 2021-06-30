@@ -5,12 +5,14 @@ import { assert } from 'chai';
 import Home from '../pageobjects/home.page';
 import Login from '../pageobjects/login.page';
 import Logout from '../pageobjects/logout.page';
-import { waitUntil } from '../util';
 
 suite( 'Home', function () {
     setup( function () {
-        Login.open();
         Login.login();
+    } );
+
+    teardown( function () {
+        Logout.logout();
     } );
 
     test( 'Clicking "Create a finding aid" navigates to /create endpoint', function () {
