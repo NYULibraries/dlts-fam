@@ -95,6 +95,10 @@ function getBrowserName() {
     return browser.options.capabilities.browserName;
 }
 
+function getCurrentUrl() {
+    return browser.getUrl();
+}
+
 function getDiffFilePath( suiteName, id ) {
     return path.resolve( getDiffFilesDirectory( suiteName ), `./${ id }.txt` );
 }
@@ -163,6 +167,7 @@ export {
     diffActualVsGoldenAndReturnMessage,
     getActualFilePath,
     getActualFilesDirectory,
+    getCurrentUrl,
     getDiffFilesDirectory,
     getGoldenFilePath,
     getGoldenFiles,
