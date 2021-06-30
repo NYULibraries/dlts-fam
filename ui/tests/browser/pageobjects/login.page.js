@@ -44,6 +44,8 @@ class Login extends Page {
             password = passwordArg;
         }
 
+        this.open();
+
         $( '#username' ).addValue( username );
         $( '#password' ).addValue( password );
         $(  '#sign-in-button' ).click();
