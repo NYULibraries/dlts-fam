@@ -142,6 +142,17 @@ function updateGoldenFiles() {
            process.env.UPDATE_GOLDEN_FILES.toLowerCase() !== 'false';
 }
 
+function waitUntil( fn, timeoutMessage, optionsArg ) {
+    const timeout = ( optionsArg && optionsArg.timeout ) || 5000;
+
+    const options = {
+        timeout    : timeout,
+        timeoutMsg : timeoutMessage || `waitUntil() condition not met after ${ timeout / 1000 } seconds`,
+    };
+
+    browser.waitUntil( fn, options );
+}
+
 export const SUITE_NAME = {
     login : 'login',
 };
@@ -159,4 +170,5 @@ export {
     isDisabled,
     jsonStableStringify,
     updateGoldenFiles,
+    waitUntil,
 };
