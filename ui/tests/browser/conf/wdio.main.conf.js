@@ -26,6 +26,7 @@ exports.config = {
     specs   : [
         'tests/browser/tests/home.js',
         'tests/browser/tests/login.js',
+        'tests/browser/tests/navbar.js',
     ],
     // Patterns to exclude.
     exclude : [
@@ -37,6 +38,9 @@ exports.config = {
         ],
         login : [
             'tests/browser/tests/login.js',
+        ],
+        navbar : [
+            'tests/browser/tests/navbar.js',
         ],
     },
     //
