@@ -15,8 +15,7 @@ class CreateNewFindingAidPage extends Page {
     }
 
     get fileInput() {
-        return $( 'div#upload-row' );
-        // return $( 'div#upload-row .b-form-file input' );
+        return $( 'div#upload-row .b-form-file input' );
     }
 
     get results() {
