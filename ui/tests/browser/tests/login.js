@@ -19,6 +19,7 @@ suite( 'Login', function () {
 
     test( 'Login with valid credentials takes user to Home', function () {
         Login.login();
+
         assert.equal( Login.currentUrl, Login.baseUrl + '#/' );
     } );
 
