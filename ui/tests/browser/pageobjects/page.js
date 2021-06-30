@@ -13,7 +13,7 @@ export default class Page {
         return this.baseUrl + this.path;
     }
 
-    open( path ) {
+    open() {
         browser.url( this.path );
     }
 };
