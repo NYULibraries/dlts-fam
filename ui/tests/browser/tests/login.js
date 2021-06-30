@@ -4,17 +4,10 @@ import { assert } from 'chai';
 
 import Login from '../pageobjects/login.page';
 import Logout from '../pageobjects/logout.page';
-import {  getCurrentUrl, waitUntil } from '../util';
-import Home from '../pageobjects/home.page';
 
 suite( 'Login', function () {
-    teardown( function () {
-        Logout.open();
-
-        waitUntil(
-            () => getCurrentUrl() === Login.fullPath,
-            'User was not redirected to Login',
-        );
+    setup( function () {
+        Logout.logout();
     } );
 
     test( 'Login with valid credentials takes user to Home', function () {
