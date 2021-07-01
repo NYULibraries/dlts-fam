@@ -4,6 +4,8 @@ import Page from './page';
 
 import Navbar from '../pageobjects/classes/navbar';
 
+import waitUntil from '../util/';
+
 class CreateNewFindingAidPage extends Page {
     constructor() {
         super();
@@ -19,7 +21,7 @@ class CreateNewFindingAidPage extends Page {
     }
 
     get results() {
-        return $( '#results-textarea' );
+        return $( '#results-textarea' ).getValue();
     }
 
     get path() {
@@ -28,6 +30,10 @@ class CreateNewFindingAidPage extends Page {
 
     get submitButton() {
         return $( '#submit-button' );
+    }
+
+    uploadFile( path ) {
+        this.fileInput.setValue( path );
     }
 }
 
