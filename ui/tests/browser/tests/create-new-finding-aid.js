@@ -18,6 +18,8 @@ const MC_100_MISSING_EADID_AND_REPOSITORY_CORPNAME_EAD_FILE_PATH =
     path.join( __dirname, '../fixtures/mc_100-missing-eadid-and-repository-corpname.xml' );
 const MC_100_INVALID_EADID_REPOSITORY_ROLE_RELATOR_CODES_UNPUBLISHED_MATERIAL_EAD_FILE_PATH =
     path.join( __dirname, '../fixtures/mc_100-invalid-eadid-repository-role-relator-codes-unpublished-material.xml ' );
+const MC_100_EADID_CONFLICT_EAD_FILE_PATH =
+    path.join( __dirname, '../fixtures/mc_100-eadid-conflict.xml' );
 
 const MISSING_ELEMENTS_ERRORS_RESULTS_TEXT =
     `Uploading EAD file mc_100-missing-eadid-and-repository-corpname.xml...
@@ -208,6 +210,21 @@ suite( 'Create New Finding Aid', function () {
         );
 
         assert.equal( CreateNewFindingAid.results, INVALID_EADID_REPOSITORY_ROLE_RELATOR_CODES_UNPUBLISHED_MATERIAL_RESULTS_TEXT );
+        assert.isFalse( CreateNewFindingAid.submitButton.isEnabled() );
+    } );
+
+    test( 'An EAD file with an <eadid> value duplicating the <eadid> value of another EAD file in a different repository is rejected with the correct error messages', function () {
+        CreateNewFindingAid.uploadFile( MC_100_EADID_CONFLICT_EAD_FILE_PATH );
+
+        waitUntil(
+            () => CreateNewFindingAid.results.includes( 'Error' ),
+            'Results text does not include the string "Error"',
+            {
+                timeout    : 10000,
+            },
+        );
+
+        assert.equal( CreateNewFindingAid.results, EADID_CONFLICT_RESULTS_TEXT );
         assert.isFalse( CreateNewFindingAid.submitButton.isEnabled() );
     } );
 
