@@ -14,6 +14,18 @@ const INVALID_XML_FILE_PATH =
     path.join( __dirname, '../fixtures/invalid-xml.xml' );
 const MC_100_EAD_FILE_PATH =
     path.join( __dirname, '../fixtures/mc_100.xml' );
+const MC_100_MISSING_EADID_AND_REPOSITORY_CORPNAME_EAD_FILE_PATH =
+    path.join( __dirname, '../fixtures/mc_100-missing-eadid-and-repository-corpname.xml' );
+
+const MISSING_ELEMENTS_ERRORS_RESULTS_TEXT =
+    `Uploading EAD file mc_100-missing-eadid-and-repository-corpname.xml...
+Upload complete.
+Validating EAD file...
+
+ERROR: Required element <eadid> not found.
+
+ERROR: Required element <repository>/<corpname> not found.
+`;
 
 const INVALID_XML_FILE_ERROR_RESULTS_TEXT =
     `Uploading EAD file invalid-xml.xml...
@@ -73,6 +85,35 @@ suite( 'Create New Finding Aid', function () {
         );
 
         assert.equal( CreateNewFindingAid.results, INVALID_XML_FILE_ERROR_RESULTS_TEXT );
+    } );
+
+    test( 'Invalid Finding Aids EAD files are rejected with the correct error messages', function () {
+        CreateNewFindingAid.uploadFile( INVALID_XML_FILE_PATH );
+
+        waitUntil(
+            () => CreateNewFindingAid.results.includes( 'Error' ),
+            'Results text does not include the string "Error"',
+            {
+                timeout    : 10000,
+            },
+        );
+
+        assert.equal( CreateNewFindingAid.results, INVALID_XML_FILE_ERROR_RESULTS_TEXT );
+    } );
+
+    test( 'EAD missing required elements are rejected with the correct error messages', function () {
+        CreateNewFindingAid.uploadFile( MC_100_MISSING_EADID_AND_REPOSITORY_CORPNAME_EAD_FILE_PATH );
+
+        waitUntil(
+            () => CreateNewFindingAid.results.includes( 'ERROR' ),
+            'Results text does not include the string "ERROR"',
+            {
+                timeout    : 10000,
+            },
+        );
+
+        assert.equal( CreateNewFindingAid.results, MISSING_ELEMENTS_ERRORS_RESULTS_TEXT );
+        assert.isFalse( CreateNewFindingAid.submitButton.isEnabled() );
     } );
 
     test( 'Uploading a valid EAD file and clicking Submit creates an in-process finding aid', function () {
