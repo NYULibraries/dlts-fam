@@ -181,7 +181,7 @@ suite( 'Create New Finding Aid', function () {
         assert.isFalse( CreateNewFindingAid.submitButton.isEnabled() );
     } );
 
-    test( 'EAD missing required elements are rejected with the correct error messages', function () {
+    test( 'EAD files missing required elements are rejected with the correct error messages', function () {
         CreateNewFindingAid.uploadFile( MC_100_MISSING_EADID_AND_REPOSITORY_CORPNAME_EAD_FILE_PATH );
 
         waitUntil(
