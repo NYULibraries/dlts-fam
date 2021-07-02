@@ -10,8 +10,19 @@ import { waitUntil } from '../util';
 
 const path = require( 'path' );
 
+const INVALID_XML_FILE_PATH =
+    path.join( __dirname, '../fixtures/invalid-xml.xml' );
 const MC_100_EAD_FILE_PATH =
     path.join( __dirname, '../fixtures/mc_100.xml' );
+
+const INVALID_XML_FILE_ERROR_RESULTS_TEXT =
+    `Uploading EAD file invalid-xml.xml...
+Upload complete.
+Validating EAD file...
+----------------------------------------------------------------------------------
+Error: The XML in this file is not valid.  Please check it using an XML validator.
+
+`;
 
 const SUCCESSFUL_UPLOAD_OF_VALID_EAD_FILE_RESULTS_TEXT =
     `Uploading EAD file mc_100.xml...
@@ -48,6 +59,20 @@ suite( 'Create New Finding Aid', function () {
 
     test( 'Submit button is disabled on first load', function () {
         assert.isFalse( CreateNewFindingAid.submitButton.isEnabled() );
+    } );
+
+    test( 'Invalid XML files are rejected with the correct error message', function () {
+        CreateNewFindingAid.uploadFile( INVALID_XML_FILE_PATH );
+
+        waitUntil(
+            () => CreateNewFindingAid.results.includes( 'Error' ),
+            'Results text does not include the string "Error"',
+            {
+                timeout    : 10000,
+            },
+        );
+
+        assert.equal( CreateNewFindingAid.results, INVALID_XML_FILE_ERROR_RESULTS_TEXT );
     } );
 
     test( 'Uploading a valid EAD file and clicking Submit creates an in-process finding aid', function () {
