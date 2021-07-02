@@ -166,7 +166,7 @@ suite( 'Create New Finding Aid', function () {
         assert.equal( CreateNewFindingAid.results, INVALID_XML_FILE_ERROR_RESULTS_TEXT );
     } );
 
-    test( 'Invalid Finding Aids EAD files are rejected with the correct error messages', function () {
+    test( 'An invalid Finding Aids EAD file is rejected with the correct error messages', function () {
         CreateNewFindingAid.uploadFile( INVALID_XML_FILE_PATH );
 
         waitUntil(
@@ -181,7 +181,7 @@ suite( 'Create New Finding Aid', function () {
         assert.isFalse( CreateNewFindingAid.submitButton.isEnabled() );
     } );
 
-    test( 'EAD files missing required elements are rejected with the correct error messages', function () {
+    test( 'An EAD file missing required elements is rejected with the correct error messages', function () {
         CreateNewFindingAid.uploadFile( MC_100_MISSING_EADID_AND_REPOSITORY_CORPNAME_EAD_FILE_PATH );
 
         waitUntil(
@@ -196,7 +196,7 @@ suite( 'Create New Finding Aid', function () {
         assert.isFalse( CreateNewFindingAid.submitButton.isEnabled() );
     } );
 
-    test( 'EAD files with invalid elements and unpublished material are rejected with the correct error messages', function () {
+    test( 'An EAD file with invalid elements and unpublished material is rejected with the correct error messages', function () {
         CreateNewFindingAid.uploadFile( MC_100_INVALID_EADID_REPOSITORY_ROLE_RELATOR_CODES_UNPUBLISHED_MATERIAL_EAD_FILE_PATH );
 
         waitUntil(
