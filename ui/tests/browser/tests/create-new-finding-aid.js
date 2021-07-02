@@ -46,7 +46,7 @@ suite( 'Create New Finding Aid', function () {
         Logout.logout();
     } );
 
-    test( 'Submit button is disabled on first load', function() {
+    test( 'Submit button is disabled on first load', function () {
         assert.isFalse( CreateNewFindingAid.submitButton.isEnabled() );
     } );
 
