@@ -12,24 +12,34 @@ const path = require( 'path' );
 
 const INVALID_XML_FILE_PATH =
     path.join( __dirname, '../fixtures/invalid-xml.xml' );
-const MC_100_EAD_FILE_PATH =
-    path.join( __dirname, '../fixtures/mc_100.xml' );
-const MC_100_MISSING_EADID_AND_REPOSITORY_CORPNAME_EAD_FILE_PATH =
-    path.join( __dirname, '../fixtures/mc_100-missing-eadid-and-repository-corpname.xml' );
-const MC_100_INVALID_EADID_REPOSITORY_ROLE_RELATOR_CODES_UNPUBLISHED_MATERIAL_EAD_FILE_PATH =
-    path.join( __dirname, '../fixtures/mc_100-invalid-eadid-repository-role-relator-codes-unpublished-material.xml ' );
 const MC_100_EADID_CONFLICT_EAD_FILE_PATH =
     path.join( __dirname, '../fixtures/mc_100-eadid-conflict.xml' );
+const MC_100_EAD_FILE_PATH =
+    path.join( __dirname, '../fixtures/mc_100.xml' );
+const MC_100_INVALID_EADID_REPOSITORY_ROLE_RELATOR_CODES_UNPUBLISHED_MATERIAL_EAD_FILE_PATH =
+    path.join( __dirname, '../fixtures/mc_100-invalid-eadid-repository-role-relator-codes-unpublished-material.xml ' );
+const MC_100_MISSING_EADID_AND_REPOSITORY_CORPNAME_EAD_FILE_PATH =
+    path.join( __dirname, '../fixtures/mc_100-missing-eadid-and-repository-corpname.xml' );
 
-const MISSING_ELEMENTS_ERRORS_RESULTS_TEXT =
-    `Uploading EAD file mc_100-missing-eadid-and-repository-corpname.xml...
+const EADID_CONFLICT_RESULTS_TEXT =
+    `Uploading EAD file mc_100-eadid-conflict.xml...
 Upload complete.
 Validating EAD file...
+------------------------------------------------------------------------------
+Error: <eadid> conflict with a published finding aid in a different repository
 
-ERROR: Required element <eadid> not found.
+A published finding aid with <eadid> "tam_100" already exists in repository "Tamiment Library and Robert F. Wagner Labor Archives":
 
-ERROR: Required element <repository>/<corpname> not found.
-`;
+EAD ID: tam_100
+REPOSITORY: Tamiment Library and Robert F. Wagner Labor Archives
+TIMESTAMP: 1530045309
+
+The uploaded EAD file belongs to repository "New York University Archives".  <eadid> values must be unique across all repositories.
+In order to create an in-process finding aid from this EAD file, you must either delete the existing published finding aid in repository "Tamiment Library and Robert F. Wagner Labor Archives", or change the <eadid> value in this EAD file.
+
+-----------------------------------------------------------------
+
+Please make the necessary corrections and re-upload the EAD file.`;
 
 const INVALID_EADID_REPOSITORY_ROLE_RELATOR_CODES_UNPUBLISHED_MATERIAL_RESULTS_TEXT =
     `Uploading EAD file mc_100-invalid-eadid-repository-role-relator-codes-unpublished-material.xml...
@@ -88,32 +98,31 @@ The EAD file contains elements with role attributes containing unrecognized rela
 
 Please make the necessary corrections and re-upload the EAD file.`;
 
-const EADID_CONFLICT_RESULTS_TEXT =
-    `Uploading EAD file mc_100-eadid-conflict.xml...
-Upload complete.
-Validating EAD file...
-------------------------------------------------------------------------------
-Error: <eadid> conflict with a published finding aid in a different repository
-
-A published finding aid with <eadid> "tam_100" already exists in repository "Tamiment Library and Robert F. Wagner Labor Archives":
-
-EAD ID: tam_100
-REPOSITORY: Tamiment Library and Robert F. Wagner Labor Archives
-TIMESTAMP: 1530045309
-
-The uploaded EAD file belongs to repository "New York University Archives".  <eadid> values must be unique across all repositories.
-In order to create an in-process finding aid from this EAD file, you must either delete the existing published finding aid in repository "Tamiment Library and Robert F. Wagner Labor Archives", or change the <eadid> value in this EAD file.
-
------------------------------------------------------------------
-
-Please make the necessary corrections and re-upload the EAD file.`;
-
 const INVALID_XML_FILE_ERROR_RESULTS_TEXT =
     `Uploading EAD file invalid-xml.xml...
 Upload complete.
 Validating EAD file...
 ----------------------------------------------------------------------------------
 Error: The XML in this file is not valid.  Please check it using an XML validator.
+
+`;
+
+const MISSING_ELEMENTS_ERRORS_RESULTS_TEXT =
+    `Uploading EAD file mc_100-missing-eadid-and-repository-corpname.xml...
+Upload complete.
+Validating EAD file...
+
+ERROR: Required element <eadid> not found.
+
+ERROR: Required element <repository>/<corpname> not found.
+`;
+
+const SUCCESSFUL_CREATION_OF_IN_PROCESS_FINDING_AID_RESULTS_TEXT =
+    SUCCESSFUL_UPLOAD_OF_VALID_EAD_FILE_RESULTS_TEXT +
+    `Creating in-process finding aid...
+New in-process finding aid created with timestamp ${ TIMESTAMP_PATTERN }.
+
+Proceed to In-process FAs to preview the new EAD file and finding aid.
 
 `;
 
@@ -131,14 +140,6 @@ REPOSITORY: New York University Archives
 `;
 
 const TIMESTAMP_PATTERN = '[MONTH]/[DAY]/[YEAR] [HOUR]:[MINUTE] [AM/PM]';
-const SUCCESSFUL_CREATION_OF_IN_PROCESS_FINDING_AID_RESULTS_TEXT =
-    SUCCESSFUL_UPLOAD_OF_VALID_EAD_FILE_RESULTS_TEXT +
-    `Creating in-process finding aid...
-New in-process finding aid created with timestamp ${ TIMESTAMP_PATTERN }.
-
-Proceed to In-process FAs to preview the new EAD file and finding aid.
-
-`;
 
 suite( 'Create New Finding Aid', function () {
     setup( function () {
