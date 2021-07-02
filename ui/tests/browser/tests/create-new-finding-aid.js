@@ -99,6 +99,7 @@ suite( 'Create New Finding Aid', function () {
         );
 
         assert.equal( CreateNewFindingAid.results, INVALID_XML_FILE_ERROR_RESULTS_TEXT );
+        assert.isFalse( CreateNewFindingAid.submitButton.isEnabled() );
     } );
 
     test( 'EAD missing required elements are rejected with the correct error messages', function () {
