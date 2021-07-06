@@ -1,4 +1,4 @@
-/* global browser:false $:false $$:false */
+/* global browser:false $:false */
 
 import Page from './page';
 

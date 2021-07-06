@@ -1,4 +1,4 @@
-/* global browser:false $:false $$:false */
+/* global browser:false $:false */
 
 import Login from './login.page';
 import Page from './page';
