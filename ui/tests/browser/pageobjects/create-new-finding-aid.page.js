@@ -4,8 +4,6 @@ import Page from './page';
 
 import Navbar from '../pageobjects/classes/navbar';
 
-import waitUntil from '../util/';
-
 class CreateNewFindingAidPage extends Page {
     constructor() {
         super();
