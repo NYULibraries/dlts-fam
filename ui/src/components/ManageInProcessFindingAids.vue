@@ -130,8 +130,7 @@
                 </template>
 
                 <template v-slot:cell(id)="row">
-                    <div
-                        @click="row.toggleDetails">
+                    <div @click="row.toggleDetails">
                         {{ row.item.id }}
                     </div>
                 </template>
