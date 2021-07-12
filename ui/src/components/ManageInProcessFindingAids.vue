@@ -12,6 +12,7 @@
 
             <b-row id="controls-row">
                 <b-col
+                    id="result-stats"
                     class="my-1 text-left"
                     cols="6"
                 >
@@ -32,6 +33,7 @@
                         class="mb-0"
                     >
                         <b-form-select
+                            id="per-page-select"
                             v-model="perPage"
                             size="sm"
                             :options="pageOptions"
@@ -43,6 +45,7 @@
                     class="my-1"
                 >
                     <b-pagination
+                        id="page-navigation"
                         v-model="currentPage"
                         :total-rows="totalRows"
                         :per-page="perPage"
@@ -109,6 +112,7 @@
 
                 <template v-slot:cell(actions)="row">
                     <span
+                        id="toggle-details-button"
                         ref="toggle-details-span"
                         class="h1"
                     >
@@ -126,7 +130,8 @@
                 </template>
 
                 <template v-slot:cell(id)="row">
-                    <div @click="row.toggleDetails">
+                    <div
+                        @click="row.toggleDetails">
                         {{ row.item.id }}
                     </div>
                 </template>
@@ -146,6 +151,7 @@
                 <template v-slot:row-details="row">
                     <div>
                         <b-button
+                            id="view-finding-aid-preview-button"
                             class="action-button"
                             :to="{ name : 'preview', params : { type : 'finding-aid', repositoryCode : row.item.repositoryCode, id : row.item.id } }"
                             target="_blank"
@@ -154,6 +160,7 @@
                         </b-button>
 
                         <b-button
+                            id="view-ead-file-preview-button"
                             class="action-button"
                             :to="{ name : 'preview', params : { type : 'ead', repositoryCode : row.item.repositoryCode, id : row.item.id } }"
                             target="_blank"
@@ -162,6 +169,7 @@
                         </b-button>
 
                         <b-button
+                            id="publish-finding-aid-button"
                             class="action-button"
                             :data-id="row.item.id"
                             :data-repository-code="row.item.repositoryCode"
@@ -172,6 +180,7 @@
                         </b-button>
 
                         <b-button
+                            id="delete-in-process-finding-aid-button"
                             class="action-button"
                             :data-id="row.item.id"
                             :data-repository-code="row.item.repositoryCode"
