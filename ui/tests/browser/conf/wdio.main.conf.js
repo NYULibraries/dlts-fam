@@ -27,6 +27,7 @@ exports.config = {
         'tests/browser/tests/create-new-finding-aid.js',
         'tests/browser/tests/home.js',
         'tests/browser/tests/login.js',
+        'tests/browser/tests/manage-in-process-finding-aids.js',
         'tests/browser/tests/navbar.js',
     ],
     // Patterns to exclude.
@@ -42,6 +43,9 @@ exports.config = {
         ],
         login : [
             'tests/browser/tests/login.js',
+        ],
+        'manage-in-process-finding-aids' : [
+            'tests/browser/tests/manage-in-process-finding-aids.js',
         ],
         navbar : [
             'tests/browser/tests/navbar.js',
