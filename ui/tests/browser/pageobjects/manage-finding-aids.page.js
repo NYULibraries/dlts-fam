@@ -75,6 +75,10 @@ export default class ManageFindingAidsPage extends Page {
         $( '#id-filter' ).addValue( id + '\uE006' );
     }
 
+    filterByRepository( repository ) {
+        $( '#repository-filter' ).selectByVisibleText( repository );
+    }
+
     // <tr role="row" aria-rowindex="1" class="">
     //
     //     ...
