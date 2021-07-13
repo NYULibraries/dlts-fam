@@ -68,6 +68,13 @@ export default class ManageFindingAidsPage extends Page {
         $( '#toggle-details-button' ).click();
     }
 
+    filterById( id ) {
+        // Previously was submitting the form using `browser.keys( '\uE006' )` in
+        // SearchForm.submit method, but that seemed to cause problems in Search Form
+        // tests.  See https://jira.nyu.edu/jira/browse/NYUP-619 for details.
+        $( '#id-filter' ).addValue( id + '\uE006' );
+    }
+
     // <tr role="row" aria-rowindex="1" class="">
     //
     //     ...
