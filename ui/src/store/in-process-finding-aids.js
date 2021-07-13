@@ -213,10 +213,6 @@ export default {
             'timestamp' : 1623582075,
             'title'     : 'NYU Abu Dhabi Capstone Archives 12',
         },
-        'ad_mc_012' : {
-            'timestamp' : 1524763494,
-            'title'     : 'Engin Ozendes Collection AD.MC.012',
-        },
         'ad_mc_015' : {
             'timestamp' : 1585848150,
             'title'     : 'Scenes of Egypt During WWI AD.MC.015',
