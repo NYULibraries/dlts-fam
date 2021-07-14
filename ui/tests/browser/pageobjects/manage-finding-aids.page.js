@@ -18,7 +18,7 @@ export default class ManageFindingAidsPage extends Page {
         return $( '#per-page-navigation' );
     }
 
-    get perPageSelect() {
+    get resultsPerPageSelect() {
         return $( '#per-page-select' );
     }
 
