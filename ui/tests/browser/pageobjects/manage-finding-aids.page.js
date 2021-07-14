@@ -14,6 +14,10 @@ export default class ManageFindingAidsPage extends Page {
         return $( '#id-filter' );
     }
 
+    get idFilterValue() {
+        return this.idFilter.getValue();
+    }
+
     get pageNavigation() {
         return $( '#page-navigation' );
     }
@@ -24,6 +28,10 @@ export default class ManageFindingAidsPage extends Page {
 
     get repositoryFilter() {
         return $( '#id-filter' );
+    }
+
+    get repositoryFilterValue() {
+        return this.repositoryFilter.getValue();
     }
 
     get resultsPerPage() {
