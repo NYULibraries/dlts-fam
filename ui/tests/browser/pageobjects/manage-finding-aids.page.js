@@ -14,8 +14,8 @@ export default class ManageFindingAidsPage extends Page {
         return $( '#id-filter' );
     }
 
-    get perPageNavigation() {
-        return $( '#per-page-navigation' );
+    get pageNavigation() {
+        return $( '#page-navigation' );
     }
 
     get resultsPerPageSelect() {
