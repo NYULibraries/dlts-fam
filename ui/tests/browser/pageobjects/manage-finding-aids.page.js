@@ -26,6 +26,10 @@ export default class ManageFindingAidsPage extends Page {
         return $( '#id-filter' );
     }
 
+    get resultsPerPage() {
+        return this.resultsPerPageSelect.getValue();
+    }
+
     get resultStats() {
         return $( '#result-stats' ).getValue();
     }
@@ -92,5 +96,9 @@ export default class ManageFindingAidsPage extends Page {
     //     ...
     row( id ) {
         return $( `div=${ id }` ).parentElement().parentElement();
+    }
+
+    setResultsPerPage( resultsPerPage ) {
+        this.resultsPerPageSelect.selectByVisibleText( resultsPerPage );
     }
 }
