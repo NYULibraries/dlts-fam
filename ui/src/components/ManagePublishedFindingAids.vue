@@ -58,9 +58,11 @@
 
             <!-- Main table element -->
             <b-table
+                id="finding-aids-table"
                 ref="table"
                 dark
                 empty-filtered-text="The are no finding aids matching your request."
+                primary-key="id"
                 striped
                 show-empty
                 small

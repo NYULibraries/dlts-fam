@@ -58,8 +58,10 @@
 
             <!-- Main table element -->
             <b-table
+                id="finding-aids-table"
                 ref="table"
                 bordered
+                primary-key="id"
                 striped
                 show-empty
                 small
