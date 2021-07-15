@@ -629,6 +629,7 @@ export default {
             const that = this;
             this.$bvModal.msgBoxOk( message, {
                 centered : true,
+                id       : 'delete-in-process-finding-aid-message-box',
                 title    : title,
             } ).then(
                 function () {
@@ -748,6 +749,7 @@ export default {
                 const that = this;
                 this.$bvModal.msgBoxOk( message, {
                     centered : true,
+                    id       : 'abort-publication-message-box',
                     title    : title,
                 } ).then(
                     function () {

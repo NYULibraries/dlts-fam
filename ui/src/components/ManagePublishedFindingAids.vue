@@ -537,6 +537,7 @@ Some things to try:
             const that = this;
             this.$bvModal.msgBoxOk( message, {
                 centered : true,
+                id       : 'delete-published-finding-aid-message-box',
                 title    : title,
             } ).then(
                 function () {
