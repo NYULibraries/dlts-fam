@@ -107,7 +107,7 @@ export default class ManageFindingAidsPage extends Page {
     //
     //     ...
     row( id ) {
-        return $( `div=${ id }` ).parentElement().parentElement();
+        return $( `#finding-aids-table__row_${ id }` );
     }
 
     setResultsPerPage( resultsPerPage ) {
