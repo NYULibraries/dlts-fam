@@ -84,6 +84,10 @@ export default class ManageFindingAidsPage extends Page {
         this.row( id ).$( '#toggle-details-button' ).click();
     }
 
+    detailsRow( id ) {
+        return $( `#${ this.row( id ).getAttribute( 'aria-details' ) }` );
+    }
+
     filterById( id ) {
         // Previously was submitting the form using `browser.keys( '\uE006' )` in
         // SearchForm.submit method, but that seemed to cause problems in Search Form
