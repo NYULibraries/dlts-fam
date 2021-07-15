@@ -68,6 +68,10 @@ export default class ManageFindingAidsPage extends Page {
         this.cellForRow( id, 'ID' ).click();
     }
 
+    clickPageNavigationLink( linkLabel ) {
+        this.pageNavigation.$( `button.page-link=${ linkLabel }` ).click();
+    }
+
     clickRepositoryCellForRow( id ) {
         this.cellForRow( id, 'Repository' ).click();
     }
