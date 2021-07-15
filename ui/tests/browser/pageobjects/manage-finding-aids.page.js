@@ -81,7 +81,7 @@ export default class ManageFindingAidsPage extends Page {
     }
 
     clickToggleDetailsButton( id ) {
-        $( '#toggle-details-button' ).click();
+        this.row( id ).$( '#toggle-details-button' ).click();
     }
 
     filterById( id ) {
