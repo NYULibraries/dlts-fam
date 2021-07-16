@@ -5,6 +5,10 @@ import Page from './page';
 import Navbar from '../pageobjects/classes/navbar';
 
 export default class ManageFindingAidsPage extends Page {
+    static COL_INDEX_ID = 2;
+    static COL_INDEX_REPOSITORY = 3;
+    static COL_INDEX_TIMESTAMP = 4;
+
     constructor() {
         super();
         this.navbar = new Navbar();
@@ -76,6 +80,32 @@ export default class ManageFindingAidsPage extends Page {
         this.cellForRow( id, 'Repository' ).click();
     }
 
+    clickSortBy( colIndex ) {
+        const th = this.th( colIndex );
+        const width = th.getSize( 'width' );
+        // The safest place to click is on table sort icons at the right edge of
+        // the <th> elements.  The icons are 101px by default:
+        // https://github.com/bootstrap-vue/bootstrap-vue/blob/d0fb9c264b35287f409b721e57215abf7c366375/src/_variables.scss#L90-L101
+        // ...however, the comments suggest that they can be narrowed horizontally.
+        // Calculate a horizontal offset that will position the click 1% of the
+        // <th> width to the left of the right edge of the <th>.
+        const offset = Math.floor( ( width / 2 ) - ( width * 0.01 ) );
+
+        th.click( { x : offset } );
+    }
+
+    clickSortById() {
+        this.clickSortBy( ManageFindingAidsPage.COL_INDEX_ID );
+    }
+
+    clickSortByRepository() {
+        this.clickSortBy( ManageFindingAidsPage.COL_INDEX_REPOSITORY );
+    }
+
+    clickSortByTimestamp() {
+        this.clickSortBy( ManageFindingAidsPage.COL_INDEX_TIMESTAMP );
+    }
+
     clickTimestampCellForRow( id ) {
         this.cellForRow( id, 'Timestamp' ).click();
     }
@@ -116,5 +146,9 @@ export default class ManageFindingAidsPage extends Page {
 
     setResultsPerPage( resultsPerPage ) {
         this.resultsPerPageSelect.selectByVisibleText( resultsPerPage );
+    }
+
+    th( colIndex ) {
+        return $( `th[ aria-colindex = "${ colIndex }"` );
     }
 }
