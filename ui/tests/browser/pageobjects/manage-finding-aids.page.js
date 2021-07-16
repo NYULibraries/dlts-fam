@@ -134,6 +134,33 @@ export default class ManageFindingAidsPage extends Page {
         $( '#repository-filter' ).selectByVisibleText( repository );
     }
 
+    resultsSnapshot() {
+        const resultRows = $$( 'tbody tr' ).map( resultRow => {
+            const resultRowSnapshot = {};
+
+            resultRow.$$( 'td' ).forEach( td => {
+                const dataLabel = td.getAttribute( 'data-label' );
+
+                if ( dataLabel ) {
+                    resultRowSnapshot[ dataLabel ] = td.getText();
+                }
+            } );
+
+            return resultRowSnapshot;
+        } );
+
+        return {
+            ui : {
+                idFilter         : this.idFilterValue || null,
+                pageNavigation   : this.pageNavigation.getText(),
+                repositoryFilter : this.repositoryFilterValue || 'All',
+                resultsPerPage   : this.resultsPerPage,
+                resultStats      : this.resultStats,
+            },
+            results : resultRows,
+        };
+    }
+
     // <tr role="row" aria-rowindex="1" class="">
     //
     //     ...
