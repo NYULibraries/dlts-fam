@@ -44,7 +44,7 @@ export default class ManageFindingAidsPage extends Page {
     }
 
     get resultStats() {
-        return $( '#result-stats' ).getValue();
+        return $( '#result-stats' ).getText();
     }
 
     get toggleDetailsButton() {
