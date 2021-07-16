@@ -5,6 +5,7 @@ import Page from './page';
 import Navbar from '../pageobjects/classes/navbar';
 
 export default class ManageFindingAidsPage extends Page {
+    static COL_INDEX_BLANK = 1;
     static COL_INDEX_ID = 2;
     static COL_INDEX_REPOSITORY = 3;
     static COL_INDEX_TIMESTAMP = 4;
@@ -66,6 +67,10 @@ export default class ManageFindingAidsPage extends Page {
     // </tr>
     cellForRow( id, cell ) {
         return this.row( id ).$( `[ data-label=${ cell } ]` );
+    }
+
+    clickBlankColumnHeader() {
+        this.th( ManageFindingAidsPage.COL_INDEX_BLANK ).click();
     }
 
     clickIdCellForRow( id ) {
