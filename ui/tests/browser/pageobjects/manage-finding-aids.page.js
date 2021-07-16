@@ -27,6 +27,10 @@ export default class ManageFindingAidsPage extends Page {
         return $( '#page-navigation' );
     }
 
+    get pageNumber() {
+        return parseInt( $( 'li button[ aria-checked = "true" ]' ).getText() );
+    }
+
     get resultsPerPageSelect() {
         return $( '#per-page-select' );
     }
@@ -45,6 +49,26 @@ export default class ManageFindingAidsPage extends Page {
 
     get resultStats() {
         return $( '#result-stats' ).getText();
+    }
+
+    get sort() {
+        let sortField;
+
+        const thElements = $$( 'th' );
+        for ( let i = 0; i < thElements.length; i++ ) {
+            const th = thElements[ i ];
+            const ariaSort = th.getAttribute( 'aria-sort' );
+            if ( ariaSort === 'ascending' || ariaSort === 'descending' ) {
+                sortField = {
+                    field     : th.$( 'label' ).getText().toLowerCase(),
+                    direction : ariaSort,
+                };
+
+                break;
+            }
+        }
+
+        return sortField;
     }
 
     get toggleDetailsButton() {
