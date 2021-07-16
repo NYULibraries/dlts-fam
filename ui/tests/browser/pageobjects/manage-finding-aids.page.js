@@ -177,6 +177,7 @@ export default class ManageFindingAidsPage extends Page {
             ui : {
                 idFilter         : this.idFilterValue || null,
                 pageNavigation   : this.pageNavigation.getText(),
+                pageNumber       : this.pageNumber,
                 repositoryFilter : this.repositoryFilterValue || 'All',
                 resultsPerPage   : this.resultsPerPage,
                 resultStats      : this.resultStats,
