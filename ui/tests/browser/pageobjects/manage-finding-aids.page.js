@@ -52,17 +52,31 @@ export default class ManageFindingAidsPage extends Page {
     }
 
     get sort() {
-        let sortField;
+        const sortField = {
+            field     : null,
+            direction : null,
+        };
 
         const thElements = $$( 'th' );
         for ( let i = 0; i < thElements.length; i++ ) {
             const th = thElements[ i ];
             const ariaSort = th.getAttribute( 'aria-sort' );
             if ( ariaSort === 'ascending' || ariaSort === 'descending' ) {
-                sortField = {
-                    field     : th.$( 'label' ).getText().toLowerCase(),
-                    direction : ariaSort,
-                };
+                if ( th.$( 'label' ).isExisting() ) {
+                    sortField.field = th.$( 'label' ).getText();
+                } else {
+                    // For Timestamp the label is in  a <div> not a <label>:
+                    // <th role="columnheader" scope="col" tabIndex="0"
+                    //     aria-colindex="4" aria-sort="descending"
+                    //     className="text-left text-nowrap">
+                    //     <div>Timestamp</div>
+                    //     <span className="sr-only"> (Click to sort Ascending)</span>
+                    // </th>
+                    sortField.field = th.$( 'div' ).getText();
+                }
+
+                sortField.field = sortField.field.toLowerCase();
+                sortField.direction = ariaSort;
 
                 break;
             }
