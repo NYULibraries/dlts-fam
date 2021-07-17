@@ -4,6 +4,8 @@ import Page from './page';
 
 import Navbar from '../pageobjects/classes/navbar';
 
+import storeConfig from '../../../src/store/store-config';
+
 export default class ManageFindingAidsPage extends Page {
     static COL_INDEX_BLANK = 1;
     static COL_INDEX_ID = 2;
@@ -13,6 +15,11 @@ export default class ManageFindingAidsPage extends Page {
     constructor() {
         super();
         this.navbar = new Navbar();
+        this.repositoryCodes = {};
+
+        for ( const [ repositoryCode, obj ] of Object.entries( storeConfig.state().repositories ) ) {
+            this.repositoryCodes[ obj.name ] = repositoryCode;
+        }
     }
 
     get idFilter() {
