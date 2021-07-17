@@ -1,5 +1,7 @@
 /* global $:false $$:false */
 
+import crypto from 'crypto';
+
 import Page from './page';
 
 import Navbar from '../pageobjects/classes/navbar';
@@ -177,6 +179,45 @@ export default class ManageFindingAidsPage extends Page {
 
     filterByRepository( repository ) {
         $( '#repository-filter' ).selectByVisibleText( repository );
+    }
+
+    getResultsId(
+        idFilterValue,
+        repositoryFilterValue,
+        resultsPerPage,
+        pageNumber,
+        sortField,
+        sortDirection,
+    ) {
+        let basename = '';
+
+        if ( idFilterValue ) {
+            const hash = crypto.createHash( 'sha256' )
+                .update( idFilterValue )
+                .digest( 'hex' );
+
+            basename += `${ hash }_`;
+        }
+
+        const repositoryCode = this.repositoryCodes[ repositoryFilterValue ];
+        if ( repositoryCode ) {
+            basename += `${ repositoryCode }_`;
+        }
+
+        return basename + `${ resultsPerPage }-per-page_` +
+            `p${ pageNumber }_` +
+            `sort-by-${ sortField }-${ sortDirection }`;
+    }
+
+    getResultsIdForCurrentOptions() {
+        return this.getResultsId(
+            this.idFilterValue,
+            this.repositoryFilterValue,
+            this.resultsPerPage,
+            this.pageNumber,
+            this.sort.field,
+            this.sort.direction,
+        );
     }
 
     resultsSnapshot() {
