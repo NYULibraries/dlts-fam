@@ -72,7 +72,7 @@ export default {
             'title'     : 'The Disappearing In-Process Finding Aid II',
         },
     },
-    'bhs' : {
+    'cbh' : {
         '1979_008' : {
             'timestamp' : 1539378584,
             'title'     : 'Ditmars family correspondence 1782',

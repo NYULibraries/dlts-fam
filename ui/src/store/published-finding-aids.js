@@ -1624,7 +1624,7 @@ export default {
             'title'     : 'The Disappearing Finding Aid',
         },
     },
-    'bhs' : {
+    'cbh' : {
         '1974_002' : {
             'timestamp' : 1534347909,
             'title'     : 'Mid-Atlantic Early Manuscripts collection 1974.002',
