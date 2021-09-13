@@ -19,6 +19,11 @@ import {
 } from '../util';
 
 suite( 'Manage In-process Finding Aids', function () {
+    suiteSetup( function () {
+        clearActualFilesDirectory( SUITE_NAME.searchResults );
+        clearDiffFilesDirectory( SUITE_NAME.searchResults );
+    } );
+
     setup( function () {
         Login.login();
         ManageInProcessFindingAids.open();
