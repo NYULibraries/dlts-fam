@@ -158,7 +158,12 @@ function waitUntil( fn, timeoutMessage, optionsArg ) {
 }
 
 export const SUITE_NAME = {
-    login : 'login',
+    create                     : 'create',
+    home                       : 'home',
+    login                      : 'login',
+    manageInProcessFindingAids : 'manage-in-process-finding-aids',
+    managePublishedFindingAids : 'manage-in-process-finding-aids',
+    navbar                     : 'navbar',
 };
 
 export {
