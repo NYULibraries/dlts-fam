@@ -205,7 +205,7 @@ export default class ManageFindingAidsPage extends Page {
         }
 
         return basename + `${ resultsPerPage }-per-page_` +
-            `p${ pageNumber }_` +
+            `page-${ pageNumber }_` +
             `sort-by-${ sortField }-${ sortDirection }`;
     }
 
