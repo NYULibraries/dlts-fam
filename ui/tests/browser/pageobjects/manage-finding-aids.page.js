@@ -45,7 +45,7 @@ export default class ManageFindingAidsPage extends Page {
     }
 
     get repositoryFilter() {
-        return $( '#id-filter' );
+        return $( '#repository-filter' );
     }
 
     get repositoryFilterValue() {
