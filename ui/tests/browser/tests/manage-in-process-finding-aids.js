@@ -68,3 +68,92 @@ suite( 'Manage In-process Finding Aids', function () {
         assert( true );
     } );
 } );
+function getTestTitleFromGoldenFile( golden ) {
+    return 'Filter options { ' +
+           ( golden.ui.idFilter ? ` id filter=${ golden.ui.idFilter };` : ' no id filter;' ) +
+           ` page number=${ golden.ui.pageNumber };` +
+           ` repository filter=${ golden.ui.repositoryFilter };` +
+           ` results per page=${ golden.ui.resultsPerPage };` +
+           ( golden.ui.sortField ? ` sort=${ golden.ui.sortField } ${ golden.ui.sortDirection }` : ' no specified sort' ) +
+           ' } produces the correct header and finding aids results';
+}
+
+function setUiOptionsFromGoldenFile( golden ) {
+    const idFilter = golden.ui.idFilter;
+    const pageNumber = golden.ui.pageNumber;
+    const repositoryFilter = golden.ui.repositoryFilter;
+    const resultsPerPage = golden.ui.resultsPerPage;
+    const sortDirection = golden.ui.sort ? golden.ui.sort.direction : null;
+    const sortField = golden.ui.sort ? golden.ui.sort.field : null;
+
+    if ( idFilter ) {
+        ManageInProcessFindingAids.filterById( idFilter );
+    }
+
+    if ( pageNumber ) {
+        ManageInProcessFindingAids.clickPageNavigationLink( pageNumber );
+    }
+
+    if ( repositoryFilter ) {
+        ManageInProcessFindingAids.filterByRepository( repositoryFilter );
+    }
+
+    if ( resultsPerPage ) {
+        ManageInProcessFindingAids.setResultsPerPage( resultsPerPage );
+    }
+
+    if ( sortField ) {
+        const currentSort = ManageInProcessFindingAids.sort;
+        if ( currentSort.field !== sortField ) {
+            ManageInProcessFindingAids.clickSortBy( sortField );
+            // There is only toggling, so click again if the sort is not right.
+            if ( currentSort.direction !== sortDirection ) {
+                ManageInProcessFindingAids.clickSortBy( sortField );
+            }
+        }
+    }
+}
+
+function writeSnapshotToActualFileAndCompareToGolden( goldenArg ) {
+    const snapshot = ManageInProcessFindingAids.resultsSnapshot();
+    const resultsId = ManageInProcessFindingAids.getResultsIdForCurrentOptions();
+
+    const actualFile = getActualFilePath( SUITE_NAME.manageInProcessFindingAids, resultsId );
+    const goldenFile = getGoldenFilePath( SUITE_NAME.manageInProcessFindingAids, resultsId );
+    const golden     = goldenArg || require( goldenFile );
+
+    const stringifiedGolden = jsonStableStringify( golden );
+    const stringifiedSnapshot = jsonStableStringify( snapshot );
+
+    if ( updateGoldenFiles() ) {
+        fs.writeFileSync( goldenFile, stringifiedSnapshot );
+
+        console.log( `Updated golden file ${ goldenFile }` );
+
+        return;
+    }
+
+    fs.writeFileSync( actualFile, stringifiedSnapshot );
+
+    const ok = ( stringifiedSnapshot === stringifiedGolden );
+    let message;
+    if ( ! ok ) {
+        message = diffActualVsGoldenAndReturnMessage( SUITE_NAME.manageInProcessFindingAids, actualFile, goldenFile, resultsId );
+    }
+
+    return {
+        ok,
+        message,
+    };
+}
+
+function testFilterResults( golden ) {
+    const testTitle = getTestTitleFromGoldenFile( golden );
+
+    test( testTitle, function () {
+        setUiOptionsFromGoldenFile( golden );
+        const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
+
+        assert( ok, message );
+    } );
+}
