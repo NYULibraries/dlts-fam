@@ -20,8 +20,8 @@ import {
 
 suite( 'Manage In-process Finding Aids', function () {
     suiteSetup( function () {
-        clearActualFilesDirectory( SUITE_NAME.searchResults );
-        clearDiffFilesDirectory( SUITE_NAME.searchResults );
+        clearActualFilesDirectory( SUITE_NAME.manageInProcessFindingAids );
+        clearDiffFilesDirectory( SUITE_NAME.manageInProcessFindingAids );
     } );
 
     setup( function () {
