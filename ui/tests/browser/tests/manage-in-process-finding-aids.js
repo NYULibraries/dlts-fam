@@ -123,25 +123,26 @@ function writeSnapshotToActualFileAndCompareToGolden( goldenArg ) {
 
     const actualFile = getActualFilePath( SUITE_NAME.manageInProcessFindingAids, resultsId );
     const goldenFile = getGoldenFilePath( SUITE_NAME.manageInProcessFindingAids, resultsId );
-    const golden     = goldenArg || require( goldenFile );
 
-    const stringifiedGolden = jsonStableStringify( golden );
     const stringifiedSnapshot = jsonStableStringify( snapshot );
 
+    let ok, message;
     if ( updateGoldenFiles() ) {
         fs.writeFileSync( goldenFile, stringifiedSnapshot );
 
         console.log( `Updated golden file ${ goldenFile }` );
 
-        return;
-    }
+        ok = true;
+    } else {
+        const golden            = goldenArg || require( goldenFile );
+        const stringifiedGolden = jsonStableStringify( golden );
 
-    fs.writeFileSync( actualFile, stringifiedSnapshot );
+        fs.writeFileSync( actualFile, stringifiedSnapshot );
 
-    const ok = ( stringifiedSnapshot === stringifiedGolden );
-    let message;
-    if ( ! ok ) {
-        message = diffActualVsGoldenAndReturnMessage( SUITE_NAME.manageInProcessFindingAids, actualFile, goldenFile, resultsId );
+        ok = ( stringifiedSnapshot === stringifiedGolden );
+        if ( ! ok ) {
+            message = diffActualVsGoldenAndReturnMessage( SUITE_NAME.manageInProcessFindingAids, actualFile, goldenFile, resultsId );
+        }
     }
 
     return {
