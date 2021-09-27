@@ -120,6 +120,32 @@ export default class ManageFindingAidsPage extends Page {
         this.th( ManageFindingAidsPage.COL_INDEX_BLANK ).click();
     }
 
+    // Called by clickGoto{First,Previous,Next,Last}Page methods
+    clickGoto_Page( label ) {
+        const element = this.pageNavigation.$( `[ aria-label = "${ label }" ]` );
+        // this.reset() attempts to click go to first page button, which might be
+        // disabled because the user is already on the first page.
+        if ( element.isClickable() ) {
+            element.click();
+        }
+    }
+
+    clickGotoFirstPage() {
+        this.clickGoto_Page( 'Go to first page' );
+    }
+
+    clickGotoLastPage() {
+        this.clickGoto_Page( 'Go to last page' );
+    }
+
+    clickGotoNextPage() {
+        this.clickGoto_Page( 'Go to next page' );
+    }
+
+    clickGotoPreviousPage() {
+        this.clickGoto_Page( 'Go to previous page' );
+    }
+
     clickIdCellForRow( id ) {
         this.cellForRow( id, 'ID' ).click();
     }
