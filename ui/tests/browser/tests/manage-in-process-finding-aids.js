@@ -87,6 +87,17 @@ suite( 'Manage In-process Finding Aids', function () {
             } );
         } );
     } );
+
+    suite( 'Per page dropdown', function () {
+        [ 10, 25, 50, 100 ].forEach( perPageNumber => {
+            test( `Sets correct number of results per page for value "${ perPageNumber }"`, function () {
+                ManageInProcessFindingAids.setResultsPerPage( perPageNumber );
+                const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
+
+                assert( ok, message );
+            } );
+        } );
+    } );
 } );
 
 function getTestTitleFromGoldenFile( golden ) {
