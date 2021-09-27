@@ -259,6 +259,19 @@ export default class ManageFindingAidsPage extends Page {
         );
     }
 
+    reset() {
+        this.filterById( '' );
+        this.filterByRepository( 'All' );
+        this.setResultsPerPage( 10 );
+        this.clickGotoFirstPage();
+        // Default sort is by repository, then ID, so need to click them in reverse
+        // order.  Since ID is theoretically unique across all repositories, there
+        // shouldn't be any need to deal with the sort for any other column (such
+        // as timestamp).
+        this.clickSortById();
+        this.clickSortByRepository();
+    }
+
     resultsSnapshot() {
         const resultRows = $$( 'tbody tr' ).map( resultRow => {
             const resultRowSnapshot = {};
