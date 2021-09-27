@@ -37,10 +37,21 @@ suite( 'Manage In-process Finding Aids', function () {
         Logout.logout();
     } );
 
-    goldenFiles.forEach( ( goldenFile ) => {
-        const golden = require( goldenFile );
+    // goldenFiles.forEach( ( goldenFile ) => {
+    //     const golden = require( goldenFile );
+    //
+    //     testFilterResults( golden );
+    // } );
 
-        testFilterResults( golden );
+    suite( 'ID filter', function () {
+        [ 'a', 'art', 'mc_3' ].forEach( filterValue => {
+            test( `Correct results for ID filter = "${ filterValue }"`, function () {
+                ManageInProcessFindingAids.filterById( filterValue );
+                const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
+
+                assert( ok, message );
+            } );
+        } );
     } );
 } );
 
