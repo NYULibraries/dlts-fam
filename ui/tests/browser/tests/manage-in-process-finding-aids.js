@@ -64,7 +64,7 @@ suite( 'Manage In-process Finding Aids', function () {
             'NYU Abu Dhabi, Archives and Special Collections, then All',
         ].forEach( filterValue => {
             test( `Correct results for Repository filter = "${ filterValue }"`, function () {
-                ManageInProcessFindingAids.filterById( filterValue );
+                ManageInProcessFindingAids.filterByRepository( filterValue );
                 const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
 
                 assert( ok, message );
@@ -82,7 +82,7 @@ suite( 'Manage In-process Finding Aids', function () {
             const repository = filterValues.repository;
             test( `Correct results for ID filter = "${ id }" and Repository filter = ${ repository }`, function () {
                 ManageInProcessFindingAids.filterById( id );
-                ManageInProcessFindingAids.filterById( repository );
+                ManageInProcessFindingAids.filterByRepository( repository );
                 const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
 
                 assert( ok, message );
