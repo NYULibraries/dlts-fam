@@ -150,6 +150,19 @@ export default class ManageFindingAidsPage extends Page {
         this.clickSortBy( ManageFindingAidsPage.COL_INDEX_ID );
     }
 
+    clickSortByLabel( label ) {
+        // This is a bit brittle, maybe.
+        if ( label === 'ID' ) {
+            this.clickSortBy( ManageFindingAidsPage.COL_INDEX_ID );
+        } else if ( label === 'Repository' ) {
+            this.clickSortBy( ManageFindingAidsPage.COL_INDEX_REPOSITORY );
+        } else if ( label === 'Timestamp' ) {
+            this.clickSortBy( ManageFindingAidsPage.COL_INDEX_TIMESTAMP );
+        } else {
+            // Should never get here
+        }
+    }
+
     clickSortByRepository() {
         this.clickSortBy( ManageFindingAidsPage.COL_INDEX_REPOSITORY );
     }
