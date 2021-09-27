@@ -26,14 +26,16 @@ suite( 'Manage In-process Finding Aids', function () {
     suiteSetup( function () {
         clearActualFilesDirectory( SUITE_NAME.manageInProcessFindingAids );
         clearDiffFilesDirectory( SUITE_NAME.manageInProcessFindingAids );
-    } );
 
-    setup( function () {
         Login.login();
         ManageInProcessFindingAids.open();
     } );
 
-    teardown( function () {
+    setup( function () {
+        ManageInProcessFindingAids.reset();
+    } );
+
+    suiteTeardown( function () {
         Logout.logout();
     } );
 
