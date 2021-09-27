@@ -69,6 +69,24 @@ suite( 'Manage In-process Finding Aids', function () {
             } );
         } );
     } );
+
+    suite( 'ID and Repository filters together', function () {
+        [
+            { id : 3,       repository : 'New York University Archives' },
+            { id : 2016,    repository : 'Center for Brooklyn History' },
+            { id : 'nysrg', repository : 'New-York Historical Society' },
+        ].forEach( filterValues => {
+            const id = filterValues.id;
+            const repository = filterValues.repository;
+            test( `Correct results for ID filter = "${ id }" and Repository filter = ${ repository }`, function () {
+                ManageInProcessFindingAids.filterById( id );
+                ManageInProcessFindingAids.filterById( repository );
+                const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
+
+                assert( ok, message );
+            } );
+        } );
+    } );
 } );
 
 function getTestTitleFromGoldenFile( golden ) {
