@@ -210,10 +210,12 @@ export default class ManageFindingAidsPage extends Page {
     }
 
     filterById( id ) {
+        const element = $( '#id-filter' );
+        element.clearValue();
         // Previously was submitting the form using `browser.keys( '\uE006' )` in
         // SearchForm.submit method, but that seemed to cause problems in Search Form
         // tests.  See https://jira.nyu.edu/jira/browse/NYUP-619 for details.
-        $( '#id-filter' ).addValue( id + '\uE006' );
+        element.addValue( id + '\uE006' );
     }
 
     filterByRepository( repository ) {
