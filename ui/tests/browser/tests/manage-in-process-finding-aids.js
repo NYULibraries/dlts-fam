@@ -53,6 +53,22 @@ suite( 'Manage In-process Finding Aids', function () {
             } );
         } );
     } );
+
+    suite( 'Repository filter', function () {
+        [
+            'Fales Library and Special Collections',
+            'New-York Historical Society',
+            'NYU Abu Dhabi, Archives and Special Collections',
+            'NYU Abu Dhabi, Archives and Special Collections, then All',
+        ].forEach( filterValue => {
+            test( `Correct results for Repository filter = "${ filterValue }"`, function () {
+                ManageInProcessFindingAids.filterById( filterValue );
+                const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
+
+                assert( ok, message );
+            } );
+        } );
+    } );
 } );
 
 function getTestTitleFromGoldenFile( golden ) {
