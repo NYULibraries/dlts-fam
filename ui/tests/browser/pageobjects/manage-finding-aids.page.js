@@ -256,6 +256,7 @@ export default class ManageFindingAidsPage extends Page {
                 repositoryFilter : this.repositoryFilterValue || 'All',
                 resultsPerPage   : this.resultsPerPage,
                 resultStats      : this.resultStats,
+                sort             : this.sort,
             },
             results : resultRows,
         };
