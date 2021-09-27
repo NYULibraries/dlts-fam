@@ -61,7 +61,6 @@ suite( 'Manage In-process Finding Aids', function () {
             'Fales Library and Special Collections',
             'New-York Historical Society',
             'NYU Abu Dhabi, Archives and Special Collections',
-            'NYU Abu Dhabi, Archives and Special Collections, then All',
         ].forEach( filterValue => {
             test( `Correct results for Repository filter = "${ filterValue }"`, function () {
                 ManageInProcessFindingAids.filterByRepository( filterValue );
