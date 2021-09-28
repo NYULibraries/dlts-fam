@@ -124,6 +124,53 @@ suite( 'Manage In-process Finding Aids', function () {
     } );
 } );
 
+function writeSnapshotToActualFileAndCompareToGolden( goldenArg ) {
+    const snapshot = ManageInProcessFindingAids.resultsSnapshot();
+    const resultsId = ManageInProcessFindingAids.getResultsIdForCurrentOptions();
+
+    const actualFile = getActualFilePath( SUITE_NAME.manageInProcessFindingAids, resultsId );
+    const goldenFile = getGoldenFilePath( SUITE_NAME.manageInProcessFindingAids, resultsId );
+
+    const stringifiedSnapshot = jsonStableStringify( snapshot );
+
+    let ok, message;
+    if ( updateGoldenFiles() ) {
+        fs.writeFileSync( goldenFile, stringifiedSnapshot );
+
+        console.log( `Updated golden file ${ goldenFile }` );
+
+        ok = true;
+    } else {
+        const golden            = goldenArg || require( goldenFile );
+        const stringifiedGolden = jsonStableStringify( golden );
+
+        fs.writeFileSync( actualFile, stringifiedSnapshot );
+
+        ok = ( stringifiedSnapshot === stringifiedGolden );
+        if ( ! ok ) {
+            message = diffActualVsGoldenAndReturnMessage( SUITE_NAME.manageInProcessFindingAids, actualFile, goldenFile, resultsId );
+        }
+    }
+
+    return {
+        ok,
+        message,
+    };
+}
+
+// -----------------------------------------------------------------------------
+
+// These are useful function for generating tests from golden files, which is an
+// approached used by the NYU Press sites ENM and Open Square from which these
+// browser tests were originally based.  Keeping them around here because they
+// were the result of refactoring done while working on this project and don't
+// exist in ENM and Open Square.  Later it became apparent that a golden files
+// test loop might not be the most appropriate testing approach for this component,
+// so the loop has been removed, but these function are being kept here for the
+// time being.
+// TODO: Do these refactorings in ENM and Open Square, or else extract them to
+// shared library code, then delete the functions from this file.
+
 function getTestTitleFromGoldenFile( golden ) {
     return 'Filter options { ' +
            ( golden.ui.idFilter ? ` id filter=${ golden.ui.idFilter };` : ' no id filter;' ) +
@@ -169,38 +216,3 @@ function setUiOptionsFromGoldenFile( golden ) {
         }
     }
 }
-
-function writeSnapshotToActualFileAndCompareToGolden( goldenArg ) {
-    const snapshot = ManageInProcessFindingAids.resultsSnapshot();
-    const resultsId = ManageInProcessFindingAids.getResultsIdForCurrentOptions();
-
-    const actualFile = getActualFilePath( SUITE_NAME.manageInProcessFindingAids, resultsId );
-    const goldenFile = getGoldenFilePath( SUITE_NAME.manageInProcessFindingAids, resultsId );
-
-    const stringifiedSnapshot = jsonStableStringify( snapshot );
-
-    let ok, message;
-    if ( updateGoldenFiles() ) {
-        fs.writeFileSync( goldenFile, stringifiedSnapshot );
-
-        console.log( `Updated golden file ${ goldenFile }` );
-
-        ok = true;
-    } else {
-        const golden            = goldenArg || require( goldenFile );
-        const stringifiedGolden = jsonStableStringify( golden );
-
-        fs.writeFileSync( actualFile, stringifiedSnapshot );
-
-        ok = ( stringifiedSnapshot === stringifiedGolden );
-        if ( ! ok ) {
-            message = diffActualVsGoldenAndReturnMessage( SUITE_NAME.manageInProcessFindingAids, actualFile, goldenFile, resultsId );
-        }
-    }
-
-    return {
-        ok,
-        message,
-    };
-}
-
