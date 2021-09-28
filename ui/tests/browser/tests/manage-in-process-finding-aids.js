@@ -91,6 +91,62 @@ suite( 'Manage In-process Finding Aids', function () {
         } );
     } );
 
+    suite( 'Page navigation', function () {
+        test( 'Clicking on go to first page and go to last page controls takes user to the correct pages', function () {
+            ManageInProcessFindingAids.clickGotoLastPage();
+            let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickGotoFirstPage();
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+        } );
+
+        test( 'Clicking on page links 2, 3, 4, 5 takes user to the correct pages', function () {
+            ManageInProcessFindingAids.clickPageNavigationLink( '2' );
+            let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickPageNavigationLink( '3' );
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickPageNavigationLink( '4' );
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickPageNavigationLink( '5' );
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+        } );
+
+        test( 'Clicking on next page 3 times then previous page 3 times produces the correct pages', function () {
+            ManageInProcessFindingAids.clickGotoNextPage();
+            let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickGotoNextPage();
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickGotoNextPage();
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickGotoPreviousPage();
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickGotoPreviousPage();
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickGotoPreviousPage();
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+        } );
+    } );
+
     suite( 'Sort controls', function () {
         test( 'Clicking ID sort produces correct ascending and descending ordering', function () {
             ManageInProcessFindingAids.clickSortById();
