@@ -178,6 +178,81 @@ suite( 'Manage In-process Finding Aids', function () {
             assert( ok, message );
         } );
     } );
+
+    suite( 'Open/close detail rows', function () {
+        // Every single row regardless of whether it is currently displayed
+        // remembers its detail row toggle state, which makes detail row toggle
+        // state difficult to reset using ManageInProcessFindingAids.reset().
+        setup( function () {
+            Logout.logout();
+            Login.login();
+            ManageInProcessFindingAids.open();
+        } );
+
+        test( 'Clicking toggle details control opens/closes detail row', function () {
+            const eadId = 'ad_mc_012';
+            ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+            assert(
+                ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                `Clicking the toggle details control did not open the detail row for ${ eadId }`,
+            );
+
+            ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+            assert(
+                ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                `Clicking the toggle details control did not close the detail row for ${ eadId }`,
+            );
+        } );
+
+        test( 'Clicking ID opens/closes detail row', function () {
+            const eadId = 'ad_mc_012';
+            ManageInProcessFindingAids.clickIdCellForRow( eadId );
+            assert(
+                ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                `Clicking "${ eadId }" did not open the detail row for ${ eadId }`,
+            );
+
+            ManageInProcessFindingAids.clickIdCellForRow( eadId );
+            assert(
+                ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                `Clicking "${ eadId }" did not close the detail row for ${ eadId }`,
+            );
+        } );
+
+        test( 'Clicking repository opens/closes detail row', function () {
+            const eadId = 'ad_mc_012';
+            const repository = ManageInProcessFindingAids.cellForRow( eadId, 'Repository' ).getText();
+
+            ManageInProcessFindingAids.clickRepositoryCellForRow( eadId );
+            assert(
+                ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                `Clicking "${ repository }" did not open the detail row for ${ eadId }`,
+            );
+
+            ManageInProcessFindingAids.clickRepositoryCellForRow( eadId );
+            assert(
+                ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                `Clicking "${ repository }" did not close the detail row for ${ eadId }`,
+            );
+        } );
+
+        test( 'Clicking timestamp opens/closes detail row', function () {
+            const eadId = 'ad_mc_012';
+            const timestamp = ManageInProcessFindingAids.cellForRow( eadId, 'Timestamp' ).getText();
+
+            ManageInProcessFindingAids.clickRepositoryCellForRow( eadId );
+            assert(
+                ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                `Clicking "${ timestamp }" did not open the detail row for ${ eadId }`,
+            );
+
+            ManageInProcessFindingAids.clickRepositoryCellForRow( eadId );
+            assert(
+                ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                `Clicking "${ timestamp }" did not close the detail row for ${ eadId }`,
+            );
+        } );
+    } );
 } );
 
 function writeSnapshotToActualFileAndCompareToGolden( goldenArg ) {
