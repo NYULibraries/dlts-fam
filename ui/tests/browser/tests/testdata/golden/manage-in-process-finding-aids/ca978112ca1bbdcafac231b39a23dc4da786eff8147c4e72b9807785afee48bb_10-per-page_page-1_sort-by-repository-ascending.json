@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "ad_mc_012",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "5/21/2020 7:09 am"
+        },
+        {
+            "ID": "ad_mc_041",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/28/2020 5:40 am"
+        },
+        {
+            "ID": "alwan",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/26/2018 8:28 am"
+        },
+        {
+            "ID": "arms_2009_011_lapc",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "12/29/2020 3:10 pm"
+        },
+        {
+            "ID": "lapietra",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "3/1/2021 11:53 am"
+        },
+        {
+            "ID": "apaimport2",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "6/23/2021 1:24 pm"
+        },
+        {
+            "ID": "eagle",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "5/19/2021 11:40 am"
+        },
+        {
+            "ID": "fadesign_116_changed",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "9/9/1999 9:09 am"
+        },
+        {
+            "ID": "fadesign_116_deleted",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "9/9/1999 9:09 am"
+        },
+        {
+            "ID": "fadesign_117_changed",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "9/9/1999 9:09 am"
+        }
+    ],
+    "ui": {
+        "idFilter": "a",
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "36 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

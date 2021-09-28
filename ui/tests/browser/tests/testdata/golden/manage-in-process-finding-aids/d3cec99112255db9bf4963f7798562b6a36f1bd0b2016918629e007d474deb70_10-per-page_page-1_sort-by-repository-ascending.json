@@ -1,0 +1,21 @@
+{
+    "results": [
+        {
+            "ID": "fineart",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "3/16/2016 3:41 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": "art",
+        "pageNavigation": "«\n‹\n1\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "1 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

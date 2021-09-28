@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "ad_mc_012",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "5/21/2020 7:09 am"
+        },
+        {
+            "ID": "ad_mc_041",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/28/2020 5:40 am"
+        },
+        {
+            "ID": "alwan",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/26/2018 8:28 am"
+        },
+        {
+            "ID": "1979_008",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/12/2018 5:09 pm"
+        },
+        {
+            "ID": "2018_006",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "8/10/2020 5:48 pm"
+        },
+        {
+            "ID": "arms_2009_011_lapc",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "12/29/2020 3:10 pm"
+        },
+        {
+            "ID": "bcms_0002",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "3/24/2021 11:54 am"
+        },
+        {
+            "ID": "bcms_0007",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "5/20/2021 1:54 pm"
+        },
+        {
+            "ID": "bcms_0031",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "3/3/2021 11:50 am"
+        },
+        {
+            "ID": "bcms_0037",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "4/30/2021 5:34 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "69 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

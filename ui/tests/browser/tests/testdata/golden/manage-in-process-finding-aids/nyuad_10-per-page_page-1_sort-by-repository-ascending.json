@@ -1,0 +1,61 @@
+{
+    "results": [
+        {
+            "ID": "ad_mc_001",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "3/27/2018 7:19 am"
+        },
+        {
+            "ID": "ad_mc_004",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "6/13/2021 7:01 am"
+        },
+        {
+            "ID": "ad_mc_015",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "4/2/2020 1:22 pm"
+        },
+        {
+            "ID": "ad_rg_24_1",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "7/4/2021 7:23 am"
+        },
+        {
+            "ID": "ad_rg_2_1",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "1/30/2020 10:36 am"
+        },
+        {
+            "ID": "ad_rg_9_001",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "3/25/2021 1:28 am"
+        },
+        {
+            "ID": "capstone",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "10/27/2017 7:07 am"
+        },
+        {
+            "ID": "oralhist",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "1/10/2021 7:52 am"
+        },
+        {
+            "ID": "timeincrg2",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "4/13/2017 10:34 am"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "NYU Abu Dhabi, Archives and Special Collections",
+        "resultStats": "9 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

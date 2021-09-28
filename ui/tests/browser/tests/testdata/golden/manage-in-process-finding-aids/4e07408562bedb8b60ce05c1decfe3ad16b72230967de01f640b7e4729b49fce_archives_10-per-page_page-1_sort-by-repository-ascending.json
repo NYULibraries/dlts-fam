@@ -1,0 +1,41 @@
+{
+    "results": [
+        {
+            "ID": "mc_139",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:24 pm"
+        },
+        {
+            "ID": "mc_3",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:01 pm"
+        },
+        {
+            "ID": "mc_354",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "4/8/2021 4:50 pm"
+        },
+        {
+            "ID": "rg_35",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:31 pm"
+        },
+        {
+            "ID": "rg_39_178",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "1/7/2021 11:57 am"
+        }
+    ],
+    "ui": {
+        "idFilter": "3",
+        "pageNavigation": "«\n‹\n1\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "New York University Archives",
+        "resultStats": "5 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

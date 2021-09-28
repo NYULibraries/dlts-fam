@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "fineart",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "3/16/2016 3:41 pm"
+        },
+        {
+            "ID": "gilbert",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "10/5/2020 4:22 pm"
+        },
+        {
+            "ID": "gilbertdrawings",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "9/16/2019 9:45 am"
+        },
+        {
+            "ID": "inventories",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "8/22/2014 2:46 pm"
+        },
+        {
+            "ID": "mckim",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "8/12/2020 1:57 pm"
+        },
+        {
+            "ID": "ms201_erasmus_hall",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "3/22/2021 2:44 pm"
+        },
+        {
+            "ID": "ms3093_maritime_association",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "8/12/2020 4:22 pm"
+        },
+        {
+            "ID": "ms3199_womens_sports",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "6/17/2021 4:37 pm"
+        },
+        {
+            "ID": "ms3202_bernfeld_puppet",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "7/8/2021 10:59 am"
+        },
+        {
+            "ID": "ms324_irvin",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "10/26/2020 9:42 am"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "New-York Historical Society",
+        "resultStats": "21 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}
