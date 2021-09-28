@@ -14,13 +14,10 @@ import {
     diffActualVsGoldenAndReturnMessage,
     getActualFilePath,
     getGoldenFilePath,
-    getGoldenFiles,
     jsonStableStringify,
     updateGoldenFiles,
     SUITE_NAME,
 } from '../util';
-
-const goldenFiles = getGoldenFiles( SUITE_NAME.manageInProcessFindingAids );
 
 suite( 'Manage In-process Finding Aids', function () {
     suiteSetup( function () {
@@ -38,12 +35,6 @@ suite( 'Manage In-process Finding Aids', function () {
     suiteTeardown( function () {
         Logout.logout();
     } );
-
-    // goldenFiles.forEach( ( goldenFile ) => {
-    //     const golden = require( goldenFile );
-    //
-    //     testFilterResults( golden );
-    // } );
 
     suite( 'ID filter', function () {
         [ 'a', 'art', 'mc_3' ].forEach( filterValue => {
@@ -213,13 +204,3 @@ function writeSnapshotToActualFileAndCompareToGolden( goldenArg ) {
     };
 }
 
-function testFilterResults( golden ) {
-    const testTitle = getTestTitleFromGoldenFile( golden );
-
-    test( testTitle, function () {
-        setUiOptionsFromGoldenFile( golden );
-        const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
-
-        assert( ok, message );
-    } );
-}
