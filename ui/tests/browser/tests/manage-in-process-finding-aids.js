@@ -252,6 +252,32 @@ suite( 'Manage In-process Finding Aids', function () {
                 `Clicking "${ timestamp }" did not close the detail row for ${ eadId }`,
             );
         } );
+
+        test( 'Opening and multiple detail rows works correctly', function () {
+            // Chose three that were near the top so that the last would not be
+            // pushed off the screen after the first two were opened.
+            const eadIds = [
+                'ad_mc_012',
+                'alwan',
+                '2018_006',
+            ];
+
+            eadIds.forEach( eadId => {
+                ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+                assert(
+                    ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                    `Clicking toggle details control did not open the detail row for ${ eadId }`,
+                );
+            } );
+
+            eadIds.reverse().forEach( eadId => {
+                ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+                assert(
+                    ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                    `Clicking toggle details control did not close the detail row for ${ eadId }`,
+                );
+            } );
+        } );
     } );
 } );
 
