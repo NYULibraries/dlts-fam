@@ -47,7 +47,7 @@ function clearDiffFilesDirectory( suiteNameArg ) {
 }
 
 function diffActualVsGoldenAndReturnMessage( suiteName, actualFile, goldenFile, id ) {
-    let message = 'Actual search results do not match expected.';
+    let message = 'Actual filter results do not match expected.';
 
     if ( DIFF_EXISTS ) {
         // Create the diff file for later inspection
