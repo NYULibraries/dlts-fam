@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "nyhsrg22",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "12/30/2018 4:43 pm"
+        },
+        {
+            "ID": "pr010_caricatures",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "9/3/2020 4:42 pm"
+        },
+        {
+            "ID": "pr053_post",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "7/2/2021 2:04 pm"
+        },
+        {
+            "ID": "pr412_william_oberhardt",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "2/24/2020 1:38 pm"
+        },
+        {
+            "ID": "pr425_william_butler",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "7/6/2021 9:48 am"
+        },
+        {
+            "ID": "timeincnewtest",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "12/5/2017 2:08 pm"
+        },
+        {
+            "ID": "timeincrg17",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "6/30/2021 1:15 pm"
+        },
+        {
+            "ID": "timeincrg24new",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "5/16/2019 3:03 pm"
+        },
+        {
+            "ID": "ad_mc_001",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "3/27/2018 7:19 am"
+        },
+        {
+            "ID": "ad_mc_004",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "6/13/2021 7:01 am"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n…\n4\n5\n6\n7\n›\n»",
+        "pageNumber": 5,
+        "repositoryFilter": "All",
+        "resultStats": "69 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

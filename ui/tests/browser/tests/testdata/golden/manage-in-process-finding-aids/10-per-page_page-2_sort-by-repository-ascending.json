@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "bcms_0041",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "4/30/2021 5:53 pm"
+        },
+        {
+            "ID": "lapietra",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "3/1/2021 11:53 am"
+        },
+        {
+            "ID": "mss_221",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "6/21/2021 4:32 pm"
+        },
+        {
+            "ID": "apaimport2",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "6/23/2021 1:24 pm"
+        },
+        {
+            "ID": "cullen",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "12/21/2020 4:25 pm"
+        },
+        {
+            "ID": "eagle",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "5/19/2021 11:40 am"
+        },
+        {
+            "ID": "mc_139",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:24 pm"
+        },
+        {
+            "ID": "mc_3",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:01 pm"
+        },
+        {
+            "ID": "mc_354",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "4/8/2021 4:50 pm"
+        },
+        {
+            "ID": "mc_41",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:07 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 2,
+        "repositoryFilter": "All",
+        "resultStats": "69 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}
