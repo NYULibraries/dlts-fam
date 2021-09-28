@@ -99,6 +99,38 @@ suite( 'Manage In-process Finding Aids', function () {
             } );
         } );
     } );
+
+    suite( 'Sort controls', function () {
+        test( 'Clicking ID sort produces correct ascending and descending ordering', function () {
+            ManageInProcessFindingAids.clickSortById();
+            let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickSortById();
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+        } );
+
+        test( 'Clicking Repository sort produces correct ascending and descending ordering', function () {
+            ManageInProcessFindingAids.clickSortByRepository();
+            let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickSortByRepository();
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+        } );
+
+        test( 'Clicking Timestamp sort produces correct ascending and descending ordering', function () {
+            ManageInProcessFindingAids.clickSortByTimestamp();
+            let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
+            assert( ok, message );
+
+            ManageInProcessFindingAids.clickSortByTimestamp();
+            ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
+            assert( ok, message );
+        } );
+    } );
 } );
 
 function getTestTitleFromGoldenFile( golden ) {
