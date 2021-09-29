@@ -66,12 +66,16 @@ class ManageInProcessFindingAids extends ManageFindingAidsPage {
         );
     }
 
-    clickViewFindingAidPreviewButtonForRow( id ) {
-        this.detailsRow( id ).$( '#view-finding-aid-preview-button' ).click();
+    viewFindingAidPreviewButtonHrefForRow( id ) {
+        return this.detailsRow( id )
+            .$( '#view-finding-aid-preview-button' )
+            .getAttribute( 'href' );
     }
 
-    clickViewEadFilePreviewButtonForRow( id ) {
-        this.detailsRow( id ).$( '#view-ead-file-preview-button' ).click();
+    viewEadFilePreviewButtonHrefForRow( id ) {
+        return this.detailsRow( id )
+            .$( '#view-ead-file-preview-button' )
+            .getAttribute( 'href' );
     }
 }
 
