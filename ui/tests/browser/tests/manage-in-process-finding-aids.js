@@ -279,6 +279,33 @@ suite( 'Manage In-process Finding Aids', function () {
             } );
         } );
     } );
+
+    // Don't know of a way to detect that a new tab was opened and that it loaded
+    // the correct preview URL.
+    test( 'View preview buttons have the correct hrefs', function () {
+        const eadId = 'ad_mc_012';
+
+        ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+
+        assert.equal(
+            ManageInProcessFindingAids.viewFindingAidPreviewButtonHrefForRow( 'ad_mc_012' ),
+            '#/preview/finding-aid/akkasah/ad_mc_012',
+            '"View finding aid preview" button does not have the correct href',
+        );
+
+        assert.equal(
+            ManageInProcessFindingAids.viewEadFilePreviewButtonHrefForRow( 'ad_mc_012' ),
+            '#/preview/ead/akkasah/ad_mc_012',
+            '"View EAD file preview" button does not have the correct href',
+        );
+
+        // Custom teardown
+        ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+        assert(
+            ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+            `Clicking toggle details control did not close the detail row for ${ eadId }`,
+        );
+    } );
 } );
 
 function writeSnapshotToActualFileAndCompareToGolden( goldenArg ) {
