@@ -16,10 +16,11 @@ import {
     getGoldenFilePath,
     jsonStableStringify,
     updateGoldenFiles,
+    waitUntil,
     SUITE_NAME,
 } from '../util';
 
-suite( 'Manage In-process Finding Aids', function () {
+suite( 'Manage In-process Finding Aids - UI', function () {
     suiteSetup( function () {
         clearActualFilesDirectory( SUITE_NAME.manageInProcessFindingAids );
         clearDiffFilesDirectory( SUITE_NAME.manageInProcessFindingAids );
@@ -305,6 +306,29 @@ suite( 'Manage In-process Finding Aids', function () {
             ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
             `Clicking toggle details control did not close the detail row for ${ eadId }`,
         );
+    } );
+
+    suite( 'Publish finding aid', function () {
+        const eadId = 'ad_mc_012';
+
+        test( 'Clicking Cancel on "Confirm publication" modal cancels publication', function () {
+            ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+            ManageInProcessFindingAids.clickPublishFindingAidButtonForRow( eadId );
+
+            assert(
+                ManageInProcessFindingAids.confirmPublishModal.element.isExisting(),
+                `"Confirm publication" modal was not displayed after clicking "Publish finding aid" button for ${ eadId }`,
+            );
+
+            ManageInProcessFindingAids.confirmPublishModal.button( 'Cancel' ).click();
+
+            // Changed this from an assert() because apparently the modal wasn't
+            // ceasing to exist fast enough.
+            waitUntil(
+                () => ! ManageInProcessFindingAids.confirmPublishModal.element.isExisting(),
+                '"Confirm publication" modal was not dismissed after clicking "Cancel" button',
+            );
+        } );
     } );
 } );
 
