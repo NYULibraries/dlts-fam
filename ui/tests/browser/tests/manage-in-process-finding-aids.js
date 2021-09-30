@@ -396,6 +396,70 @@ suite( 'Manage In-process Finding Aids - UI', function () {
             );
         } );
     } );
+
+    suite( 'Delete in-process finding aid', function () {
+        // This needs to be different from the eadId used for the publish finding aid tests.
+        const eadId = '2018_006';
+
+        test( 'Clicking Cancel on "Confirm deletion" modal cancels deletion', function () {
+            ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+            ManageInProcessFindingAids.clickDeleteInProcessFindingAidButtonForRow( eadId );
+
+            assert(
+                ManageInProcessFindingAids.confirmDeletionModal.element.isExisting(),
+                `"Confirm deletion" modal was not displayed after clicking "Delete in-process finding aid" button for ${ eadId }`,
+            );
+
+            ManageInProcessFindingAids.confirmDeletionModal.button( 'Cancel' ).click();
+
+            // Changed this from an assert() because apparently the modal wasn't
+            // ceasing to exist fast enough.
+            waitUntil(
+                () => ! ManageInProcessFindingAids.confirmDeletionModal.element.isExisting(),
+                '"Confirm deletion" modal was not dismissed after clicking "Cancel" button',
+            );
+        } );
+
+        test( 'Deletion of in-process finding aid works correctly', function () {
+            ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+            ManageInProcessFindingAids.clickDeleteInProcessFindingAidButtonForRow( eadId );
+
+            assert(
+                ManageInProcessFindingAids.confirmDeletionModal.element.isExisting(),
+                `"Confirm deletion" modal was not displayed after clicking "Delete in-process finding aid" button for ${ eadId }`,
+            );
+
+            ManageInProcessFindingAids.confirmDeletionModal.button( 'Delete' ).click();
+
+            waitUntil(
+                () => ManageInProcessFindingAids.deletionCompletedModal.element.isExisting(),
+                `"Deletion completed" modal was not displayed after clicking "Delete" button for ${ eadId }`,
+            );
+
+            // Not sure why, but the click of the OK button fails if this is not here.
+            // Apparently ManageInProcessFindingAids.deletionCompletedModal.element.isExisting()
+            // is not enough.  Weird, considering this problem doesn't happen with the OK
+            // button on the "Publication complete" modal.
+            waitUntil(
+                () => ManageInProcessFindingAids.deletionCompletedModal.button( 'OK' ).isClickable(),
+                'OK button on "Deletion completed" modal is not clickable.',
+            );
+
+            ManageInProcessFindingAids.deletionCompletedModal.button( 'OK' ).click();
+
+            // Changed this from an assert() because apparently the modal wasn't
+            // ceasing to exist fast enough.
+            waitUntil(
+                () => ! ManageInProcessFindingAids.deletionCompletedModal.element.isExisting(),
+                '"Deletion completed" modal was not dismissed after clicking "OK" button',
+            );
+
+            assert(
+                ! ManageInProcessFindingAids.row( eadId ).isExisting(),
+                `${ eadId } is still in the In-process FAs table`,
+            );
+        } );
+    } );
 } );
 
 function writeSnapshotToActualFileAndCompareToGolden( goldenArg ) {
