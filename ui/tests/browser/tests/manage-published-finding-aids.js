@@ -4,7 +4,7 @@ import fs from 'fs';
 
 import { assert } from 'chai';
 
-import ManageInProcessFindingAids from '../pageobjects/manage-in-process-finding-aids.page';
+import ManagePublishedFindingAids from '../pageobjects/manage-published-finding-aids.page';
 import Login from '../pageobjects/login.page';
 import Logout from '../pageobjects/logout.page';
 
@@ -20,17 +20,23 @@ import {
     SUITE_NAME,
 } from '../util';
 
-suite( 'Manage In-process Finding Aids - UI', function () {
+suite( 'Manage Published Finding Aids - UI', function () {
     suiteSetup( function () {
-        clearActualFilesDirectory( SUITE_NAME.manageInProcessFindingAids );
-        clearDiffFilesDirectory( SUITE_NAME.manageInProcessFindingAids );
+        clearActualFilesDirectory( SUITE_NAME.managePublishedFindingAids );
+        clearDiffFilesDirectory( SUITE_NAME.managePublishedFindingAids );
 
         Login.login();
-        ManageInProcessFindingAids.open();
+        ManagePublishedFindingAids.open();
     } );
 
     setup( function () {
-        ManageInProcessFindingAids.reset();
+        ManagePublishedFindingAids.reset();
+        // Wait until the table is populated.
+        waitUntil(
+            () => ManagePublishedFindingAids.rowExists( 'ad_mc_002' ),
+            'Row for "ad_mc_002" does not exist.  The table has not been populated.',
+            { timeout : 60000 },
+        );
     } );
 
     suiteTeardown( function () {
@@ -38,9 +44,9 @@ suite( 'Manage In-process Finding Aids - UI', function () {
     } );
 
     suite( 'ID filter', function () {
-        [ 'a', 'art', 'mc_3' ].forEach( filterValue => {
+        [ 'a', 'diner', 'grey_gallery' ].forEach( filterValue => {
             test( `Correct results for ID filter = "${ filterValue }"`, function () {
-                ManageInProcessFindingAids.filterById( filterValue );
+                ManagePublishedFindingAids.filterById( filterValue );
                 const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
 
                 assert( ok, message );
@@ -55,7 +61,7 @@ suite( 'Manage In-process Finding Aids - UI', function () {
             'NYU Abu Dhabi, Archives and Special Collections',
         ].forEach( filterValue => {
             test( `Correct results for Repository filter = "${ filterValue }"`, function () {
-                ManageInProcessFindingAids.filterByRepository( filterValue );
+                ManagePublishedFindingAids.filterByRepository( filterValue );
                 const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
 
                 assert( ok, message );
@@ -65,15 +71,15 @@ suite( 'Manage In-process Finding Aids - UI', function () {
 
     suite( 'ID and Repository filters together', function () {
         [
-            { id : 3,       repository : 'New York University Archives' },
-            { id : 2016,    repository : 'Center for Brooklyn History' },
-            { id : 'nysrg', repository : 'New-York Historical Society' },
+            { id : 3,         repository : 'New York University Archives' },
+            { id : '2015_11', repository : 'Center for Brooklyn History' },
+            { id : 'bible',   repository : 'New-York Historical Society' },
         ].forEach( filterValues => {
             const id = filterValues.id;
             const repository = filterValues.repository;
             test( `Correct results for ID filter = "${ id }" and Repository filter = ${ repository }`, function () {
-                ManageInProcessFindingAids.filterById( id );
-                ManageInProcessFindingAids.filterByRepository( repository );
+                ManagePublishedFindingAids.filterById( id );
+                ManagePublishedFindingAids.filterByRepository( repository );
                 const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
 
                 assert( ok, message );
@@ -84,7 +90,7 @@ suite( 'Manage In-process Finding Aids - UI', function () {
     suite( 'Per page dropdown', function () {
         [ 10, 25, 50, 100 ].forEach( perPageNumber => {
             test( `Sets correct number of results per page for value "${ perPageNumber }"`, function () {
-                ManageInProcessFindingAids.setResultsPerPage( perPageNumber );
+                ManagePublishedFindingAids.setResultsPerPage( perPageNumber );
                 const { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
 
                 assert( ok, message );
@@ -94,55 +100,55 @@ suite( 'Manage In-process Finding Aids - UI', function () {
 
     suite( 'Page navigation', function () {
         test( 'Clicking on go to first page and go to last page controls takes user to the correct pages', function () {
-            ManageInProcessFindingAids.clickGotoLastPage();
+            ManagePublishedFindingAids.clickGotoLastPage();
             let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickGotoFirstPage();
+            ManagePublishedFindingAids.clickGotoFirstPage();
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
         } );
 
         test( 'Clicking on page links 2, 3, 4, 5 takes user to the correct pages', function () {
-            ManageInProcessFindingAids.clickPageNavigationLink( '2' );
+            ManagePublishedFindingAids.clickPageNavigationLink( '2' );
             let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickPageNavigationLink( '3' );
+            ManagePublishedFindingAids.clickPageNavigationLink( '3' );
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickPageNavigationLink( '4' );
+            ManagePublishedFindingAids.clickPageNavigationLink( '4' );
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickPageNavigationLink( '5' );
+            ManagePublishedFindingAids.clickPageNavigationLink( '5' );
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
         } );
 
         test( 'Clicking on next page 3 times then previous page 3 times produces the correct pages', function () {
-            ManageInProcessFindingAids.clickGotoNextPage();
+            ManagePublishedFindingAids.clickGotoNextPage();
             let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickGotoNextPage();
+            ManagePublishedFindingAids.clickGotoNextPage();
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickGotoNextPage();
+            ManagePublishedFindingAids.clickGotoNextPage();
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickGotoPreviousPage();
+            ManagePublishedFindingAids.clickGotoPreviousPage();
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickGotoPreviousPage();
+            ManagePublishedFindingAids.clickGotoPreviousPage();
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickGotoPreviousPage();
+            ManagePublishedFindingAids.clickGotoPreviousPage();
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
         } );
@@ -150,31 +156,31 @@ suite( 'Manage In-process Finding Aids - UI', function () {
 
     suite( 'Sort controls', function () {
         test( 'Clicking ID sort produces correct ascending and descending ordering', function () {
-            ManageInProcessFindingAids.clickSortById();
+            ManagePublishedFindingAids.clickSortById();
             let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickSortById();
+            ManagePublishedFindingAids.clickSortById();
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
         } );
 
         test( 'Clicking Repository sort produces correct ascending and descending ordering', function () {
-            ManageInProcessFindingAids.clickSortByRepository();
+            ManagePublishedFindingAids.clickSortByRepository();
             let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickSortByRepository();
+            ManagePublishedFindingAids.clickSortByRepository();
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
         } );
 
         test( 'Clicking Timestamp sort produces correct ascending and descending ordering', function () {
-            ManageInProcessFindingAids.clickSortByTimestamp();
+            ManagePublishedFindingAids.clickSortByTimestamp();
             let { ok, message } = writeSnapshotToActualFileAndCompareToGolden();
             assert( ok, message );
 
-            ManageInProcessFindingAids.clickSortByTimestamp();
+            ManagePublishedFindingAids.clickSortByTimestamp();
             ( { ok, message } = writeSnapshotToActualFileAndCompareToGolden() );
             assert( ok, message );
         } );
@@ -183,73 +189,73 @@ suite( 'Manage In-process Finding Aids - UI', function () {
     suite( 'Open/close detail rows', function () {
         // Every single row regardless of whether it is currently displayed
         // remembers its detail row toggle state, which makes detail row toggle
-        // state difficult to reset using ManageInProcessFindingAids.reset().
+        // state difficult to reset using ManagePublishedFindingAids.reset().
         setup( function () {
             Logout.logout();
             Login.login();
-            ManageInProcessFindingAids.open();
+            ManagePublishedFindingAids.open();
         } );
 
         test( 'Clicking toggle details control opens/closes detail row', function () {
-            const eadId = 'ad_mc_012';
-            ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+            const eadId = 'ad_mc_002';
+            ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
             assert(
-                ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
                 `Clicking the toggle details control did not open the detail row for ${ eadId }`,
             );
 
-            ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+            ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
             assert(
-                ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                ! ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
                 `Clicking the toggle details control did not close the detail row for ${ eadId }`,
             );
         } );
 
         test( 'Clicking ID opens/closes detail row', function () {
-            const eadId = 'ad_mc_012';
-            ManageInProcessFindingAids.clickIdCellForRow( eadId );
+            const eadId = 'ad_mc_002';
+            ManagePublishedFindingAids.clickIdCellForRow( eadId );
             assert(
-                ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
                 `Clicking "${ eadId }" did not open the detail row for ${ eadId }`,
             );
 
-            ManageInProcessFindingAids.clickIdCellForRow( eadId );
+            ManagePublishedFindingAids.clickIdCellForRow( eadId );
             assert(
-                ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                ! ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
                 `Clicking "${ eadId }" did not close the detail row for ${ eadId }`,
             );
         } );
 
         test( 'Clicking repository opens/closes detail row', function () {
-            const eadId = 'ad_mc_012';
-            const repository = ManageInProcessFindingAids.cellForRow( eadId, 'Repository' ).getText();
+            const eadId = 'ad_mc_002';
+            const repository = ManagePublishedFindingAids.cellForRow( eadId, 'Repository' ).getText();
 
-            ManageInProcessFindingAids.clickRepositoryCellForRow( eadId );
+            ManagePublishedFindingAids.clickRepositoryCellForRow( eadId );
             assert(
-                ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
                 `Clicking "${ repository }" did not open the detail row for ${ eadId }`,
             );
 
-            ManageInProcessFindingAids.clickRepositoryCellForRow( eadId );
+            ManagePublishedFindingAids.clickRepositoryCellForRow( eadId );
             assert(
-                ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                ! ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
                 `Clicking "${ repository }" did not close the detail row for ${ eadId }`,
             );
         } );
 
         test( 'Clicking timestamp opens/closes detail row', function () {
-            const eadId = 'ad_mc_012';
-            const timestamp = ManageInProcessFindingAids.cellForRow( eadId, 'Timestamp' ).getText();
+            const eadId = 'ad_mc_002';
+            const timestamp = ManagePublishedFindingAids.cellForRow( eadId, 'Timestamp' ).getText();
 
-            ManageInProcessFindingAids.clickRepositoryCellForRow( eadId );
+            ManagePublishedFindingAids.clickRepositoryCellForRow( eadId );
             assert(
-                ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
                 `Clicking "${ timestamp }" did not open the detail row for ${ eadId }`,
             );
 
-            ManageInProcessFindingAids.clickRepositoryCellForRow( eadId );
+            ManagePublishedFindingAids.clickRepositoryCellForRow( eadId );
             assert(
-                ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                ! ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
                 `Clicking "${ timestamp }" did not close the detail row for ${ eadId }`,
             );
         } );
@@ -258,23 +264,23 @@ suite( 'Manage In-process Finding Aids - UI', function () {
             // Chose three that were near the top so that the last would not be
             // pushed off the screen after the first two were opened.
             const eadIds = [
+                'ad_mc_002',
+                'ad_mc_011',
                 'ad_mc_012',
-                'alwan',
-                '2018_006',
             ];
 
             eadIds.forEach( eadId => {
-                ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+                ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
                 assert(
-                    ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                    ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
                     `Clicking toggle details control did not open the detail row for ${ eadId }`,
                 );
             } );
 
             eadIds.reverse().forEach( eadId => {
-                ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+                ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
                 assert(
-                    ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+                    ! ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
                     `Clicking toggle details control did not close the detail row for ${ eadId }`,
                 );
             } );
@@ -284,190 +290,106 @@ suite( 'Manage In-process Finding Aids - UI', function () {
     // Don't know of a way to detect that a new tab was opened and that it loaded
     // the correct preview URL.
     test( 'View preview buttons have the correct hrefs', function () {
-        const eadId = 'ad_mc_012';
+        const eadId = 'ad_mc_002';
 
-        ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+        ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
 
         assert.equal(
-            ManageInProcessFindingAids.viewFindingAidPreviewButtonHrefForRow( 'ad_mc_012' ),
-            '#/preview/finding-aid/akkasah/ad_mc_012',
+            ManagePublishedFindingAids.viewFindingAidPreviewButtonHrefForRow( 'ad_mc_002' ),
+            '#/preview/finding-aid/akkasah/ad_mc_002',
             '"View finding aid preview" button does not have the correct href',
         );
 
         assert.equal(
-            ManageInProcessFindingAids.viewEadFilePreviewButtonHrefForRow( 'ad_mc_012' ),
-            '#/preview/ead/akkasah/ad_mc_012',
+            ManagePublishedFindingAids.viewEadFilePreviewButtonHrefForRow( 'ad_mc_002' ),
+            '#/preview/ead/akkasah/ad_mc_002',
             '"View EAD file preview" button does not have the correct href',
         );
 
         // Custom teardown
-        ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
+        ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
         assert(
-            ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
+            ! ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
             `Clicking toggle details control did not close the detail row for ${ eadId }`,
         );
     } );
 
-    suite( 'Publish finding aid', function () {
-        const eadId = 'ad_mc_012';
-
-        test( 'Clicking Cancel on "Confirm publication" modal cancels publication', function () {
-            ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
-            ManageInProcessFindingAids.clickPublishFindingAidButtonForRow( eadId );
-
-            assert(
-                ManageInProcessFindingAids.confirmPublishModal.element.isExisting(),
-                `"Confirm publication" modal was not displayed after clicking "Publish finding aid" button for ${ eadId }`,
-            );
-
-            ManageInProcessFindingAids.confirmPublishModal.button( 'Cancel' ).click();
-
-            // Changed this from an assert() because apparently the modal wasn't
-            // ceasing to exist fast enough.
-            waitUntil(
-                () => ! ManageInProcessFindingAids.confirmPublishModal.element.isExisting(),
-                '"Confirm publication" modal was not dismissed after clicking "Cancel" button',
-            );
-        } );
-
-        test( 'Publication (update) of in-process finding aid works correctly', function () {
-            ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
-            ManageInProcessFindingAids.clickPublishFindingAidButtonForRow( eadId );
-
-            assert(
-                ManageInProcessFindingAids.confirmPublishModal.element.isExisting(),
-                `"Confirm publication" modal was not displayed after clicking "Publish finding aid" button for ${ eadId }`,
-            );
-
-            ManageInProcessFindingAids.confirmPublishModal.button( 'Publish' ).click();
-
-            waitUntil(
-                () => ManageInProcessFindingAids.publicationHasBeenQueuedModal.element.isExisting(),
-                `"Publication complete" modal was not displayed after clicking "Publish" button for ${ eadId }`,
-            );
-
-            ManageInProcessFindingAids.publicationHasBeenQueuedModal.button( 'OK' ).click();
-
-            // Changed this from an assert() because apparently the modal wasn't
-            // ceasing to exist fast enough.
-            waitUntil(
-                () => ! ManageInProcessFindingAids.publicationHasBeenQueuedModal.element.isExisting(),
-                '"Publication complete" modal was not dismissed after clicking "OK" button',
-            );
-
-            assert(
-                ! ManageInProcessFindingAids.row( eadId ).isExisting(),
-                `${ eadId } is still in the In-process FAs table`,
-            );
-
-            ManageInProcessFindingAids.navbar.published.click();
-
-            assert.equal(
-                ManageInProcessFindingAids.currentUrl,
-                ManageInProcessFindingAids.baseUrl + '#/published',
-            );
-
-            // Give Published FAs time to get latest metadata snapshot.
-            waitUntil(
-                () => ManageInProcessFindingAids.row( eadId ).isExisting(),
-                `${ eadId } did not appear in Published FAs table`,
-                { timeout : 60000 },
-            );
-
-            // Check that timestamp is within the last 5 minutes, to prove that
-            // it is the updated finding aid created by this publication test,
-            // rather than the previously published version which was already in
-            // the fixture data for Published FAs.
-            const oneMinuteAgo = new Date( new Date() - ( 5 * 60000 ) );
-            const timestampOfUpdatedFindingAid = ManageInProcessFindingAids.cellForRow( eadId, 'Timestamp' ).getText();
-
-            assert(
-                new Date( timestampOfUpdatedFindingAid ) > oneMinuteAgo,
-                `Update of published finding aid ${ eadId } failed: ` +
-                `expected a timestamp > ${ oneMinuteAgo.toLocaleString() }, ` +
-                // Timestamps in the table have a slight different format than that
-                // used by Date.toLocaleString().  They are generated by Vue.prototype.$getFormattedTimestamp,
-                // which is not available here.  That plugin method was implemented
-                // using Moment.js, which we could easily import here, but in fact
-                // Moment.js has since deprecated itself for most new projects,
-                // which would include this new set of tests.  For consistency,
-                // we convert the date to a vanilla JS to match expected.
-                `and got ${ new Date( timestampOfUpdatedFindingAid ).toLocaleString() }`,
-            );
-        } );
-    } );
-
-    suite( 'Delete in-process finding aid', function () {
+    suite( 'Delete published finding aid', function () {
         // This needs to be different from the eadId used for the publish finding aid tests.
-        const eadId = '2018_006';
+        const eadId = 'ad_mc_002';
 
         test( 'Clicking Cancel on "Confirm deletion" modal cancels deletion', function () {
-            ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
-            ManageInProcessFindingAids.clickDeleteInProcessFindingAidButtonForRow( eadId );
+            ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
+            ManagePublishedFindingAids.clickDeletePublishedFindingAidButtonForRow( eadId );
 
             assert(
-                ManageInProcessFindingAids.confirmDeletionModal.element.isExisting(),
-                `"Confirm deletion" modal was not displayed after clicking "Delete in-process finding aid" button for ${ eadId }`,
+                ManagePublishedFindingAids.confirmDeletionModal.element.isExisting(),
+                `"Confirm deletion" modal was not displayed after clicking "Delete published finding aid" button for ${ eadId }`,
             );
 
-            ManageInProcessFindingAids.confirmDeletionModal.button( 'Cancel' ).click();
+            ManagePublishedFindingAids.confirmDeletionModal.button( 'Cancel' ).click();
 
             // Changed this from an assert() because apparently the modal wasn't
             // ceasing to exist fast enough.
             waitUntil(
-                () => ! ManageInProcessFindingAids.confirmDeletionModal.element.isExisting(),
+                () => ! ManagePublishedFindingAids.confirmDeletionModal.element.isExisting(),
                 '"Confirm deletion" modal was not dismissed after clicking "Cancel" button',
             );
         } );
 
-        test( 'Deletion of in-process finding aid works correctly', function () {
-            ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
-            ManageInProcessFindingAids.clickDeleteInProcessFindingAidButtonForRow( eadId );
+        test( 'Deletion of published finding aid works correctly', function () {
+            ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
+            ManagePublishedFindingAids.clickDeletePublishedFindingAidButtonForRow( eadId );
 
             assert(
-                ManageInProcessFindingAids.confirmDeletionModal.element.isExisting(),
-                `"Confirm deletion" modal was not displayed after clicking "Delete in-process finding aid" button for ${ eadId }`,
+                ManagePublishedFindingAids.confirmDeletionModal.element.isExisting(),
+                `"Confirm deletion" modal was not displayed after clicking "Delete published finding aid" button for ${ eadId }`,
             );
 
-            ManageInProcessFindingAids.confirmDeletionModal.button( 'Delete' ).click();
+            ManagePublishedFindingAids.confirmDeletionModal.button( 'Delete' ).click();
 
             waitUntil(
-                () => ManageInProcessFindingAids.deletionCompletedModal.element.isExisting(),
+                () => ManagePublishedFindingAids.deletionCompletedModal.element.isExisting(),
                 `"Deletion completed" modal was not displayed after clicking "Delete" button for ${ eadId }`,
             );
 
+            // TODO: Reinstate if necessary
             // Not sure why, but the click of the OK button fails if this is not here.
-            // Apparently ManageInProcessFindingAids.deletionCompletedModal.element.isExisting()
+            // Apparently ManagePublishedFindingAids.deletionCompletedModal.element.isExisting()
             // is not enough.  Weird, considering this problem doesn't happen with the OK
             // button on the "Publication complete" modal.
-            waitUntil(
-                () => ManageInProcessFindingAids.deletionCompletedModal.button( 'OK' ).isClickable(),
-                'OK button on "Deletion completed" modal is not clickable.',
-            );
+            // waitUntil(
+            //     () => ManagePublishedFindingAids.deletionCompletedModal.button( 'OK' ).isClickable(),
+            //     'OK button on "Deletion completed" modal is not clickable.',
+            // );
 
-            ManageInProcessFindingAids.deletionCompletedModal.button( 'OK' ).click();
+            ManagePublishedFindingAids.deletionCompletedModal.button( 'OK' ).click();
 
             // Changed this from an assert() because apparently the modal wasn't
             // ceasing to exist fast enough.
-            waitUntil(
-                () => ! ManageInProcessFindingAids.deletionCompletedModal.element.isExisting(),
-                '"Deletion completed" modal was not dismissed after clicking "OK" button',
-            );
+            // waitUntil(
+            //     () => ! ManagePublishedFindingAids.deletionCompletedModal.element.isExisting(),
+            //     '"Deletion completed" modal was not dismissed after clicking "OK" button',
+            // );
 
             assert(
-                ! ManageInProcessFindingAids.row( eadId ).isExisting(),
-                `${ eadId } is still in the In-process FAs table`,
+                ! ManagePublishedFindingAids.deletionCompletedModal.element.isExisting(),
+                '"Deletion completed" modal was not dismissed after clicking "OK" button',
+            );
+            assert(
+                ! ManagePublishedFindingAids.row( eadId ).isExisting(),
+                `${ eadId } is still in the Published FAs table`,
             );
         } );
     } );
 } );
 
 function writeSnapshotToActualFileAndCompareToGolden( goldenArg ) {
-    const snapshot = ManageInProcessFindingAids.resultsSnapshot();
-    const resultsId = ManageInProcessFindingAids.getResultsIdForCurrentOptions();
+    const snapshot = ManagePublishedFindingAids.resultsSnapshot();
+    const resultsId = ManagePublishedFindingAids.getResultsIdForCurrentOptions();
 
-    const actualFile = getActualFilePath( SUITE_NAME.manageInProcessFindingAids, resultsId );
-    const goldenFile = getGoldenFilePath( SUITE_NAME.manageInProcessFindingAids, resultsId );
+    const actualFile = getActualFilePath( SUITE_NAME.managePublishedFindingAids, resultsId );
+    const goldenFile = getGoldenFilePath( SUITE_NAME.managePublishedFindingAids, resultsId );
 
     const stringifiedSnapshot = jsonStableStringify( snapshot );
 
@@ -486,7 +408,7 @@ function writeSnapshotToActualFileAndCompareToGolden( goldenArg ) {
 
         ok = ( stringifiedSnapshot === stringifiedGolden );
         if ( ! ok ) {
-            message = diffActualVsGoldenAndReturnMessage( SUITE_NAME.manageInProcessFindingAids, actualFile, goldenFile, resultsId );
+            message = diffActualVsGoldenAndReturnMessage( SUITE_NAME.managePublishedFindingAids, actualFile, goldenFile, resultsId );
         }
     }
 
@@ -528,28 +450,28 @@ function setUiOptionsFromGoldenFile( golden ) {
     const sortField = golden.ui.sort ? golden.ui.sort.field : null;
 
     if ( idFilter ) {
-        ManageInProcessFindingAids.filterById( idFilter );
+        ManagePublishedFindingAids.filterById( idFilter );
     }
 
     if ( pageNumber ) {
-        ManageInProcessFindingAids.clickPageNavigationLink( pageNumber );
+        ManagePublishedFindingAids.clickPageNavigationLink( pageNumber );
     }
 
     if ( repositoryFilter ) {
-        ManageInProcessFindingAids.filterByRepository( repositoryFilter );
+        ManagePublishedFindingAids.filterByRepository( repositoryFilter );
     }
 
     if ( resultsPerPage ) {
-        ManageInProcessFindingAids.setResultsPerPage( resultsPerPage );
+        ManagePublishedFindingAids.setResultsPerPage( resultsPerPage );
     }
 
     if ( sortField ) {
-        const currentSort = ManageInProcessFindingAids.sort;
+        const currentSort = ManagePublishedFindingAids.sort;
         if ( currentSort.field !== sortField ) {
-            ManageInProcessFindingAids.clickSortBy( sortField );
+            ManagePublishedFindingAids.clickSortBy( sortField );
             // There is only toggling, so click again if the sort is not right.
             if ( currentSort.direction !== sortDirection ) {
-                ManageInProcessFindingAids.clickSortBy( sortField );
+                ManagePublishedFindingAids.clickSortBy( sortField );
             }
         }
     }
