@@ -318,6 +318,10 @@ export default class ManageFindingAidsPage extends Page {
         return $( `#finding-aids-table__row_${ id }` );
     }
 
+    rowExists( id ) {
+        return $( `#finding-aids-table__row_${ id }` ).isExisting();
+    }
+
     setResultsPerPage( resultsPerPage ) {
         this.resultsPerPageSelect.selectByVisibleText( resultsPerPage );
     }
