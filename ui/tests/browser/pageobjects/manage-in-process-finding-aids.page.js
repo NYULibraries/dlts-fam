@@ -14,7 +14,7 @@ class ManageInProcessFindingAids extends ManageFindingAidsPage {
         // Working with modal #queueing-publish-modal has proven to be tricky, so
         // we won't deal with it in tests.  Likewise we won't deal with modal
         // #deletion-in-progress-modal.
-        this.#confirmDeletionModal = new Modal( 'confirm-deletion-modal' );
+        this.#confirmDeletionModal = new Modal( 'confirm-delete-modal' );
         this.#confirmPublishModal = new Modal( 'confirm-publish-modal' );
         this.#deletionCompletedModal = new Modal( 'delete-in-process-finding-aid-message-box' );
         this.#publicationHasBeenQueuedModal = new Modal( 'publication-has-been-queued-modal' );

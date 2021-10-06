@@ -196,7 +196,7 @@
         </b-container>
 
         <b-modal
-            id="confirm-deletion-modal"
+            id="confirm-delete-modal"
             header-text-variant="danger"
             size="lg"
             centered
@@ -564,7 +564,7 @@ export default {
             this.findingAidToDelete.id = event.currentTarget.dataset.id;
             this.findingAidToDelete.repositoryCode = event.currentTarget.dataset.repositoryCode;
 
-            this.$bvModal.show( 'confirm-deletion-modal' );
+            this.$bvModal.show( 'confirm-delete-modal' );
         },
         clickPublishInProcessFindingAid( event ) {
             this.findingAidToPublish.id = event.currentTarget.dataset.id;
