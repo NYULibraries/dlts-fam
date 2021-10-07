@@ -7,6 +7,7 @@ import Page from './page';
 import Navbar from '../pageobjects/classes/navbar';
 
 import storeConfig from '../../../src/store/store-config';
+import waitUntil from '../util';
 
 export default class ManageFindingAidsPage extends Page {
     static COL_INDEX_BLANK = 1;
@@ -203,6 +204,17 @@ export default class ManageFindingAidsPage extends Page {
 
     clickToggleDetailsButton( id ) {
         this.row( id ).$( '#toggle-details-button' ).click();
+    }
+
+    closeDetailsRowIfOpenForId( id ) {
+        if ( this.detailsRow( id ).isExisting() ) {
+            this.clickToggleDetailsButton( id );
+        }
+
+        waitUntil(
+            () => ! this.detailsRow( id ).isExisting(),
+            `Details row for ${ id } has not been closed.`,
+        );
     }
 
     detailsRow( id ) {
