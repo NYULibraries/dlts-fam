@@ -300,7 +300,7 @@ suite( 'Manage Published Finding Aids - UI', function () {
         const eadId = 'ad_mc_002';
 
         // Custom setup
-        ManageInProcessFindingAids.closeDetailsRowIfOpen( eadId );
+        ManagePublishedFindingAids.closeDetailsRowIfOpen( eadId );
 
         ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
 
