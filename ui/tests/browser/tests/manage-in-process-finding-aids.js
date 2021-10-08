@@ -181,6 +181,14 @@ suite( 'Manage In-process Finding Aids - UI', function () {
     } );
 
     suite( 'Open/close detail rows', function () {
+        // Chose three that were near the top so that the last would not be
+        // pushed off the screen after the first two were opened.
+        const eadIds = [
+            'ad_mc_012',
+            'alwan',
+            '2018_006',
+        ];
+
         // Every single row regardless of whether it is currently displayed
         // remembers its detail row toggle state, which makes detail row toggle
         // state difficult to reset using ManageInProcessFindingAids.reset().
@@ -190,8 +198,14 @@ suite( 'Manage In-process Finding Aids - UI', function () {
             ManageInProcessFindingAids.open();
         } );
 
+        teardown( function () {
+            eadIds.forEach( eadId => {
+                ManageInProcessFindingAids.closeDetailsRowIfOpen( eadId );
+            } );
+        } );
+
         test( 'Clicking toggle details control opens/closes detail row', function () {
-            const eadId = 'ad_mc_012';
+            const eadId = eadIds[ 0 ];
             ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
             assert(
                 ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
@@ -206,7 +220,7 @@ suite( 'Manage In-process Finding Aids - UI', function () {
         } );
 
         test( 'Clicking ID opens/closes detail row', function () {
-            const eadId = 'ad_mc_012';
+            const eadId = eadIds[ 0 ];
             ManageInProcessFindingAids.clickIdCellForRow( eadId );
             assert(
                 ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
@@ -221,7 +235,7 @@ suite( 'Manage In-process Finding Aids - UI', function () {
         } );
 
         test( 'Clicking repository opens/closes detail row', function () {
-            const eadId = 'ad_mc_012';
+            const eadId = eadIds[ 0 ];
             const repository = ManageInProcessFindingAids.cellForRow( eadId, 'Repository' ).getText();
 
             ManageInProcessFindingAids.clickRepositoryCellForRow( eadId );
@@ -238,7 +252,7 @@ suite( 'Manage In-process Finding Aids - UI', function () {
         } );
 
         test( 'Clicking timestamp opens/closes detail row', function () {
-            const eadId = 'ad_mc_012';
+            const eadId = eadIds[ 0 ];
             const timestamp = ManageInProcessFindingAids.cellForRow( eadId, 'Timestamp' ).getText();
 
             ManageInProcessFindingAids.clickRepositoryCellForRow( eadId );
@@ -255,14 +269,6 @@ suite( 'Manage In-process Finding Aids - UI', function () {
         } );
 
         test( 'Opening and multiple detail rows works correctly', function () {
-            // Chose three that were near the top so that the last would not be
-            // pushed off the screen after the first two were opened.
-            const eadIds = [
-                'ad_mc_012',
-                'alwan',
-                '2018_006',
-            ];
-
             eadIds.forEach( eadId => {
                 ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
                 assert(
@@ -286,6 +292,9 @@ suite( 'Manage In-process Finding Aids - UI', function () {
     test( 'View preview buttons have the correct hrefs', function () {
         const eadId = 'ad_mc_012';
 
+        // Custom setup
+        ManageInProcessFindingAids.closeDetailsRowIfOpen( eadId );
+
         ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
 
         assert.equal(
@@ -301,15 +310,19 @@ suite( 'Manage In-process Finding Aids - UI', function () {
         );
 
         // Custom teardown
-        ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
-        assert(
-            ! ManageInProcessFindingAids.detailsRow( eadId ).isExisting(),
-            `Clicking toggle details control did not close the detail row for ${ eadId }`,
-        );
+        ManageInProcessFindingAids.closeDetailsRowIfOpen( eadId );
     } );
 
     suite( 'Publish finding aid', function () {
         const eadId = 'ad_mc_012';
+
+        setup( function () {
+            ManageInProcessFindingAids.closeDetailsRowIfOpen( eadId );
+        } );
+
+        teardown( function () {
+            ManageInProcessFindingAids.closeDetailsRowIfOpen( eadId );
+        } );
 
         test( 'Clicking Cancel on "Confirm publication" modal cancels publication', function () {
             ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
@@ -400,6 +413,14 @@ suite( 'Manage In-process Finding Aids - UI', function () {
     suite( 'Delete in-process finding aid', function () {
         // This needs to be different from the eadId used for the publish finding aid tests.
         const eadId = '2018_006';
+
+        setup( function () {
+            ManageInProcessFindingAids.closeDetailsRowIfOpen( eadId );
+        } );
+
+        teardown( function () {
+            ManageInProcessFindingAids.closeDetailsRowIfOpen( eadId );
+        } );
 
         test( 'Clicking Cancel on "Confirm deletion" modal cancels deletion', function () {
             ManageInProcessFindingAids.clickToggleDetailsButton( eadId );
