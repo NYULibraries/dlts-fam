@@ -187,6 +187,14 @@ suite( 'Manage Published Finding Aids - UI', function () {
     } );
 
     suite( 'Open/close detail rows', function () {
+        // Chose three that were near the top so that the last would not be
+        // pushed off the screen after the first two were opened.
+        const eadIds = [
+            'ad_mc_002',
+            'ad_mc_011',
+            'ad_mc_012',
+        ];
+
         // Every single row regardless of whether it is currently displayed
         // remembers its detail row toggle state, which makes detail row toggle
         // state difficult to reset using ManagePublishedFindingAids.reset().
@@ -194,6 +202,12 @@ suite( 'Manage Published Finding Aids - UI', function () {
             Logout.logout();
             Login.login();
             ManagePublishedFindingAids.open();
+        } );
+
+        teardown( function () {
+            eadIds.forEach( eadId => {
+                ManagePublishedFindingAids.closeDetailsRowIfOpen( eadId );
+            } );
         } );
 
         test( 'Clicking toggle details control opens/closes detail row', function () {
@@ -261,14 +275,6 @@ suite( 'Manage Published Finding Aids - UI', function () {
         } );
 
         test( 'Opening and multiple detail rows works correctly', function () {
-            // Chose three that were near the top so that the last would not be
-            // pushed off the screen after the first two were opened.
-            const eadIds = [
-                'ad_mc_002',
-                'ad_mc_011',
-                'ad_mc_012',
-            ];
-
             eadIds.forEach( eadId => {
                 ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
                 assert(
@@ -289,34 +295,42 @@ suite( 'Manage Published Finding Aids - UI', function () {
 
     // Don't know of a way to detect that a new tab was opened and that it loaded
     // the correct preview URL.
-    test( 'View preview buttons have the correct hrefs', function () {
+    test( 'View buttons have the correct hrefs', function () {
+        const repositoryCode = 'akkasah';
         const eadId = 'ad_mc_002';
+
+        // Custom setup
+        ManageInProcessFindingAids.closeDetailsRowIfOpen( eadId );
 
         ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
 
         assert.equal(
-            ManagePublishedFindingAids.viewFindingAidPreviewButtonHrefForRow( 'ad_mc_002' ),
-            '#/preview/finding-aid/akkasah/ad_mc_002',
-            '"View finding aid preview" button does not have the correct href',
+            ManagePublishedFindingAids.viewFindingAidButtonHrefForRow( 'ad_mc_002' ),
+            `${ ManagePublishedFindingAids.baseUrlFas }${ repositoryCode }/${ eadId }`,
+            '"View finding aid" button does not have the correct href',
         );
 
         assert.equal(
             ManagePublishedFindingAids.viewEadFilePreviewButtonHrefForRow( 'ad_mc_002' ),
-            '#/preview/ead/akkasah/ad_mc_002',
-            '"View EAD file preview" button does not have the correct href',
+            `${ ManagePublishedFindingAids.baseUrlEad }${ repositoryCode }/${ eadId }`,
+            '"View EAD file" button does not have the correct href',
         );
 
         // Custom teardown
-        ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
-        assert(
-            ! ManagePublishedFindingAids.detailsRow( eadId ).isExisting(),
-            `Clicking toggle details control did not close the detail row for ${ eadId }`,
-        );
+        ManagePublishedFindingAids.closeDetailsRowIfOpen( eadId );
     } );
 
     suite( 'Delete published finding aid', function () {
         // This needs to be different from the eadId used for the publish finding aid tests.
-        const eadId = 'ad_mc_002';
+        const eadId = 'ad_mc_007';
+
+        setup( function () {
+            ManagePublishedFindingAids.closeDetailsRowIfOpen( eadId );
+        } );
+
+        teardown( function () {
+            ManagePublishedFindingAids.closeDetailsRowIfOpen( eadId );
+        } );
 
         test( 'Clicking Cancel on "Confirm deletion" modal cancels deletion', function () {
             ManagePublishedFindingAids.clickToggleDetailsButton( eadId );
