@@ -5,6 +5,14 @@ export default class Page {
         return browser.config.baseUrl;
     }
 
+    get baseUrlFas() {
+        return browser.config.baseUrlEad;
+    }
+
+    get baseUrlFas() {
+        return browser.config.baseUrlFas;
+    }
+
     get currentUrl() {
         return browser.getUrl();
     }
