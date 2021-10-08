@@ -343,8 +343,8 @@ suite( 'Manage Published Finding Aids - UI', function () {
 
             ManagePublishedFindingAids.confirmDeletionModal.button( 'Cancel' ).click();
 
-            // Changed this from an assert() because apparently the modal wasn't
-            // ceasing to exist fast enough.
+            // See comment in manage-in-process-finding-aids.js test 'Clicking Cancel on "Confirm deletion" modal cancels deletion'.
+            // Haven't verified it's needed hear, but might as well keep the parallel structure.
             waitUntil(
                 () => ! ManagePublishedFindingAids.confirmDeletionModal.element.isExisting(),
                 '"Confirm deletion" modal was not dismissed after clicking "Cancel" button',
@@ -367,24 +367,21 @@ suite( 'Manage Published Finding Aids - UI', function () {
                 `"Deletion completed" modal was not displayed after clicking "Delete" button for ${ eadId }`,
             );
 
-            // TODO: Reinstate if necessary
-            // Not sure why, but the click of the OK button fails if this is not here.
-            // Apparently ManagePublishedFindingAids.deletionCompletedModal.element.isExisting()
-            // is not enough.  Weird, considering this problem doesn't happen with the OK
-            // button on the "Publication complete" modal.
-            // waitUntil(
-            //     () => ManagePublishedFindingAids.deletionCompletedModal.button( 'OK' ).isClickable(),
-            //     'OK button on "Deletion completed" modal is not clickable.',
-            // );
+            // See comment in manage-in-process-finding-aids.js test 'Deletion of in-process finding aid works correctly'.
+            // Haven't verified it's needed hear, but might as well keep the parallel structure.
+            waitUntil(
+                () => ManagePublishedFindingAids.deletionCompletedModal.button( 'OK' ).isClickable(),
+                'OK button on "Deletion completed" modal is not clickable.',
+            );
 
             ManagePublishedFindingAids.deletionCompletedModal.button( 'OK' ).click();
 
-            // Changed this from an assert() because apparently the modal wasn't
-            // ceasing to exist fast enough.
-            // waitUntil(
-            //     () => ! ManagePublishedFindingAids.deletionCompletedModal.element.isExisting(),
-            //     '"Deletion completed" modal was not dismissed after clicking "OK" button',
-            // );
+            // See comment in manage-in-process-finding-aids.js test 'Deletion of in-process finding aid works correctly'.
+            // Haven't verified it's needed hear, but might as well keep the parallel structure.
+            waitUntil(
+                () => ! ManagePublishedFindingAids.deletionCompletedModal.element.isExisting(),
+                '"Deletion completed" modal was not dismissed after clicking "OK" button',
+            );
 
             assert(
                 ! ManagePublishedFindingAids.deletionCompletedModal.element.isExisting(),
