@@ -29,7 +29,7 @@ class ManagePublishedFindingAids extends ManageFindingAidsPage {
     }
 
     clickDeletePublishedFindingAidButtonForRow( id ) {
-        this.detailsRow( id ).$( '#delete-published-finding-aid-button' ).click();
+        this.detailsRow( id ).$( '#delete-finding-aid-button' ).click();
 
         waitUntil(
             // This does not work, not sure why:
@@ -41,15 +41,15 @@ class ManagePublishedFindingAids extends ManageFindingAidsPage {
         );
     }
 
-    viewFindingAidPreviewButtonHrefForRow( id ) {
+    viewFindingAidButtonHrefForRow( id ) {
         return this.detailsRow( id )
-            .$( '#view-finding-aid-preview-button' )
+            .$( '#view-finding-aid-button' )
             .getAttribute( 'href' );
     }
 
     viewEadFilePreviewButtonHrefForRow( id ) {
         return this.detailsRow( id )
-            .$( '#view-ead-file-preview-button' )
+            .$( '#view-ead-file-button' )
             .getAttribute( 'href' );
     }
 }
