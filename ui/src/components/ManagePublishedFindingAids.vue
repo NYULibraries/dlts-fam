@@ -165,7 +165,7 @@
                         <b-button
                             id="view-finding-aid-button"
                             class="action-button"
-                            :href="`http://dlib.nyu.edu/findingaids/html/${ row.item.repositoryCode }/${ row.item.id }/`"
+                            :href="`https://findingaids-local.library.nyu.edu/${ row.item.repositoryCode }/${ row.item.id }/`"
                             target="_blank"
                         >
                             View finding aid
@@ -174,7 +174,7 @@
                         <b-button
                             id="view-ead-file-button"
                             class="action-button"
-                            :href="`http://dlib.nyu.edu/findingaids/ead/${ row.item.repositoryCode }/${ row.item.id }.xml`"
+                            :href="`https://raw.githubusercontent.com/NYULibraries/findingaids_eads/master/${ row.item.repositoryCode }/${ row.item.id }.xml`"
                             target="_blank"
                         >
                             View EAD file
