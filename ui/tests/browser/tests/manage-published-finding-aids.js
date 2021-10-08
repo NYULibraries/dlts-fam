@@ -306,13 +306,13 @@ suite( 'Manage Published Finding Aids - UI', function () {
 
         assert.equal(
             ManagePublishedFindingAids.viewFindingAidButtonHrefForRow( 'ad_mc_002' ),
-            `${ ManagePublishedFindingAids.baseUrlFas }${ repositoryCode }/${ eadId }`,
+            `${ ManagePublishedFindingAids.baseUrlFas }${ repositoryCode }/${ eadId }/`,
             '"View finding aid" button does not have the correct href',
         );
 
         assert.equal(
             ManagePublishedFindingAids.viewEadFilePreviewButtonHrefForRow( 'ad_mc_002' ),
-            `${ ManagePublishedFindingAids.baseUrlEad }${ repositoryCode }/${ eadId }`,
+            `${ ManagePublishedFindingAids.baseUrlEad }${ repositoryCode }/${ eadId }.xml`,
             '"View EAD file" button does not have the correct href',
         );
 
