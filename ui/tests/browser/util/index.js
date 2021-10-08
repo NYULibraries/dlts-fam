@@ -162,7 +162,7 @@ export const SUITE_NAME = {
     home                       : 'home',
     login                      : 'login',
     manageInProcessFindingAids : 'manage-in-process-finding-aids',
-    managePublishedFindingAids : 'manage-in-process-finding-aids',
+    managePublishedFindingAids : 'manage-published-finding-aids',
     navbar                     : 'navbar',
 };
 
