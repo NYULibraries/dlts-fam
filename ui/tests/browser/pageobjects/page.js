@@ -5,7 +5,7 @@ export default class Page {
         return browser.config.baseUrl;
     }
 
-    get baseUrlFas() {
+    get baseUrlEad() {
         return browser.config.baseUrlEad;
     }
 
