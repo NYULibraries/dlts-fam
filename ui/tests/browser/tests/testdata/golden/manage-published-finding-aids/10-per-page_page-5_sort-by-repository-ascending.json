@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "1974_065",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "11/5/2018 11:25 am"
+        },
+        {
+            "ID": "1974_131",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "6/13/2019 5:25 pm"
+        },
+        {
+            "ID": "1979_008",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "9/23/2016 10:45 am"
+        },
+        {
+            "ID": "1985_093",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "5/17/2017 1:30 pm"
+        },
+        {
+            "ID": "1989_006",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "11/14/2018 10:35 am"
+        },
+        {
+            "ID": "2004_010",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "11/1/2018 10:05 am"
+        },
+        {
+            "ID": "2004_023",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "12/16/2016 3:25 pm"
+        },
+        {
+            "ID": "2004_024_verrazano_bridge",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "4/23/2015 1:10 pm"
+        },
+        {
+            "ID": "2007_048",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "8/29/2019 12:20 pm"
+        },
+        {
+            "ID": "2008_031",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "12/22/2020 3:50 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n…\n4\n5\n6\n…\n›\n»",
+        "pageNumber": 5,
+        "repositoryFilter": "All",
+        "resultStats": "4,770 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "ad_mc_045",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "5/5/2020 6:40 am"
+        },
+        {
+            "ID": "ad_mc_046",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "5/5/2020 6:45 am"
+        },
+        {
+            "ID": "ad_mc_047",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "5/5/2020 6:45 am"
+        },
+        {
+            "ID": "ad_mc_048",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "5/5/2020 6:45 am"
+        },
+        {
+            "ID": "ad_mc_049",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/2/2020 11:45 am"
+        },
+        {
+            "ID": "ad_mc_050",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/2/2020 11:20 am"
+        },
+        {
+            "ID": "ad_mc_056",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/6/2020 10:45 am"
+        },
+        {
+            "ID": "ad_mc_062",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/22/2021 4:50 am"
+        },
+        {
+            "ID": "1974_002",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "8/15/2018 11:45 am"
+        },
+        {
+            "ID": "1974_003",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "1/13/2021 10:50 am"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n…\n3\n4\n5\n…\n›\n»",
+        "pageNumber": 4,
+        "repositoryFilter": "All",
+        "resultStats": "4,770 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

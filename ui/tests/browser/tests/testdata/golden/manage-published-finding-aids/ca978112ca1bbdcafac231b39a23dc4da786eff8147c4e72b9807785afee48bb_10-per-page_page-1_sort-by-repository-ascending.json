@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "ad_mc_002",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/1/2020 6:45 am"
+        },
+        {
+            "ID": "ad_mc_007",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "7/17/2020 3:10 pm"
+        },
+        {
+            "ID": "ad_mc_011",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/17/2020 5:05 am"
+        },
+        {
+            "ID": "ad_mc_012",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "3/31/2020 11:50 am"
+        },
+        {
+            "ID": "ad_mc_013_v1",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/14/2020 1:50 pm"
+        },
+        {
+            "ID": "ad_mc_013_v2",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/14/2020 2:15 pm"
+        },
+        {
+            "ID": "ad_mc_014",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/2/2020 1:05 pm"
+        },
+        {
+            "ID": "ad_mc_015",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/2/2020 1:25 pm"
+        },
+        {
+            "ID": "ad_mc_016",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "3/31/2020 11:50 am"
+        },
+        {
+            "ID": "ad_mc_020",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/15/2020 12:45 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": "a",
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "3,482 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

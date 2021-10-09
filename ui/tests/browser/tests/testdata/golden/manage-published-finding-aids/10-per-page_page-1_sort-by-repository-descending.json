@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "aia_001",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "10/27/2020 3:45 pm"
+        },
+        {
+            "ID": "aia_002",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "9/10/2018 4:25 pm"
+        },
+        {
+            "ID": "aia_003",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "9/17/2019 11:05 am"
+        },
+        {
+            "ID": "aia_004",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "3/26/2021 9:45 am"
+        },
+        {
+            "ID": "aia_005",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "8/6/2018 2:15 pm"
+        },
+        {
+            "ID": "aia_006",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "9/10/2018 4:30 pm"
+        },
+        {
+            "ID": "aia_007",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "3/1/2019 12:10 pm"
+        },
+        {
+            "ID": "aia_008",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "1/22/2020 6:00 pm"
+        },
+        {
+            "ID": "aia_009",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/24/2019 9:20 am"
+        },
+        {
+            "ID": "aia_010",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "9/10/2018 4:30 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "4,770 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "descending",
+            "field": "repository"
+        }
+    }
+}
