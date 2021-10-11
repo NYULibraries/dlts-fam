@@ -10,10 +10,17 @@ import storeConfig from '../../../src/store/store-config';
 import { waitUntil } from '../util';
 
 export default class ManageFindingAidsPage extends Page {
-    static COL_INDEX_BLANK = 1;
-    static COL_INDEX_ID = 2;
-    static COL_INDEX_REPOSITORY = 3;
-    static COL_INDEX_TIMESTAMP = 4;
+    static COLUMN_LABEL_BLANK      = '';
+    static COLUMN_LABEL_ID         = 'ID';
+    static COLUMN_LABEL_REPOSITORY = 'Repository';
+    static COLUMN_LABEL_TIMESTAMP  = 'Timestamp';
+
+    static COLUMN_INDEX_FOR_LABEL = {
+        [ ManageFindingAidsPage.COLUMN_LABEL_BLANK ]      : 1,
+        [ ManageFindingAidsPage.COLUMN_LABEL_ID ]         : 2,
+        [ ManageFindingAidsPage.COLUMN_LABEL_REPOSITORY ] : 3,
+        [ ManageFindingAidsPage.COLUMN_LABEL_TIMESTAMP ]  : 4,
+    };
 
     constructor() {
         super();
@@ -174,28 +181,19 @@ export default class ManageFindingAidsPage extends Page {
     }
 
     clickSortById() {
-        this.clickSortBy( ManageFindingAidsPage.COL_INDEX_ID );
+        this.clickSortByLabel( ManageFindingAidsPage.COLUMN_LABEL_ID );
     }
 
     clickSortByLabel( label ) {
-        // This is a bit brittle, maybe.
-        if ( label === 'ID' ) {
-            this.clickSortBy( ManageFindingAidsPage.COL_INDEX_ID );
-        } else if ( label === 'Repository' ) {
-            this.clickSortBy( ManageFindingAidsPage.COL_INDEX_REPOSITORY );
-        } else if ( label === 'Timestamp' ) {
-            this.clickSortBy( ManageFindingAidsPage.COL_INDEX_TIMESTAMP );
-        } else {
-            // Should never get here
-        }
+        this.clickSortBy( ManageFindingAidsPage.COLUMN_INDEX_FOR_LABEL[ label ] );
     }
 
     clickSortByRepository() {
-        this.clickSortBy( ManageFindingAidsPage.COL_INDEX_REPOSITORY );
+        this.clickSortByLabel( ManageFindingAidsPage.COLUMN_LABEL_REPOSITORY );
     }
 
     clickSortByTimestamp() {
-        this.clickSortBy( ManageFindingAidsPage.COL_INDEX_TIMESTAMP );
+        this.clickSortByLabel( ManageFindingAidsPage.COLUMN_LABEL_TIMESTAMP );
     }
 
     clickTimestampCellForRow( id ) {
