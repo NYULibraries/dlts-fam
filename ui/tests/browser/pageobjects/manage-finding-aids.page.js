@@ -282,8 +282,8 @@ export default class ManageFindingAidsPage extends Page {
         // order.  Since ID is theoretically unique across all repositories, there
         // shouldn't be any need to deal with the sort for any other column (such
         // as timestamp).
-        this.clickSortById();
-        this.clickSortByRepository();
+        this.setSort( 'ID', 'ascending' );
+        this.setSort( 'Repository', 'ascending' );
     }
 
     resultsSnapshot() {
@@ -336,6 +336,17 @@ export default class ManageFindingAidsPage extends Page {
 
     setResultsPerPage( resultsPerPage ) {
         this.resultsPerPageSelect.selectByVisibleText( resultsPerPage );
+    }
+
+    setSort( field, direction ) {
+        // It's not easy or maybe even possible to know the sort direction of a
+        // column that was previously sorted but is not now the sort column, so
+        // we first make it the active sort column, check the direction, and
+        // toggle the direction if it's not the one desired.
+        this.clickSortByLabel( field );
+        if ( this.sort.direction !== direction ) {
+            this.clickSortByLabel( field );
+        }
     }
 
     th( colIndex ) {
