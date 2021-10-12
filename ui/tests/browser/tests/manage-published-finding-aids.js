@@ -202,6 +202,13 @@ suite( 'Manage Published Finding Aids - UI', function () {
             Logout.logout();
             Login.login();
             ManagePublishedFindingAids.open();
+
+            // Wait until the table is populated.
+            waitUntil(
+                () => ManagePublishedFindingAids.rowExists( 'ad_mc_002' ),
+                'Row for "ad_mc_002" does not exist.  The table has not been populated.',
+                { timeout : 60000 },
+            );
         } );
 
         teardown( function () {
