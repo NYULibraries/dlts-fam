@@ -407,6 +407,9 @@ suite( 'Manage In-process Finding Aids - UI', function () {
                 // we convert the date to a vanilla JS to match expected.
                 `and got ${ new Date( timestampOfUpdatedFindingAid ).toLocaleString() }`,
             );
+
+            // Custom teardown
+            ManageInProcessFindingAids.navbar.inProcess.click();
         } );
     } );
 
