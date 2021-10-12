@@ -117,15 +117,8 @@ ERROR: Required element <eadid> not found.
 ERROR: Required element <repository>/<corpname> not found.
 `;
 
-const SUCCESSFUL_CREATION_OF_IN_PROCESS_FINDING_AID_RESULTS_TEXT =
-    SUCCESSFUL_UPLOAD_OF_VALID_EAD_FILE_RESULTS_TEXT +
-    `Creating in-process finding aid...
-New in-process finding aid created with timestamp ${ TIMESTAMP_PATTERN }.
-
-Proceed to In-process FAs to preview the new EAD file and finding aid.
-
-`;
-
+// This const initialization must be done before initialization of
+// SUCCESSFUL_CREATION_OF_IN_PROCESS_FINDING_AID_RESULTS_TEXT
 const SUCCESSFUL_UPLOAD_OF_VALID_EAD_FILE_RESULTS_TEXT =
     `Uploading EAD file mc_100.xml...
 Upload complete.
@@ -139,7 +132,18 @@ REPOSITORY: New York University Archives
 
 `;
 
+// This const initialization must be done before initialization of
+// SUCCESSFUL_CREATION_OF_IN_PROCESS_FINDING_AID_RESULTS_TEXT
 const TIMESTAMP_PATTERN = '[MONTH]/[DAY]/[YEAR] [HOUR]:[MINUTE] [AM/PM]';
+
+const SUCCESSFUL_CREATION_OF_IN_PROCESS_FINDING_AID_RESULTS_TEXT =
+    SUCCESSFUL_UPLOAD_OF_VALID_EAD_FILE_RESULTS_TEXT +
+    `Creating in-process finding aid...
+New in-process finding aid created with timestamp ${ TIMESTAMP_PATTERN }.
+
+Proceed to In-process FAs to preview the new EAD file and finding aid.
+
+`;
 
 suite( 'Create New Finding Aid', function () {
     setup( function () {
