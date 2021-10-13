@@ -7,6 +7,10 @@ import Login from '../pageobjects/login.page';
 import Logout from '../pageobjects/logout.page';
 
 suite( 'Home', function () {
+    suiteSetup( function () {
+        Home.setWindowSize( 1280, 720 );
+    } );
+
     setup( function () {
         Login.login();
     } );

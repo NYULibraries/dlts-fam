@@ -24,4 +24,8 @@ export default class Page {
     open() {
         browser.url( this.path );
     }
+
+    setWindowSize( width, height ) {
+        browser.setWindowSize( width, height );
+    }
 };
