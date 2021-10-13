@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "123",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "1/21/2016 10:50 am"
+        },
+        {
+            "ID": "7threg",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "9/12/2019 2:40 pm"
+        },
+        {
+            "ID": "ericsson",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "4/23/2015 1:10 pm"
+        },
+        {
+            "ID": "adickes",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "1/24/2014 3:13 pm"
+        },
+        {
+            "ID": "adler",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "2/24/2021 3:30 pm"
+        },
+        {
+            "ID": "africanschool",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "9/6/2019 5:10 pm"
+        },
+        {
+            "ID": "ahmc_2958_9824_marvel",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "2/1/2019 10:15 am"
+        },
+        {
+            "ID": "ahmc_hopesdelight",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "7/31/2019 3:45 pm"
+        },
+        {
+            "ID": "albok",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "4/23/2015 1:10 pm"
+        },
+        {
+            "ID": "album",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "11/12/2020 3:40 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "New-York Historical Society",
+        "resultStats": "770 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

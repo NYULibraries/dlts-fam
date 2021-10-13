@@ -1,13 +1,13 @@
 /* eslint quote-props: ["error", "always"] */
 export default {
     'akkasah' : {
-        '030_ref184' : {
-            'timestamp' : 1585063507,
-            'title'     : 'Bilder-Atlas zu Mekka and ephemera - Hisham Khatib Collection AD_MC_030_ref184',
-        },
         'ad_mc_002' : {
             'timestamp' : 1585737907,
             'title'     : 'Yasser Alwan Collection AD.MC.002',
+        },
+        'ad_mc_007' : {
+            'timestamp' : 1595013013,
+            'title'     : 'Ozge Calafato Collection AD.MC.007',
         },
         'ad_mc_011' : {
             'timestamp' : 1587114311,
@@ -149,20 +149,12 @@ export default {
             'timestamp' : 1586184307,
             'title'     : 'Nasri Fuleihan Collection AD.MC.056',
         },
-        'khatib_Pilgrimage' : {
-            'timestamp' : 1566230106,
-            'title'     : 'Hisham Khatib Collection - Mediterranean Pilgrimage Association AD_MC_030_ref150',
-        },
-        'nusseibeh' : {
-            'timestamp' : 1542823810,
-            'title'     : 'Zaki Nusseibeh Collection AD.MC.020',
+        'ad_mc_062' : {
+            'timestamp' : 1619081452,
+            'title'     : 'Orientreise 1898 AD.MC.062',
         },
     },
     'archives' : {
-        'RG_39_187' : {
-            'timestamp' : 1580247607,
-            'title'     : 'New York University Archives Collection of the Washington Square Journal RG.39.187',
-        },
         'acuny' : {
             'timestamp' : 1450504811,
             'title'     : 'Records of the Associated Colleges of Upper New York MC 82',
@@ -186,10 +178,6 @@ export default {
         'andiron' : {
             'timestamp' : 1563979209,
             'title'     : 'Records of the Andiron Club of New York City MC 19',
-        },
-        'apaimport2' : {
-            'timestamp' : 1536770160,
-            'title'     : 'Records of the Asian/Pacific/American Institute RG.21.35',
         },
         'archives' : {
             'timestamp' : 1450505108,
@@ -492,8 +480,8 @@ export default {
             'title'     : 'George Burton Hotchkiss Papers MC.45',
         },
         'iaaa' : {
-            'timestamp' : 1526066708,
-            'title'     : 'Records of the Institute of Afro-American Affairs RG.9.8',
+            'timestamp' : 1603811108,
+            'title'     : 'Records of the Institute of African American Affairs RG.9.8',
         },
         'instcomphum' : {
             'timestamp' : 1450507508,
@@ -611,6 +599,14 @@ export default {
             'timestamp' : 1569877207,
             'title'     : 'Ralph E. Pickett Papers MC.104',
         },
+        'mc_105' : {
+            'timestamp' : 1611071109,
+            'title'     : 'New York University Archives Collection on Countee Cullen MC.105',
+        },
+        'mc_106' : {
+            'timestamp' : 1610038508,
+            'title'     : 'John G. Stephenson Streetcar Patent MC.106',
+        },
         'mc_107' : {
             'timestamp' : 1570734909,
             'title'     : 'Richard A. Girard Papers MC.107',
@@ -620,7 +616,7 @@ export default {
             'title'     : 'Records of the American Society for Educating Pious Youth for Gospel Ministry MC 108',
         },
         'mc_113' : {
-            'timestamp' : 1532636109,
+            'timestamp' : 1621001710,
             'title'     : 'Lewis Albert Sayre Papers MC.113',
         },
         'mc_116' : {
@@ -660,7 +656,7 @@ export default {
             'title'     : 'Arthur Gordon Papers MC.160',
         },
         'mc_164' : {
-            'timestamp' : 1512060308,
+            'timestamp' : 1616788509,
             'title'     : 'Jerry Dickason Collection on Protests MC.164',
         },
         'mc_165' : {
@@ -694,6 +690,10 @@ export default {
         'mc_198' : {
             'timestamp' : 1555965912,
             'title'     : 'Roger McNiven Papers MC.198',
+        },
+        'mc_2' : {
+            'timestamp' : 1621004708,
+            'title'     : 'James Buell Munn Papers MC.2',
         },
         'mc_209' : {
             'timestamp' : 1450508411,
@@ -732,8 +732,8 @@ export default {
             'title'     : 'Early Alumni Materials Collection MC 237',
         },
         'mc_240' : {
-            'timestamp' : 1450508411,
-            'title'     : 'Class of 1892 Scrapbook MC 240',
+            'timestamp' : 1622746507,
+            'title'     : 'Class of 1892 Scrapbook MC.240',
         },
         'mc_244' : {
             'timestamp' : 1569262207,
@@ -768,7 +768,7 @@ export default {
             'title'     : 'New York University Library Accession Books MC.258',
         },
         'mc_259' : {
-            'timestamp' : 1572354007,
+            'timestamp' : 1611765610,
             'title'     : 'Robert Landy Papers MC.259',
         },
         'mc_26' : {
@@ -812,7 +812,7 @@ export default {
             'title'     : 'Faculty Against the Sexton Plan Collection MC.270',
         },
         'mc_271' : {
-            'timestamp' : 1533153611,
+            'timestamp' : 1622746811,
             'title'     : 'Records of City-As-School MC.271',
         },
         'mc_272' : {
@@ -895,9 +895,21 @@ export default {
             'timestamp' : 1553781610,
             'title'     : 'William Chidekel Dissertation MC.314',
         },
+        'mc_317' : {
+            'timestamp' : 1614787211,
+            'title'     : 'New York University Archives Biographical Files MC.317',
+        },
         'mc_318' : {
             'timestamp' : 1557754812,
             'title'     : 'Susan Reverby Collection on the NYU Student Strike MC.318',
+        },
+        'mc_319' : {
+            'timestamp' : 1611167409,
+            'title'     : 'New York University Archives Portrait Files MC.319',
+        },
+        'mc_320' : {
+            'timestamp' : 1611849909,
+            'title'     : 'Robbins Barstow Film Collection MC.320',
         },
         'mc_321' : {
             'timestamp' : 1557754812,
@@ -931,6 +943,14 @@ export default {
             'timestamp' : 1562075410,
             'title'     : 'Arthur Blum Student Lab  Book MC.338',
         },
+        'mc_339' : {
+            'timestamp' : 1611167409,
+            'title'     : 'New York University Archives Photographic Slides Collection MC.339',
+        },
+        'mc_346' : {
+            'timestamp' : 1611167409,
+            'title'     : 'New York University Archives Collection of Minutes MC.346',
+        },
         'mc_350' : {
             'timestamp' : 1582569606,
             'title'     : 'Nina B. de Fels Collection MC.350',
@@ -950,6 +970,10 @@ export default {
         'mc_50' : {
             'timestamp' : 1543956611,
             'title'     : 'Henry Heald Speeches MC.50',
+        },
+        'mc_51' : {
+            'timestamp' : 1596046211,
+            'title'     : 'James McNaughton Hester Papers MC.51',
         },
         'mc_53' : {
             'timestamp' : 1547479811,
@@ -1010,6 +1034,14 @@ export default {
         'mc_81' : {
             'timestamp' : 1517502309,
             'title'     : 'Charles Butler Papers MC.81',
+        },
+        'mc_83' : {
+            'timestamp' : 1609858208,
+            'title'     : 'New York University Archives Collection of Student Theses MC.83',
+        },
+        'mc_84' : {
+            'timestamp' : 1610038207,
+            'title'     : 'New York University Archives Collection of World War II Materials MC.84',
         },
         'mc_86' : {
             'timestamp' : 1543960210,
@@ -1076,8 +1108,8 @@ export default {
             'title'     : 'Kenneth Silverman Research Collection on Samuel F.B. Morse MC 173',
         },
         'munn' : {
-            'timestamp' : 1450509010,
-            'title'     : 'Collection1873-1980  MC 2',
+            'timestamp' : 1603827911,
+            'title'     : 'James Buell Munn Papers 68',
         },
         'newsom' : {
             'timestamp' : 1522698610,
@@ -1196,8 +1228,12 @@ export default {
             'title'     : 'Records of the Lyman R. Bradley Academic Freedom Case RG.19.2',
         },
         'rg_19_3' : {
-            'timestamp' : 1564582810,
+            'timestamp' : 1621002008,
             'title'     : 'Records of the Dean of Women, Washington Square College, Dorothy McSparran Arnold RG.19.3',
+        },
+        'rg_21_35' : {
+            'timestamp' : 1624475107,
+            'title'     : 'Records of the Asian/Pacific/American Institute RG.21.35',
         },
         'rg_21_50' : {
             'timestamp' : 1565359810,
@@ -1215,9 +1251,17 @@ export default {
             'timestamp' : 1557409214,
             'title'     : 'Tisch School of the Arts Department of Photography and Imaging Publications RG.35.5',
         },
+        'rg_37_13' : {
+            'timestamp' : 1623953407,
+            'title'     : 'Records of the Department of French Literature, Thought and Culture RG.37.13',
+        },
         'rg_37_33' : {
             'timestamp' : 1565359211,
             'title'     : 'Records of the King Juan Carlos I of Spain Center RG.37.33',
+        },
+        'rg_37_4' : {
+            'timestamp' : 1622575209,
+            'title'     : 'Records of the New York Institute for the Humanities RG.37.4',
         },
         'rg_37_51' : {
             'timestamp' : 1562781913,
@@ -1323,13 +1367,25 @@ export default {
             'timestamp' : 1563294012,
             'title'     : 'Records of the New York University Photo Bureau RG 7.2.2',
         },
+        'rg_7_4' : {
+            'timestamp' : 1622746811,
+            'title'     : 'Records of the Office of External Affairs, Commencement and Special Events RG.7.4',
+        },
         'rg_7_5_2_1' : {
             'timestamp' : 1565359211,
             'title'     : 'Records of the Black Alumni Network RG.7.5.2.1',
         },
+        'rg_9_8' : {
+            'timestamp' : 1612473907,
+            'title'     : 'Records of the Institute of African American Affairs RG.9.8',
+        },
         'ricci' : {
             'timestamp' : 1450509909,
             'title'     : 'John Ricci Papers MC 156',
+        },
+        'rism_vf_1' : {
+            'timestamp' : 1625580009,
+            'title'     : 'Research Institute for the Study of Man (RISM) Vertical Files RISM.VF.1',
         },
         'roberto' : {
             'timestamp' : 1450509909,
@@ -1356,7 +1412,7 @@ export default {
             'title'     : 'George Schwartz Papers MC.217',
         },
         'schweitz' : {
-            'timestamp' : 1581543007,
+            'timestamp' : 1600785308,
             'title'     : 'Records of the Albert Schweitzer Chair in the Humanities RG.21.1',
         },
         'selfstudy' : {
@@ -1428,11 +1484,11 @@ export default {
             'title'     : 'Records of the Office of the Treasurer RG.10.2',
         },
         'ua_av' : {
-            'timestamp' : 1467207613,
-            'title'     : 'Audiovisual Collection AV',
+            'timestamp' : 1617201908,
+            'title'     : 'New York University Archives Audiovisual Collection AV',
         },
         'ua_os' : {
-            'timestamp' : 1563911413,
+            'timestamp' : 1606331113,
             'title'     : 'New York University Archives Collection of Building Drawings and Large-Format Materials OS',
         },
         'ucf' : {
@@ -1456,7 +1512,7 @@ export default {
             'title'     : 'Washington Square Music Festival MC 158',
         },
         'washsq' : {
-            'timestamp' : 1578596707,
+            'timestamp' : 1601565308,
             'title'     : 'Records of the Washington Square Association, Inc. MC.94',
         },
         'washsquarephoto' : {
@@ -1568,13 +1624,13 @@ export default {
             'title'     : 'The Disappearing Finding Aid',
         },
     },
-    'bhs' : {
+    'cbh' : {
         '1974_002' : {
             'timestamp' : 1534347909,
             'title'     : 'Mid-Atlantic Early Manuscripts collection 1974.002',
         },
         '1974_003' : {
-            'timestamp' : 1560461410,
+            'timestamp' : 1610553009,
             'title'     : 'Long Island Early Manuscripts collection 1974.003',
         },
         '1974_065' : {
@@ -1614,16 +1670,28 @@ export default {
             'title'     : 'Lee Bergeson collection of Verrazzano-Narrows Bridge photographs 2007.048',
         },
         '2008_031' : {
-            'timestamp' : 1510340732,
+            'timestamp' : 1608670209,
             'title'     : 'Voices of Brooklyn oral histories 2008.031',
         },
         '2010_010' : {
             'timestamp' : 1495052109,
             'title'     : 'Edward and Charlotte Artus family photographs 2010.010',
         },
+        '2011_005' : {
+            'timestamp' : 1600450808,
+            'title'     : 'Brooklyn Heights Synagogue oral histories 2011.005',
+        },
         '2011_007' : {
             'timestamp' : 1476824709,
             'title'     : 'F. &amp; M. Schaefer Brewing Company\'s                  The Last Night at Ebbets Field scrapbook 2011.007',
+        },
+        '2011_008' : {
+            'timestamp' : 1609278007,
+            'title'     : 'Jackie Weisberg\'s Gowanus Impressions photographs 2011.008',
+        },
+        '2011_018' : {
+            'timestamp' : 1609278007,
+            'title'     : 'Melanie Einzig Purim photographs 2011.018',
         },
         '2011_029' : {
             'timestamp' : 1492539008,
@@ -1658,8 +1726,12 @@ export default {
             'title'     : 'Schlagel and Wolf family papers 2013.008',
         },
         '2013_023' : {
-            'timestamp' : 1573501811,
+            'timestamp' : 1609355107,
             'title'     : 'Ronald Shiffman collection on the Pratt Center for Community Development 2013.023',
+        },
+        '2014_023' : {
+            'timestamp' : 1606773308,
+            'title'     : 'Hiroki Kobayashi photographs on the Slave Theater from the collection of Dexter Wimberly 2014.023',
         },
         '2015_011' : {
             'timestamp' : 1496338526,
@@ -1672,6 +1744,10 @@ export default {
         '2015_024' : {
             'timestamp' : 1490898614,
             'title'     : 'Elizabeth Payne drawings of Fort Greene Park 2015.024',
+        },
+        '2015_030' : {
+            'timestamp' : 1618601707,
+            'title'     : 'Henry R. Stiles collection of Brooklyn Historical Society Institutional Memory oral histories 2015.030',
         },
         '2015_036' : {
             'timestamp' : 1474638329,
@@ -1690,11 +1766,11 @@ export default {
             'title'     : 'Edward B. Watson personal photographs 2016.016',
         },
         '2016_021' : {
-            'timestamp' : 1495554310,
+            'timestamp' : 1610127009,
             'title'     : 'Mark Naison papers 2016.021',
         },
         '2016_026' : {
-            'timestamp' : 1536603910,
+            'timestamp' : 1615220408,
             'title'     : 'Brooklyn For Peace records 2016.026',
         },
         '2016_027_voices_crown_heights' : {
@@ -1754,7 +1830,7 @@ export default {
             'title'     : 'Pastor George R. Swartz Sr. marriage records 2017.014',
         },
         '2017_024' : {
-            'timestamp' : 1540999812,
+            'timestamp' : 1606862108,
             'title'     : 'Linda F. Segal collection of Brooklyn Bridge Centennial records 2017.024',
         },
         '2018_004' : {
@@ -1778,8 +1854,12 @@ export default {
             'title'     : 'Corporal Harry Bloom World War I correspondence 2019.007',
         },
         '2019_008' : {
-            'timestamp' : 1563392110,
+            'timestamp' : 1607553007,
             'title'     : 'Civil War era Carte-de-visite album of Famous Americans 2019.008',
+        },
+        '2019_009' : {
+            'timestamp' : 1617995410,
+            'title'     : 'Ann Schoenfeld collection on the Fulton Ferry Landing Association 2019.009',
         },
         '2019_010' : {
             'timestamp' : 1577995506,
@@ -1789,9 +1869,21 @@ export default {
             'timestamp' : 1576774808,
             'title'     : 'Anthony Jansen (Janszoon) Van Salee deed 2019.013',
         },
+        '2020_002' : {
+            'timestamp' : 1610489409,
+            'title'     : 'Khalil Abdulkhabir photographs of the Dar-ul-Islam movement 2020.002',
+        },
         '2020_003' : {
-            'timestamp' : 1592492108,
+            'timestamp' : 1618600807,
             'title'     : 'Brooklyn Historical Society COVID-19 collection 2020.003',
+        },
+        '2020_004' : {
+            'timestamp' : 1612807210,
+            'title'     : 'Wyckoff House papers 2020.004',
+        },
+        '2021_002' : {
+            'timestamp' : 1617997206,
+            'title'     : 'John Crean Cardwell and Grace Ann Parker correspondence 2021.002',
         },
         'arc_001_bennet_ryder' : {
             'timestamp' : 1429809049,
@@ -1800,6 +1892,10 @@ export default {
         'arc_002_goldwag_core' : {
             'timestamp' : 1429809049,
             'title'     : 'Arnie Goldwag Brooklyn Congress of Racial Equality (CORE) collection ARC.002',
+        },
+        'arc_003' : {
+            'timestamp' : 1600377608,
+            'title'     : 'Brooklyn Navy Yard oral history collection ARC.003',
         },
         'arc_005_morrell' : {
             'timestamp' : 1390594418,
@@ -1982,7 +2078,7 @@ export default {
             'title'     : 'Board of Supervisors of Kings County collection ARC.049',
         },
         'arc_050_melish' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1610735410,
             'title'     : 'John Howard Melish, William Howard Melish and Protestant Episcopal Church of the Holy Trinity collection ARC.050',
         },
         'arc_051_hayes' : {
@@ -2174,7 +2270,7 @@ export default {
             'title'     : 'Alden Spooner family papers ARC.098',
         },
         'arc_099_sprague' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611240909,
             'title'     : 'Joseph Sprague papers ARC.099',
         },
         'arc_100_hotel_st_george' : {
@@ -2310,7 +2406,7 @@ export default {
             'title'     : 'First Baptist Church of Williamsburg records ARC.134',
         },
         'arc_135_hulst' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1610562612,
             'title'     : 'Hulst family collection ARC.135',
         },
         'arc_136_emmanuel_baptist_church' : {
@@ -2338,7 +2434,7 @@ export default {
             'title'     : 'Brooklyn hospitals and health services organizations collection ARC.141',
         },
         'arc_142_pelletreau' : {
-            'timestamp' : 1542729613,
+            'timestamp' : 1611242109,
             'title'     : 'Pelletreau family papers ARC.142',
         },
         'arc_143_rotary_club' : {
@@ -2350,7 +2446,7 @@ export default {
             'title'     : 'Apollo Club of Brooklyn programs ARC.144',
         },
         'arc_145_lefferts_family' : {
-            'timestamp' : 1561056613,
+            'timestamp' : 1611075008,
             'title'     : 'Lefferts family papers ARC.145',
         },
         'arc_146_society_professional_engineers' : {
@@ -2370,7 +2466,7 @@ export default {
             'title'     : 'Brooklyn Arts and Culture Association publications ARC.149',
         },
         'arc_150_stoothoff' : {
-            'timestamp' : 1449071708,
+            'timestamp' : 1611241211,
             'title'     : 'Stoothoff family collection ARC.150',
         },
         'arc_151_animal_welfare_organizations' : {
@@ -2514,7 +2610,7 @@ export default {
             'title'     : 'Episcopal Diocese of Long Island publications ARC.185',
         },
         'arc_186_lott' : {
-            'timestamp' : 1560460809,
+            'timestamp' : 1611242409,
             'title'     : 'Lott family papers ARC.186',
         },
         'arc_187_king' : {
@@ -2554,7 +2650,7 @@ export default {
             'title'     : 'Brooklyn, Manhattan, and Long Island lantern slide collection ARC.195',
         },
         'arc_196_charles_ditmas' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611243610,
             'title'     : 'Charles A. Ditmas collection ARC.196',
         },
         'arc_197_pierrepont_photographs' : {
@@ -2606,7 +2702,7 @@ export default {
             'title'     : 'Bartlett family papers ARC.211',
         },
         'arc_212_plymouth_beecher' : {
-            'timestamp' : 1564670113,
+            'timestamp' : 1611243610,
             'title'     : 'Plymouth Church of the Pilgrims and Henry Ward Beecher collection ARC.212',
         },
         'arc_213_watson' : {
@@ -2786,11 +2882,11 @@ export default {
             'title'     : 'Jarvis S. Wight medical scrapbook ARC.256',
         },
         'arc_257_baxter_journals' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611242409,
             'title'     : 'John and Garret S. Baxter journals ARC.257',
         },
         'arc_258_community_newspaper_collection' : {
-            'timestamp' : 1538578565,
+            'timestamp' : 1614792008,
             'title'     : 'Brooklyn Historical Society newspaper collection ARC.258',
         },
         'arc_259_brooklyn_daily_eagle' : {
@@ -2870,7 +2966,7 @@ export default {
             'title'     : 'Francis Skillman papers ARC.280',
         },
         'arc_281_anita_lott_cruikshank' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611244211,
             'title'     : 'Anita Lott Cruikshank collection of Kings County, N.Y., family papers ARC.281',
         },
         'arc_282_luquer_payne' : {
@@ -2886,7 +2982,7 @@ export default {
             'title'     : 'Conkling family papers ARC.284',
         },
         'arc_285_martense_family' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1610556309,
             'title'     : 'Martense family papers ARC.285',
         },
         'arc_286_epher_whitaker' : {
@@ -2922,7 +3018,7 @@ export default {
             'title'     : '128 Pierrepont Street building architectural drawings ARC.302',
         },
         'arc_304_junior' : {
-            'timestamp' : 1576003207,
+            'timestamp' : 1610133011,
             'title'     : 'Junior League of Brooklyn records ARC.304',
         },
         'arc_305_caltagirone' : {
@@ -2930,7 +3026,7 @@ export default {
             'title'     : 'Caltagirone family papers and photographs ARC.305',
         },
         'arc_306_ortner' : {
-            'timestamp' : 1562087410,
+            'timestamp' : 1610131508,
             'title'     : 'Everett and Evelyn Ortner papers and photographs ARC.306',
         },
         'arc_307_urbahn' : {
@@ -2986,7 +3082,7 @@ export default {
             'title'     : 'Roll of assessment for the grading and paving of Flatbush Avenue 1973.089',
         },
         'arms_1973_090_samuel_john_atlee' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1603484108,
             'title'     : 'Samuel John Atlee journal on the Battle of Long Island 1973.090',
         },
         'arms_1973_094_richard_hewlett' : {
@@ -3270,7 +3366,7 @@ export default {
             'title'     : 'Michael C. Heenan collection 1973.256',
         },
         'arms_1973_258_harriet_stryker_rhoda' : {
-            'timestamp' : 1429809049,
+            'timestamp' : 1611075611,
             'title'     : 'Harriet Stryker-Rodda typescript of Peter Wyckoff recollections 1973.258',
         },
         'arms_1973_259_classon_avenue_presbyterian' : {
@@ -3402,7 +3498,7 @@ export default {
             'title'     : 'Edmond Andros judgment concerning John Underhill estate 1974.004',
         },
         'arms_1974_005_seaman_family' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611168008,
             'title'     : 'Seaman family papers 1974.005',
         },
         'arms_1974_006_jacob_isaac_rapelye' : {
@@ -3450,12 +3546,16 @@ export default {
             'title'     : 'John MacKay scrapbook 1974.035',
         },
         'arms_1974_037_mixed_manuscripts' : {
-            'timestamp' : 1560459907,
+            'timestamp' : 1611166809,
             'title'     : 'Brooklyn Historical Society Mixed manuscript collection 1974.037',
         },
         'arms_1974_038_march_middagh_sands' : {
             'timestamp' : 1390594418,
             'title'     : 'March, Middagh, and Sands families property records 1974.038',
+        },
+        'arms_1974_044_hubbard' : {
+            'timestamp' : 1611076508,
+            'title'     : 'Hubbard family papers 1974.044',
         },
         'arms_1974_049_hamilton_delancey' : {
             'timestamp' : 1390594418,
@@ -3502,8 +3602,8 @@ export default {
             'title'     : 'H. Randolph Lever papers 1974.102',
         },
         'arms_1974_108_bassett' : {
-            'timestamp' : 1390594418,
-            'title'     : 'Susannah Bassett                  Book of Common Prayer 1974.108',
+            'timestamp' : 1610555411,
+            'title'     : 'Susannah Bassett Book of Common Prayer 1974.108',
         },
         'arms_1974_109_a_vliet' : {
             'timestamp' : 1390594418,
@@ -3558,7 +3658,7 @@ export default {
             'title'     : 'New York City Department of Parks records on Prospect Park 1974.136',
         },
         'arms_1974_137_cortelyou' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611076210,
             'title'     : 'Isaac Cortelyou family notebook 1974.137',
         },
         'arms_1974_141_conover_cowenhoven' : {
@@ -3614,7 +3714,7 @@ export default {
             'title'     : 'Rutgert Van Brunt survey map of Brooklyn lot at ferry 1974.164',
         },
         'arms_1974_168_gertrude_vanderbilt' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1610741412,
             'title'     : 'Gertrude Lefferts Vanderbilt collection 1974.168',
         },
         'arms_1974_170_gowanus_bridge' : {
@@ -3634,7 +3734,7 @@ export default {
             'title'     : 'Kings County tax assessment 1974.178',
         },
         'arms_1974_179_middagh_family' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611168008,
             'title'     : 'Middagh family papers 1974.179',
         },
         'arms_1974_184_denman' : {
@@ -3742,7 +3842,7 @@ export default {
             'title'     : 'Militia of Gravesend roll 1974.252',
         },
         'arms_1974_253_haviland' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1610555109,
             'title'     : 'Jack Harris letter to Robert Haviland 1974.253',
         },
         'arms_1974_257_brush' : {
@@ -4014,7 +4114,7 @@ export default {
             'title'     : 'Brooklyn Prohibition collection 1977.127',
         },
         'arms_1977_129_montgomerie' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611076210,
             'title'     : 'John Montgomerie broadside 1977.129',
         },
         'arms_1977_130_greenpoint_ymca' : {
@@ -4194,7 +4294,7 @@ export default {
             'title'     : 'Julius Robinson beneficiary membership certificate from the Knights of Honor Lodge No. 2115 1977.218',
         },
         'arms_1977_219_marquand' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611167709,
             'title'     : 'Frederick and Hetty Marquand scrapbook 1977.219',
         },
         'arms_1977_220_mackey' : {
@@ -4390,7 +4490,7 @@ export default {
             'title'     : 'Alexander Hamilton Bishop papers 1977.316',
         },
         'arms_1977_321_brooklyn_correspondence_manuscripts' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1610742013,
             'title'     : 'Brooklyn correspondence and miscellaneous manuscripts collection 1977.321',
         },
         'arms_1977_323_north' : {
@@ -4438,7 +4538,7 @@ export default {
             'title'     : 'Wyckoff House collection 1977.350',
         },
         'arms_1977_351_zunser' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611167108,
             'title'     : 'Helen Zunser Wortis collection 1977.351',
         },
         'arms_1977_354_prince' : {
@@ -4662,7 +4762,7 @@ export default {
             'title'     : 'James Abeel account sheet 1977.444',
         },
         'arms_1977_447_brigantine_sivan' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1610556309,
             'title'     : 'Brigantine Sivan bill of lading 1977.447',
         },
         'arms_1977_448_queens_county_courthouse' : {
@@ -4862,7 +4962,7 @@ export default {
             'title'     : 'Thomas and William H. Smith papers 1977.546',
         },
         'arms_1977_548_jackson' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1610553910,
             'title'     : 'Samuel Jackson will 1977.548',
         },
         'arms_1977_549_silliman' : {
@@ -4946,8 +5046,8 @@ export default {
             'title'     : 'Peter Wyckoff historical notes 1977.582',
         },
         'arms_1977_583_ditmars_duryee' : {
-            'timestamp' : 1390594418,
-            'title'     : 'John Ditmars and Jacob Duryee slave bill of sale 1977.583',
+            'timestamp' : 1610552108,
+            'title'     : 'John Ditmars and Jacob Duryee enslaved woman bill of sale 1977.583',
         },
         'arms_1977_584_denton' : {
             'timestamp' : 1390594418,
@@ -5150,7 +5250,7 @@ export default {
             'title'     : 'Newbold Morris papers 1978.001',
         },
         'arms_1978_002_william_wyckoff' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611241508,
             'title'     : 'William F. Wyckoff papers 1978.002',
         },
         'arms_1978_004_notman' : {
@@ -5174,8 +5274,8 @@ export default {
             'title'     : '959 Park Place Tenants\' Association records 1978.009',
         },
         'arms_1978_010_slave_bills_of_sale' : {
-            'timestamp' : 1390594418,
-            'title'     : 'Queens County, N.Y. slave bills of sale 1978.010',
+            'timestamp' : 1610551810,
+            'title'     : 'Queens County, N.Y. enslaved people bills of sale 1978.010',
         },
         'arms_1978_012_jackson' : {
             'timestamp' : 1390594418,
@@ -5333,10 +5433,6 @@ export default {
             'timestamp' : 1390594418,
             'title'     : 'Boyce family papers 1978.071',
         },
-        'arms_1978_075_eason ' : {
-            'timestamp' : 1390594418,
-            'title'     : 'Lanier Eason letter 1978.075',
-        },
         'arms_1978_079_department_of_parks' : {
             'timestamp' : 1390594418,
             'title'     : 'New York City Department of Parks reports 1978.079',
@@ -5470,7 +5566,7 @@ export default {
             'title'     : 'Lemuel Shattuck collection of White family papers 1978.136',
         },
         'arms_1978_137_richetta_randolph_wallace' : {
-            'timestamp' : 1430231110,
+            'timestamp' : 1595364010,
             'title'     : 'Richetta Randolph Wallace papers 1978.137',
         },
         'arms_1978_138_wallabout_park' : {
@@ -5514,7 +5610,7 @@ export default {
             'title'     : 'Rutgert A. Van Brunt estate papers 1978.156',
         },
         'arms_1978_157_van_brunt' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611076809,
             'title'     : 'Teunis G. Bergen collection of Van Brunt family genealogy papers 1978.157',
         },
         'arms_1978_158_property_tax_assessments' : {
@@ -5570,7 +5666,7 @@ export default {
             'title'     : 'South Side Signal vital records 1978.184',
         },
         'arms_1978_185_southold_register_book' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611072909,
             'title'     : 'Southold, N.Y. register book 1978.185',
         },
         'arms_1978_187_baker_osman' : {
@@ -5762,7 +5858,7 @@ export default {
             'title'     : 'Gertrude Vanderbilt-Smith diary 1981.010',
         },
         'arms_1981_012_kings_county_census_1786' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1610741712,
             'title'     : 'Kings County census of 1786 1981.012',
         },
         'arms_1981_014_gill' : {
@@ -6138,7 +6234,7 @@ export default {
             'title'     : 'Church of the Pilgrims collection 1986.018',
         },
         'arms_1986_019_plymouth_church' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611168910,
             'title'     : 'Plymouth Church publications and ephemera 1986.019',
         },
         'arms_1986_020_south_congregational_church' : {
@@ -6166,7 +6262,7 @@ export default {
             'title'     : 'St. Ann\'s Church collection 1986.026',
         },
         'arms_1986_027_methodist_churches' : {
-            'timestamp' : 1490889908,
+            'timestamp' : 1611241810,
             'title'     : 'Methodist Churches of Brooklyn collection 1986.027',
         },
         'arms_1986_030_unitarian_churches' : {
@@ -6234,7 +6330,7 @@ export default {
             'title'     : 'Bath Beach and Bay Ridge property maps and advertisements 1986.052',
         },
         'arms_1986_054_ditmas' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611075309,
             'title'     : 'Ditmas family papers 1986.054',
         },
         'arms_1986_055_donin' : {
@@ -6625,10 +6721,6 @@ export default {
             'timestamp' : 1543865412,
             'title'     : 'Bommer family collection 1992.033',
         },
-        'arms_1993_001_aids-brooklyn' : {
-            'timestamp' : 1495050910,
-            'title'     : 'AIDS/Brooklyn Oral History Project collection 1993.001',
-        },
         'arms_1993_004_society_samoset' : {
             'timestamp' : 1390594418,
             'title'     : 'Society of Samoset, Inc. records 1993.004',
@@ -6674,7 +6766,7 @@ export default {
             'title'     : 'Emily Hernandez Calamari collection 1994.011',
         },
         'arms_1994_013_cranston' : {
-            'timestamp' : 1429809049,
+            'timestamp' : 1609271107,
             'title'     : 'Cranston family papers and photographs 1994.013',
         },
         'arms_1994_015_brooklyn_bridge_centennial' : {
@@ -6921,10 +7013,6 @@ export default {
             'timestamp' : 1390594418,
             'title'     : 'Liman collection of 19th century McLoughlin Brothers illustrated children books 2007.002',
         },
-        'arms_2007_005_swezey' : {
-            'timestamp' : 1390594418,
-            'title'     : 'Kenneth M. Swezey papers 2007.005',
-        },
         'arms_2007_008_gowanus_street_openings' : {
             'timestamp' : 1390594418,
             'title'     : 'Gowanus street opening invoices 2007.008',
@@ -7018,7 +7106,7 @@ export default {
             'title'     : 'Order of the Amaranth Brooklyn Court No. 4 records 2008.023',
         },
         'arms_2008_030_bedstuy_restoration' : {
-            'timestamp' : 1495474809,
+            'timestamp' : 1597157110,
             'title'     : 'Bedford Stuyvesant Restoration Corporation oral histories 2008.030',
         },
         'arms_2008_037_garre_blackford' : {
@@ -7026,7 +7114,7 @@ export default {
             'title'     : 'David C. Garre collection of Eugene G. Blackford papers 2008.037',
         },
         'arms_2008_038_nakdimen' : {
-            'timestamp' : 1449081910,
+            'timestamp' : 1611241211,
             'title'     : 'Linda Nakdimen papers and Henry Ward Beecher Anniversary photographs 2008.038',
         },
         'arms_2008_039_granbery_barr' : {
@@ -7058,7 +7146,7 @@ export default {
             'title'     : 'Lafayette Avenue Presbyterian Church records 2009.011',
         },
         'arms_2009_012_bennett_civil_war' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1611243312,
             'title'     : 'Bennett family collection of Civil War correspondence and other material 2009.012',
         },
         'arms_2009_014_suba' : {
@@ -7086,7 +7174,7 @@ export default {
             'title'     : 'Grand Army of the Republic, Department of New York, Gen. James B. McPherson Post 614 personal war sketches 2011.011',
         },
         'arms_2011_019' : {
-            'timestamp' : 1559573709,
+            'timestamp' : 1615234809,
             'title'     : 'Crossing Borders, Bridging Generations oral history collection 2011.019',
         },
         'arms_2011_024_bicentennial_medals' : {
@@ -7094,7 +7182,7 @@ export default {
             'title'     : 'Brooklyn Bicentennial Commission medals 2011.024',
         },
         'arms_2012_002_bhfam' : {
-            'timestamp' : 1449852908,
+            'timestamp' : 1609279209,
             'title'     : 'Brooklyn Home for Aged Men records 2012.002',
         },
         'arms_2012_004_toedteberg_bookplates' : {
@@ -7114,7 +7202,7 @@ export default {
             'title'     : 'William R. Coleman collection of New York City waterfront pollution slides 2012.017',
         },
         'arms_2012_018_lewandowski' : {
-            'timestamp' : 1447527009,
+            'timestamp' : 1609350907,
             'title'     : 'Matthew Lewandowski jewelry dies and papers 2012.018',
         },
         'arms_2013_002_elias_lewis' : {
@@ -7138,7 +7226,7 @@ export default {
             'title'     : 'Marshall collection of McLoughlin Brothers / Robert A. Graef illustrated children\'s books 2013.009',
         },
         'arms_2013_010_spafford_ackerly' : {
-            'timestamp' : 1457985910,
+            'timestamp' : 1609352108,
             'title'     : 'S. Spafford Ackerly papers 2013.010',
         },
         'arms_2013_015_corp_counsel' : {
@@ -7162,7 +7250,7 @@ export default {
             'title'     : 'Brody family papers 2014.005',
         },
         'arms_2014_006_lich_son' : {
-            'timestamp' : 1436803508,
+            'timestamp' : 1610035808,
             'title'     : 'Long Island College Hospital School of Nursing Alumnae Association records 2014.006',
         },
         'arms_2014_008_kathy_hayes' : {
@@ -7190,11 +7278,11 @@ export default {
             'title'     : 'Frederick and Ann Dunekack family photographs and property records 2014.017',
         },
         'arms_2014_019_packer' : {
-            'timestamp' : 1580934908,
+            'timestamp' : 1613766309,
             'title'     : 'The Packer Collegiate Institute records 2014.019',
         },
         'arms_2014_020_joan_millman' : {
-            'timestamp' : 1432759208,
+            'timestamp' : 1610120109,
             'title'     : 'Joan L. Millman papers 2014.020',
         },
         'arms_2014_021_wilkens_schrader' : {
@@ -7208,10 +7296,6 @@ export default {
         'arms_2015_001_mccarroll' : {
             'timestamp' : 1429809049,
             'title'     : 'Joseph A. McCarroll papers 2015.001',
-        },
-        'arms_2015_003_city_of_new_york_fire_department' : {
-            'timestamp' : 1447104308,
-            'title'     : 'City of New York Fire Department 31st Battalion fire record journal 2015.003',
         },
         'arms_2015_004_nagel' : {
             'timestamp' : 1482163807,
@@ -7280,6 +7364,194 @@ export default {
         'arms_2016_031_meyer' : {
             'timestamp' : 1541536211,
             'title'     : 'Emma Doris Meyer journals 2016.031',
+        },
+        'bcms_0001' : {
+            'timestamp' : 1612288809,
+            'title'     : 'Betsy Head Farm Garden Photo Collection BCMS.0001',
+        },
+        'bcms_0004' : {
+            'timestamp' : 1624550106,
+            'title'     : 'E. E. Rutter Photograph Collection BCMS.0004',
+        },
+        'bcms_0005' : {
+            'timestamp' : 1620756910,
+            'title'     : 'Subway Station Photographs Collection BCMS.0005',
+        },
+        'bcms_0006' : {
+            'timestamp' : 1619643008,
+            'title'     : 'Terrence J. Allen Prospect Park Collection BCMS.0006',
+        },
+        'bcms_0010' : {
+            'timestamp' : 1611679509,
+            'title'     : 'Brooklyn Bridge Postcard Collection BCMS.0010',
+        },
+        'bcms_0011' : {
+            'timestamp' : 1620939307,
+            'title'     : 'Rioghan Kirchner Civil Rights in Brooklyn Collection BCMS.0011',
+        },
+        'bcms_0014' : {
+            'timestamp' : 1610562008,
+            'title'     : 'Captain Freeman H. Smith Family Letters BCMS.0014',
+        },
+        'bcms_0015' : {
+            'timestamp' : 1619617508,
+            'title'     : 'Ina Clausen Papers BCMS.0015',
+        },
+        'bcms_0016' : {
+            'timestamp' : 1616165110,
+            'title'     : 'Burton Turkus Collection BCMS.0016',
+        },
+        'bcms_0017' : {
+            'timestamp' : 1611957611,
+            'title'     : 'Emanuel Celler Collection BCMS.0017',
+        },
+        'bcms_0018' : {
+            'timestamp' : 1619616907,
+            'title'     : 'Gertrude Hoffmann collection BCMS.0018',
+        },
+        'bcms_0019' : {
+            'timestamp' : 1612563307,
+            'title'     : 'John Thatcher Collection BCMS.0019',
+        },
+        'bcms_0020' : {
+            'timestamp' : 1612210508,
+            'title'     : 'Laura C. Holloway Letters BCMS.0020',
+        },
+        'bcms_0021' : {
+            'timestamp' : 1623876908,
+            'title'     : 'Letters of James W. Vanderhoef BCMS.0021',
+        },
+        'bcms_0022' : {
+            'timestamp' : 1619637907,
+            'title'     : 'Rainone-Morra Family Papers BCMS.0022',
+        },
+        'bcms_0024' : {
+            'timestamp' : 1611681008,
+            'title'     : 'Carlisle Indian: The Newsletter of the Carlisle Club BCMS.0024',
+        },
+        'bcms_0027' : {
+            'timestamp' : 1619619310,
+            'title'     : 'Linewaiters\' Gazette Collection BCMS.0027',
+        },
+        'bcms_0029' : {
+            'timestamp' : 1611693608,
+            'title'     : 'Class Photograph Collection BCMS.0029',
+        },
+        'bcms_0030' : {
+            'timestamp' : 1615487707,
+            'title'     : 'Brooklyn High School Newspaper Collection BCMS.0030',
+        },
+        'bcms_0033' : {
+            'timestamp' : 1611690908,
+            'title'     : 'Brooklyn Film and Arts Festival Collection BCMS.0033',
+        },
+        'bcms_0035' : {
+            'timestamp' : 1619624108,
+            'title'     : 'Brooklyn Heights Association Records BCMS.0035',
+        },
+        'bcms_0037' : {
+            'timestamp' : 1619644509,
+            'title'     : 'The Froebel Society Records: Brooklyn Chapter BCMS.0037',
+        },
+        'bcms_0038' : {
+            'timestamp' : 1610561708,
+            'title'     : 'Brooklyn Badges Collection BCMS.0038',
+        },
+        'bcms_0039' : {
+            'timestamp' : 1623867007,
+            'title'     : 'Records of the Brooklyn Council for Social Planning BCMS.0039',
+        },
+        'bcms_0041' : {
+            'timestamp' : 1619819108,
+            'title'     : 'Brooklyn Playbills and Programs Collection BCMS.0041',
+        },
+        'bcms_0042' : {
+            'timestamp' : 1619615709,
+            'title'     : 'Bella Gordon P.S. 64 Collection BCMS.0042',
+        },
+        'bcms_0043' : {
+            'timestamp' : 1612303808,
+            'title'     : 'Bedford-Stuyvesant Youth in Action Collection BCMS.0043',
+        },
+        'bcms_0044' : {
+            'timestamp' : 1619631610,
+            'title'     : 'Brownsville and East New York Photographs, 1958-1965 BCMS.0044',
+        },
+        'bcms_0045' : {
+            'timestamp' : 1613596809,
+            'title'     : 'Montauk Club Collection BCMS.0045',
+        },
+        'bcms_0046' : {
+            'timestamp' : 1610475911,
+            'title'     : 'Birth Records of Catherine Ling, Midwife BCMS.0046',
+        },
+        'bcms_0047' : {
+            'timestamp' : 1619618708,
+            'title'     : 'Kings County Historic Records Microfilm Collection BCMS.0047',
+        },
+        'bcms_0048' : {
+            'timestamp' : 1619622010,
+            'title'     : 'Jesús Colón Collection BCMS.0048',
+        },
+        'bcms_0050' : {
+            'timestamp' : 1619637609,
+            'title'     : 'Martha Gayle Collection BCMS.0050',
+        },
+        'bcms_0051' : {
+            'timestamp' : 1619617208,
+            'title'     : 'Henry Stillwell Clapp Collection BCMS.0051',
+        },
+        'bcms_0052' : {
+            'timestamp' : 1610562612,
+            'title'     : 'Al Todres Brooklyn Dodgers Collection BCMS.0052',
+        },
+        'bcms_0053' : {
+            'timestamp' : 1623091511,
+            'title'     : 'Larry Racioppo Collection BCMS.0053',
+        },
+        'bcms_0061' : {
+            'timestamp' : 1613495420,
+            'title'     : 'Raymond V. Ingersoll Collection BCMS.0061',
+        },
+        'bcms_0062' : {
+            'timestamp' : 1610475610,
+            'title'     : 'Greenpoint Petroleum Remediation Project (GPRP) Records BCMS.0062',
+        },
+        'bcms_0063' : {
+            'timestamp' : 1610562309,
+            'title'     : 'Benedict Family Collection BCMS.0063',
+        },
+        'bcms_0065' : {
+            'timestamp' : 1610562914,
+            'title'     : 'Stanley Person Baseball Collection BCMS.0065',
+        },
+        'bcms_0067' : {
+            'timestamp' : 1610561110,
+            'title'     : 'Norman Finkelstein Collection BCMS.0067',
+        },
+        'bcms_0076' : {
+            'timestamp' : 1612281609,
+            'title'     : 'Walter Thorn Papers BCMS.0076',
+        },
+        'bcms_0077' : {
+            'timestamp' : 1613762408,
+            'title'     : 'Hattie Carthan Collection BCMS.0077',
+        },
+        'bcms_0078' : {
+            'timestamp' : 1620834609,
+            'title'     : 'Major Owens Collection BCMS.0078',
+        },
+        'bcms_0079' : {
+            'timestamp' : 1624550707,
+            'title'     : 'Robin Ketchum Prospect Heights Community Organizing Collection BCMS.0079',
+        },
+        'bcms_0080' : {
+            'timestamp' : 1624050606,
+            'title'     : 'Kasper Family Collection BCMS.0080',
+        },
+        'bcms_034' : {
+            'timestamp' : 1619615409,
+            'title'     : 'African Methodist Episcopal (A.M.E.) Zion Church Collection BCMS.0034',
         },
         'v1974_003_praeger_departments_parks' : {
             'timestamp' : 1390594418,
@@ -8019,10 +8291,6 @@ export default {
             'timestamp' : 1497621308,
             'title'     : '0 to 9 Archive MSS.026',
         },
-        'Turner' : {
-            'timestamp' : 1561484413,
-            'title'     : 'Tommy Turner Film Collection MSS.099',
-        },
         'acker' : {
             'timestamp' : 1582574409,
             'title'     : 'Kathy Acker Notebooks MSS.434',
@@ -8048,8 +8316,8 @@ export default {
             'title'     : 'An American Family DVD Collection MSS 210',
         },
         'amfar' : {
-            'timestamp' : 1444063862,
-            'title'     : 'Candida Scott Piel Papers and AmFAR Collection MSS 142',
+            'timestamp' : 1604522709,
+            'title'     : 'Candida Scott Piel Papers and AmFAR Collection MSS.142',
         },
         'amitin' : {
             'timestamp' : 1510171210,
@@ -8128,7 +8396,7 @@ export default {
             'title'     : 'Blackout Arts Collective Archive MSS.379',
         },
         'blacksun' : {
-            'timestamp' : 1494955508,
+            'timestamp' : 1596225308,
             'title'     : 'Black Sun Archive MSS.006',
         },
         'blanchon' : {
@@ -8136,8 +8404,8 @@ export default {
             'title'     : 'Robert Blanchon Papers and Collection MSS.220',
         },
         'bloch' : {
-            'timestamp' : 1455135011,
-            'title'     : 'Mark Bloch Postal Art Network (PAN) Archive MSS 170',
+            'timestamp' : 1604953210,
+            'title'     : 'Mark Bloch Postal Art Network (PAN) Archive MSS.170',
         },
         'blotcher' : {
             'timestamp' : 1583525410,
@@ -8270,10 +8538,6 @@ export default {
         'davidovich' : {
             'timestamp' : 1503691588,
             'title'     : 'Jaime Davidovich Collection MSS.155',
-        },
-        'dean' : {
-            'timestamp' : 1499786709,
-            'title'     : 'Joe Campbell Collection of Dorothy Dean Letters MSS.222',
         },
         'demoura' : {
             'timestamp' : 1456841110,
@@ -8411,10 +8675,6 @@ export default {
             'timestamp' : 1535552713,
             'title'     : 'Nancy Fales Garrett Papers MSS 051',
         },
-        'gaycable' : {
-            'timestamp' : 1591747811,
-            'title'     : 'Gay Cable Network Archives MSS.231',
-        },
         'gaypulp' : {
             'timestamp' : 1429809049,
             'title'     : 'Gay and Lesbian Pulp Fiction Collection MSS 116',
@@ -8448,7 +8708,7 @@ export default {
             'title'     : 'Godzilla Asian American Arts Network Archive MSS 166',
         },
         'goldstein' : {
-            'timestamp' : 1575390907,
+            'timestamp' : 1607353510,
             'title'     : 'Malcolm Goldstein Papers MSS.350',
         },
         'goode' : {
@@ -8528,7 +8788,7 @@ export default {
             'title'     : 'Institute on the Arts and Civic Dialogue Archive MSS.127',
         },
         'ibm' : {
-            'timestamp' : 1429809049,
+            'timestamp' : 1614221096,
             'title'     : 'IBM European Business Archive MSS 126',
         },
         'indiana' : {
@@ -8550,10 +8810,6 @@ export default {
         'jps' : {
             'timestamp' : 1435257610,
             'title'     : 'Harold and Joyce Pomeroy Schwartz Public Art Archive MSS 171',
-        },
-        'judson' : {
-            'timestamp' : 1580484608,
-            'title'     : 'Judson Memorial Church Archive MSS.094',
         },
         'judsonoral' : {
             'timestamp' : 1429809049,
@@ -8684,11 +8940,11 @@ export default {
             'title'     : 'The Mix Collection MSS.143',
         },
         'montano' : {
-            'timestamp' : 1565717414,
+            'timestamp' : 1604603710,
             'title'     : 'Linda Mary Montano Papers MSS.386',
         },
         'moore' : {
-            'timestamp' : 1557424814,
+            'timestamp' : 1600979107,
             'title'     : 'Frank Moore Papers MSS.135',
         },
         'mrlady' : {
@@ -8707,6 +8963,10 @@ export default {
             'timestamp' : 1533842407,
             'title'     : 'Maxwell Aley Papers MSS 066',
         },
+        'mss_067' : {
+            'timestamp' : 1615406409,
+            'title'     : 'Elmer Holmes Bobst Collection MSS.067',
+        },
         'mss_069' : {
             'timestamp' : 1589307909,
             'title'     : 'Karen Swenson Papers MSS.069',
@@ -8724,12 +8984,20 @@ export default {
             'title'     : 'Denise Duhamel Collection MSS 083',
         },
         'mss_090' : {
-            'timestamp' : 1501009210,
+            'timestamp' : 1622057709,
             'title'     : 'Neil Polen Photographs MSS.090',
         },
+        'mss_094' : {
+            'timestamp' : 1615839308,
+            'title'     : 'Judson Memorial Church Archive MSS.094',
+        },
+        'mss_102' : {
+            'timestamp' : 1624291209,
+            'title'     : 'Martin Wong Papers MSS.102',
+        },
         'mss_103' : {
-            'timestamp' : 1465407613,
-            'title'     : 'Richard W. Rychtarik/Hart Crane Papers MSS 103',
+            'timestamp' : 1619448013,
+            'title'     : 'Richard W. Rychtarik/Hart Crane Papers MSS.103',
         },
         'mss_104' : {
             'timestamp' : 1532015710,
@@ -8759,6 +9027,10 @@ export default {
             'timestamp' : 1532015411,
             'title'     : 'Betty Fussell Papers MSS 160',
         },
+        'mss_177' : {
+            'timestamp' : 1619448013,
+            'title'     : 'Ed Smith Papers MSS.177',
+        },
         'mss_187' : {
             'timestamp' : 1533071110,
             'title'     : 'Holly Anderson Papers MSS 187',
@@ -8780,20 +9052,36 @@ export default {
             'title'     : 'Hal Sirowitz Papers MSS 196',
         },
         'mss_199' : {
-            'timestamp' : 1535469910,
+            'timestamp' : 1624477807,
             'title'     : 'Peter Lewis Allen Collection of Safe Sex Pamphlets MSS.199',
         },
         'mss_200' : {
             'timestamp' : 1513288812,
             'title'     : 'Shael Shapiro Papers MSS.200',
         },
+        'mss_203' : {
+            'timestamp' : 1614700809,
+            'title'     : 'Amos Poe Papers MSS.203',
+        },
         'mss_204' : {
             'timestamp' : 1539361209,
             'title'     : 'Elaine Equi and Jerome Sala Papers MSS.204',
         },
+        'mss_221' : {
+            'timestamp' : 1624307707,
+            'title'     : 'Sylvère Lotringer Papers and Semiotext(e) Archive MSS.221',
+        },
+        'mss_222' : {
+            'timestamp' : 1619810109,
+            'title'     : 'Joe Campbell Collection of Dorothy Dean Letters MSS.222',
+        },
         'mss_224' : {
             'timestamp' : 1540477812,
             'title'     : 'Patricia Dix Papers MSS 224',
+        },
+        'mss_231' : {
+            'timestamp' : 1619448013,
+            'title'     : 'Gay Cable Network Archives MSS.231',
         },
         'mss_235' : {
             'timestamp' : 1522872910,
@@ -8810,6 +9098,10 @@ export default {
         'mss_265' : {
             'timestamp' : 1533070810,
             'title'     : 'Doris Tobias Papers MSS 265',
+        },
+        'mss_276' : {
+            'timestamp' : 1619104509,
+            'title'     : 'The Paper Tiger Television Archive MSS.276',
         },
         'mss_282' : {
             'timestamp' : 1535469910,
@@ -8851,6 +9143,10 @@ export default {
             'timestamp' : 1535469910,
             'title'     : 'Kezia Snyder Papers MSS.324',
         },
+        'mss_334' : {
+            'timestamp' : 1619448608,
+            'title'     : 'Elliot Glass and Ken Marsh Video Collection MSS.334',
+        },
         'mss_338' : {
             'timestamp' : 1545146714,
             'title'     : 'Joseph Nechvatal Papers MSS.338',
@@ -8858,6 +9154,10 @@ export default {
         'mss_352' : {
             'timestamp' : 1499788811,
             'title'     : 'David Giannini and Theodore Enslin Correspondence MSS.352',
+        },
+        'mss_356' : {
+            'timestamp' : 1614009008,
+            'title'     : 'Jonathan Alexander Collection of Medieval Manuscripts MSS.356',
         },
         'mss_358' : {
             'timestamp' : 1498231207,
@@ -8868,15 +9168,23 @@ export default {
             'title'     : 'Michael Lally Papers MSS.361',
         },
         'mss_368' : {
-            'timestamp' : 1572018311,
+            'timestamp' : 1618579209,
             'title'     : 'Lindseth Collection of Alice in Wonderland Ephemera MSS.368',
         },
         'mss_372' : {
             'timestamp' : 1538493610,
             'title'     : 'Fisher and Levy Archives MSS 372',
         },
+        'mss_374' : {
+            'timestamp' : 1610038508,
+            'title'     : 'Fales Zine Collection 330',
+        },
+        'mss_381' : {
+            'timestamp' : 1616012407,
+            'title'     : 'Shu Lea Cheang Papers MSS.381',
+        },
         'mss_385' : {
-            'timestamp' : 1546440610,
+            'timestamp' : 1614786608,
             'title'     : 'Tuli Kupferberg and Sylvia Topp Papers MSS.385',
         },
         'mss_393' : {
@@ -8894,6 +9202,14 @@ export default {
         'mss_405' : {
             'timestamp' : 1574366107,
             'title'     : 'Larry Polansky Papers MSS.405',
+        },
+        'mss_407' : {
+            'timestamp' : 1609963811,
+            'title'     : 'Alva Rogers Papers MSS.407',
+        },
+        'mss_411' : {
+            'timestamp' : 1621618508,
+            'title'     : 'John Ferrone Papers MSS.411',
         },
         'mss_413' : {
             'timestamp' : 1497282907,
@@ -8918,6 +9234,14 @@ export default {
         'mss_426' : {
             'timestamp' : 1566843316,
             'title'     : 'Gay USA Collection MSS.426',
+        },
+        'mss_431' : {
+            'timestamp' : 1613078108,
+            'title'     : 'Charles Franklin Peters Photographs MSS.431',
+        },
+        'mss_439' : {
+            'timestamp' : 1620915907,
+            'title'     : 'Tomie Arai and Legan Wong Papers MSS.439',
         },
         'mss_440' : {
             'timestamp' : 1515530109,
@@ -8996,7 +9320,7 @@ export default {
             'title'     : 'Julie Covello Papers MSS.479',
         },
         'mss_480' : {
-            'timestamp' : 1513605057,
+            'timestamp' : 1599230107,
             'title'     : 'Julie Kathryn Franco I Am Snow Angel Papers MSS.480',
         },
         'mss_483' : {
@@ -9020,7 +9344,7 @@ export default {
             'title'     : 'Alysa Hornick Collection of Clubbing Ephemera MSS.489',
         },
         'mss_492' : {
-            'timestamp' : 1548185115,
+            'timestamp' : 1624479308,
             'title'     : 'Atif Toor Collection on the South Asian Lesbian and Gay Association (SALGA) MSS.492',
         },
         'mss_494' : {
@@ -9032,7 +9356,7 @@ export default {
             'title'     : 'Commercial Closet, Ad Respect, and Michael Wilke LGBT Advertising Archive MSS.495',
         },
         'mss_496' : {
-            'timestamp' : 1592424609,
+            'timestamp' : 1614798009,
             'title'     : 'New York University Collection of Contemporary Composers\' Websites MSS.496',
         },
         'mss_497' : {
@@ -9067,6 +9391,18 @@ export default {
             'timestamp' : 1513366211,
             'title'     : 'New York Transfer Company Records MSS.507',
         },
+        'mss_509' : {
+            'timestamp' : 1610123410,
+            'title'     : 'Fales Library Collection of Artwork and Memorabilia MSS.509',
+        },
+        'mss_510' : {
+            'timestamp' : 1610723413,
+            'title'     : 'DeCoursey Fales Art Collection MSS.510',
+        },
+        'mss_511' : {
+            'timestamp' : 1610123410,
+            'title'     : 'Hugh Steers Papers MSS.511',
+        },
         'mss_512' : {
             'timestamp' : 1510694111,
             'title'     : 'David Pollack Collection of Cereal Boxes MSS.512',
@@ -9076,7 +9412,7 @@ export default {
             'title'     : 'Ursule Molinaro Papers MSS.514',
         },
         'mss_515' : {
-            'timestamp' : 1532029510,
+            'timestamp' : 1611090909,
             'title'     : 'New York Foundation For the Arts (NYFA) Records MSS.515',
         },
         'mss_516' : {
@@ -9112,7 +9448,7 @@ export default {
             'title'     : 'Gina Johnson Riot Grrrl Zines MSS.524',
         },
         'mss_525' : {
-            'timestamp' : 1559839818,
+            'timestamp' : 1623183309,
             'title'     : 'Harry Kondoleon Papers MSS.525',
         },
         'mss_526' : {
@@ -9131,16 +9467,20 @@ export default {
             'timestamp' : 1526671809,
             'title'     : 'Joseph Bendich Collection MSS.534',
         },
+        'mss_535' : {
+            'timestamp' : 1621542907,
+            'title'     : 'Homer L. Bartlett Medieval Manuscript Fragments MSS.535',
+        },
         'mss_540' : {
             'timestamp' : 1584988208,
             'title'     : 'Caterina Borelli Papers MSS.540',
         },
         'mss_542' : {
-            'timestamp' : 1575482107,
+            'timestamp' : 1603810209,
             'title'     : 'Julius Hemphill Papers MSS.542',
         },
         'mss_544' : {
-            'timestamp' : 1548441310,
+            'timestamp' : 1624477807,
             'title'     : 'Debra Miller Collection MSS.544',
         },
         'mss_545' : {
@@ -9150,6 +9490,10 @@ export default {
         'mss_546' : {
             'timestamp' : 1538493610,
             'title'     : 'Todd Thomas and Robert Blanchon Papers MSS 546',
+        },
+        'mss_553' : {
+            'timestamp' : 1624281609,
+            'title'     : 'Fales Library Collection of Publishers Galleys MSS.553',
         },
         'mss_557' : {
             'timestamp' : 1548441610,
@@ -9188,7 +9532,7 @@ export default {
             'title'     : 'Frederieke S. Taylor Papers MSS.570',
         },
         'mss_573' : {
-            'timestamp' : 1563806708,
+            'timestamp' : 1615836008,
             'title'     : 'Elisa Hertz Collection of Concert and Nightclub Ephemera MSS.573',
         },
         'mss_577' : {
@@ -9224,7 +9568,7 @@ export default {
             'title'     : 'Fales Library Poster Collection MSS.586',
         },
         'mss_593' : {
-            'timestamp' : 1580484608,
+            'timestamp' : 1610739612,
             'title'     : 'Dixon Place Archived Websites MSS.593',
         },
         'mss_595' : {
@@ -9234,6 +9578,10 @@ export default {
         'mss_598' : {
             'timestamp' : 1585341607,
             'title'     : 'Kiyoshi Koyama Papers MSS.598',
+        },
+        'mss_601' : {
+            'timestamp' : 1619448013,
+            'title'     : 'Voices in Contemporary Art Records MSS.601',
         },
         'mucha' : {
             'timestamp' : 1503945009,
@@ -9359,10 +9707,6 @@ export default {
             'timestamp' : 1429809049,
             'title'     : 'Fales Portrait/Subject Collection MSS 034',
         },
-        'pttv' : {
-            'timestamp' : 1567539011,
-            'title'     : 'The Paper Tiger Television Archive MSS.276',
-        },
         'pugliese' : {
             'timestamp' : 1530543055,
             'title'     : 'James Pugliese Dime Novel Manuscript Collection MSS 241',
@@ -9400,7 +9744,7 @@ export default {
             'title'     : 'REPOhistory Archive MSS.113',
         },
         'reynolds' : {
-            'timestamp' : 1510242309,
+            'timestamp' : 1614372008,
             'title'     : 'Hunter Reynolds Papers and Collection MSS.319',
         },
         'rforeman' : {
@@ -9436,11 +9780,11 @@ export default {
             'title'     : 'Curt Royston Papers MSS 259',
         },
         'rydermontanna' : {
-            'timestamp' : 1533154810,
+            'timestamp' : 1619448013,
             'title'     : 'William Ryder Mathers Collection of David Wojnarowicz and Montanna MSS.433',
         },
         'sabbateni' : {
-            'timestamp' : 1505415909,
+            'timestamp' : 1610553310,
             'title'     : 'The Sabbateni Collection of Renaissance Music Manuscripts MSS.239',
         },
         'science' : {
@@ -9466,10 +9810,6 @@ export default {
         'sellers' : {
             'timestamp' : 1558119312,
             'title'     : 'Terence Sellers Papers MSS.167',
-        },
-        'semio' : {
-            'timestamp' : 1553800810,
-            'title'     : 'Sylvere Lotringer Papers and Semiotext(e) Archive MSS.221',
         },
         'senskin' : {
             'timestamp' : 1538056261,
@@ -9616,15 +9956,11 @@ export default {
             'title'     : 'Sir William Jones Manuscripts MSS 301',
         },
         'woj' : {
-            'timestamp' : 1591979107,
+            'timestamp' : 1619448013,
             'title'     : 'David Wojnarowicz Papers MSS.092',
         },
-        'wong' : {
-            'timestamp' : 1435255211,
-            'title'     : 'Martin Wong Papers MSS 102',
-        },
         'woolley' : {
-            'timestamp' : 1497281439,
+            'timestamp' : 1619448013,
             'title'     : 'Nancy Woolley/Montanna Houston Correspondence MSS.436',
         },
         'wu' : {
@@ -9659,36 +9995,16 @@ export default {
             'timestamp' : 1568313606,
             'title'     : '7th Regiment Records MS 556',
         },
-        'Eadie' : {
-            'timestamp' : 1390594418,
-            'title'     : 'Margaret Wright Eadie Papers MS 1271',
-        },
         'ericsson' : {
             'timestamp' : 1429809049,
             'title'     : 'John Ericsson Collection MS 439.16',
-        },
-        'Goodrich' : {
-            'timestamp' : 1390594418,
-            'title'     : 'Caspar F. Goodrich Collection MS 439.21',
-        },
-        'NHSRecords' : {
-            'timestamp' : 1390594418,
-            'title'     : 'Naval History Society Records MS 439.53',
-        },
-        'Raven' : {
-            'timestamp' : 1390594418,
-            'title'     : 'Raven Poetry Circle of Greenwich Village Collection PR 108',
-        },
-        'SAS' : {
-            'timestamp' : 1516735811,
-            'title'     : 'Saint Andrew\'s Society of the State of New York Records MS 2997',
         },
         'adickes' : {
             'timestamp' : 1390594418,
             'title'     : 'Adickes Papers MS 672.1',
         },
         'adler' : {
-            'timestamp' : 1495206309,
+            'timestamp' : 1614198610,
             'title'     : 'Cyrus Adler Papers MS 3',
         },
         'africanschool' : {
@@ -9708,7 +10024,7 @@ export default {
             'title'     : 'John Albok Photograph Collection PR 1',
         },
         'album' : {
-            'timestamp' : 1590176413,
+            'timestamp' : 1605213611,
             'title'     : 'New-York Historical Society collection of albums PR 2',
         },
         'alexander' : {
@@ -9720,7 +10036,7 @@ export default {
             'title'     : 'Alexander Alland Photograph Collection PR 110',
         },
         'alpern' : {
-            'timestamp' : 1536682811,
+            'timestamp' : 1605117307,
             'title'     : 'Andrew Alpern papers PR 324',
         },
         'americanart' : {
@@ -9744,8 +10060,8 @@ export default {
             'title'     : 'Alexander Anderson Print Collection PR 216',
         },
         'archeng' : {
-            'timestamp' : 1587397808,
-            'title'     : 'Architect &amp; Engineer file PR 3',
+            'timestamp' : 1606772409,
+            'title'     : 'Architect &amp; Engineer collection PR 3',
         },
         'armbruster' : {
             'timestamp' : 1566916810,
@@ -9892,7 +10208,7 @@ export default {
             'title'     : 'Broadway Tabernacle Church and Society Papers MS 74',
         },
         'brooklyn_friends_school_mural' : {
-            'timestamp' : 1495204210,
+            'timestamp' : 1612994108,
             'title'     : 'Brooklyn Friends School Post-It Mural collection MS 3026',
         },
         'brown' : {
@@ -9940,7 +10256,7 @@ export default {
             'title'     : 'Lucius H. Cathan Photograph Collection PR 132',
         },
         'causeries' : {
-            'timestamp' : 1565354412,
+            'timestamp' : 1614183308,
             'title'     : 'Causeries du Lundi records MS 104',
         },
         'chapel' : {
@@ -9958,10 +10274,6 @@ export default {
         'childrensaidsociety' : {
             'timestamp' : 1554312911,
             'title'     : 'Children\'s Aid Society records MS 111',
-        },
-        '' : {
-            'timestamp' : 1390594418,
-            'title'     : 'The Victor Remer Historical Archives of the Children\'s Aid Society MS 111',
         },
         'chisolm' : {
             'timestamp' : 1429809049,
@@ -10100,7 +10412,7 @@ export default {
             'title'     : 'William Thompson Dewart collection of Frank A. Munsey and New York Sun papers MS 168',
         },
         'dogancay' : {
-            'timestamp' : 1567709706,
+            'timestamp' : 1614282608,
             'title'     : 'Burhan Dogançay (Dogancay) photographs and sketchbooks PR 183',
         },
         'dolls' : {
@@ -10148,7 +10460,7 @@ export default {
             'title'     : 'John Elari Photographic Slide Collection PR 285',
         },
         'elmira_1948_election' : {
-            'timestamp' : 1495201210,
+            'timestamp' : 1613756708,
             'title'     : 'Records of the 1948 election voting study in Elmira, New York MS 196',
         },
         'emshelter' : {
@@ -10160,7 +10472,7 @@ export default {
             'title'     : 'Patriotic Envelope Collection PR 117',
         },
         'ephemera' : {
-            'timestamp' : 1582656607,
+            'timestamp' : 1605720308,
             'title'     : 'New-York Historical Society ephemera collection PR 264',
         },
         'equitable' : {
@@ -10172,7 +10484,7 @@ export default {
             'title'     : 'Emery Roth Architectural Print Collection PR 170',
         },
         'erving' : {
-            'timestamp' : 1550269814,
+            'timestamp' : 1598635207,
             'title'     : 'Erving-King Family Papers MS 204',
         },
         'european' : {
@@ -10232,8 +10544,8 @@ export default {
             'title'     : 'Horatio Gates papers MS 240',
         },
         'gayle' : {
-            'timestamp' : 1453391409,
-            'title'     : 'Guide to the Margot Gayle Papers MS 241',
+            'timestamp' : 1612992609,
+            'title'     : 'Margot Gayle papers MS 241',
         },
         'geils' : {
             'timestamp' : 1390594418,
@@ -10244,7 +10556,7 @@ export default {
             'title'     : 'Arnold Genthe Photograph Collection PR 19',
         },
         'geographic' : {
-            'timestamp' : 1582665007,
+            'timestamp' : 1603737309,
             'title'     : 'New-York Historical Society collection of geographic images PR 20',
         },
         'george_joan_violin' : {
@@ -10300,7 +10612,7 @@ export default {
             'title'     : 'James D. Grabow photographs and family papers PR 317',
         },
         'grabowski' : {
-            'timestamp' : 1558641312,
+            'timestamp' : 1620060911,
             'title'     : 'William Grabowski photographs PR 321',
         },
         'grahamwindham' : {
@@ -10308,8 +10620,8 @@ export default {
             'title'     : 'Graham Windham Records MS 2916',
         },
         'graphic' : {
-            'timestamp' : 1499711707,
-            'title'     : 'Graphic Arts File PR 22',
+            'timestamp' : 1609267208,
+            'title'     : 'New-York Historical graphic arts collection PR 22',
         },
         'green' : {
             'timestamp' : 1390594418,
@@ -10324,7 +10636,7 @@ export default {
             'title'     : 'Arthur W. Grumbine Photograph Collection PR 97',
         },
         'guion' : {
-            'timestamp' : 1502289308,
+            'timestamp' : 1620157809,
             'title'     : 'Guion family papers MS 3013',
         },
         'halbreich' : {
@@ -10344,8 +10656,8 @@ export default {
             'title'     : 'Hannah Campbell Papers MS 2948',
         },
         'harbord' : {
-            'timestamp' : 1547581813,
-            'title'     : 'James G. Harbord Papers MS 1493',
+            'timestamp' : 1624469409,
+            'title'     : 'James G. Harbord papers MS 1493',
         },
         'hare' : {
             'timestamp' : 1390594418,
@@ -10408,8 +10720,8 @@ export default {
             'title'     : 'Holland Tunnel construction photographs and reports PR 332',
         },
         'holloway' : {
-            'timestamp' : 1471293611,
-            'title'     : 'H. Maxon Holloway Papers MS.3012',
+            'timestamp' : 1622205014,
+            'title'     : 'H. Maxson Holloway papers MS 3012',
         },
         'hollyer' : {
             'timestamp' : 1390594418,
@@ -10540,8 +10852,8 @@ export default {
             'title'     : 'Kimball Family Papers MS 348',
         },
         'king' : {
-            'timestamp' : 1485376210,
-            'title'     : 'Rufus King Papers MS 1660',
+            'timestamp' : 1609176310,
+            'title'     : 'Rufus King Papers 144',
         },
         'kingfamily' : {
             'timestamp' : 1390594418,
@@ -10572,7 +10884,7 @@ export default {
             'title'     : 'Martha J. Lamb Papers MS 362',
         },
         'landauer' : {
-            'timestamp' : 1547757310,
+            'timestamp' : 1608332708,
             'title'     : 'Bella C. Landauer Collection of Business and Advertising Ephemera PR 31',
         },
         'landauerref' : {
@@ -10592,8 +10904,8 @@ export default {
             'title'     : 'Leonard Larsen Papers MS 365',
         },
         'leakeandwatts' : {
-            'timestamp' : 1519940411,
-            'title'     : 'Leake and Watts Children\'s Home Records MS 377',
+            'timestamp' : 1612882810,
+            'title'     : 'Leake and Watts Children\'s Home records MS 377',
         },
         'leboutillier' : {
             'timestamp' : 1429809049,
@@ -10660,7 +10972,7 @@ export default {
             'title'     : 'Lower East Side Photograph Collection PR 251',
         },
         'loyallegion' : {
-            'timestamp' : 1463427311,
+            'timestamp' : 1620237308,
             'title'     : 'Military Order of the Loyal Legion of the United States, New York Commandery Records MS 2996',
         },
         'ludington' : {
@@ -10672,7 +10984,7 @@ export default {
             'title'     : 'DeWayne Lundgren Papers MS 393',
         },
         'macdowell' : {
-            'timestamp' : 1433186709,
+            'timestamp' : 1600357207,
             'title'     : 'MacDowell Club of New York City Records MS 2953',
         },
         'macwhinney' : {
@@ -10724,19 +11036,19 @@ export default {
             'title'     : 'Burr McIntosh photograph collection PR 41',
         },
         'mckim' : {
-            'timestamp' : 1588950009,
-            'title'     : 'McKim, Mead and White architectural records PR 42',
+            'timestamp' : 1597254608,
+            'title'     : 'McKim, Mead and White architectural records 334',
         },
         'mclaughlin' : {
             'timestamp' : 1579700709,
             'title'     : 'McLaughlin Air Service Photograph Collection PR 43',
         },
         'messages_president_elect' : {
-            'timestamp' : 1495203909,
+            'timestamp' : 1612994707,
             'title'     : 'Messages for the President-Elect collection MS 3027',
         },
         'millstein' : {
-            'timestamp' : 1501517727,
+            'timestamp' : 1613755208,
             'title'     : 'Ira M. Millstein papers MS 3020',
         },
         'morris' : {
@@ -10751,6 +11063,14 @@ export default {
             'timestamp' : 1444855812,
             'title'     : 'Film Location Scouts Photograph Collection PR 293',
         },
+        'ms0540_sawitzky' : {
+            'timestamp' : 1621446009,
+            'title'     : 'William Sawitzky research notes MS 0540',
+        },
+        'ms0573_helen_burr_smith' : {
+            'timestamp' : 1612545308,
+            'title'     : 'Helen Burr Smith papers MS 0573',
+        },
         'ms1130_cooper_hewitt' : {
             'timestamp' : 1520869842,
             'title'     : 'Cooper, Hewitt &amp; Co. letterpress copybooks MS 1130',
@@ -10759,12 +11079,16 @@ export default {
             'timestamp' : 1561579512,
             'title'     : 'City Club of New York records MS 116',
         },
+        'ms200_ensko_silver' : {
+            'timestamp' : 1619797509,
+            'title'     : 'Robert Ensko Inc. records MS 200',
+        },
         'ms220_flexner' : {
             'timestamp' : 1578319506,
             'title'     : 'James Thomas Flexner papers MS 220',
         },
         'ms233_frenchbensoc' : {
-            'timestamp' : 1565119214,
+            'timestamp' : 1606254909,
             'title'     : 'French Benevolent Society records MS 233',
         },
         'ms2807_charles_edwin_west' : {
@@ -10772,7 +11096,7 @@ export default {
             'title'     : 'Charles Edwin West scrapbooks MS 2807',
         },
         'ms2922_oxman' : {
-            'timestamp' : 1572440110,
+            'timestamp' : 1614180610,
             'title'     : 'Harriet Oxman papers MS 2922',
         },
         'ms2958_5423_kimball' : {
@@ -10784,7 +11108,7 @@ export default {
             'title'     : 'Henry Kassebart abstract of property title (1776-1892) AHMC Kassebart, Henry',
         },
         'ms2958_9788_varrecchia' : {
-            'timestamp' : 1543519510,
+            'timestamp' : 1606255214,
             'title'     : 'Alfonso Varrecchia passport AHMC-Varrecchia',
         },
         'ms2958_9798_herbert_lehman' : {
@@ -10792,7 +11116,7 @@ export default {
             'title'     : 'Herbert H. Lehman letter to Jacob Billikopf AHMC-Lehman, Herbert',
         },
         'ms2958_9799_richard_knight' : {
-            'timestamp' : 1531921810,
+            'timestamp' : 1623448811,
             'title'     : 'Richard A. Knight letter to the Committee on Grievances of the Association of the Bar of the City of New York AHMC-Knight, Richard',
         },
         'ms2958_9800_joao_dasilva' : {
@@ -10864,7 +11188,7 @@ export default {
             'title'     : 'Whitelaw Reid letter to Stephen B. Elkins AHMC – Reid, Whitelaw (to Elkins)',
         },
         'ms2958_9825_laura_morgan' : {
-            'timestamp' : 1551480311,
+            'timestamp' : 1606255214,
             'title'     : 'Laura Morgan papers AHMC - Morgan, Laura',
         },
         'ms2958_9826_libby_demorin' : {
@@ -10928,7 +11252,7 @@ export default {
             'title'     : 'War Assets Administration surplus property offerings AHMC - War Assets Administration',
         },
         'ms2958_9845_gutfreund' : {
-            'timestamp' : 1575308107,
+            'timestamp' : 1624984507,
             'title'     : 'John H. Gutfreund collection AHMC - Gutfreund John H.',
         },
         'ms2958_9846_wc_dunn' : {
@@ -10943,24 +11267,80 @@ export default {
             'timestamp' : 1580853608,
             'title'     : 'Old New York: A new look: The first series of etchings by Henry Farrer (1844-1903) AHMC - Wright, David G.',
         },
+        'ms2958_9849_kennedy_teletypes' : {
+            'timestamp' : 1606255512,
+            'title'     : 'John F. Kennedy assassination teletypes AHMC - Kennedy Assassination Teletypes',
+        },
+        'ms2958_9850_axtell_vanpelt' : {
+            'timestamp' : 1604696108,
+            'title'     : 'Certification of oath of allegiance taken by Rem Van Pelt AHMC -Axtell, William Certification',
+        },
+        'ms2958_9851_billie_jean_king' : {
+            'timestamp' : 1608665107,
+            'title'     : 'Billie Jean King autographed ticket to Grass Courts Championships and related documents AHMC - King, Billie Jean',
+        },
+        'ms2958_9852_manhattan_burr' : {
+            'timestamp' : 1617030608,
+            'title'     : 'Resolution of the Manhattan Company concerning Aaron Burr\'s indebtedness AHMC - Manhattan Company-Burr',
+        },
+        'ms2958_9853_philip_pope' : {
+            'timestamp' : 1617030909,
+            'title'     : 'Philip Pope declaration of imports AHMC - Pope, Philip',
+        },
+        'ms2958_9854_hill_matrimonial' : {
+            'timestamp' : 1617031208,
+            'title'     : 'Letter of solicitation for matrimonial agency AHMC - Hill, W.K.',
+        },
+        'ms2958_9855_nyhrailroad_taxation' : {
+            'timestamp' : 1617031507,
+            'title'     : 'New York City Comptroller\'s Office records concerning taxation of the New York and Harlem Railroad Company AHMC-NY Comptroller\'s Office. Railroad Taxation',
+        },
+        'ms2958_9856_stoutenburgh' : {
+            'timestamp' : 1619797809,
+            'title'     : 'Land indenture between James J. Stoutenburgh and Abraham Stoutenburgh and Peter Stoutenburgh AHMC-Stoutenburgh, James J.',
+        },
+        'ms2958_9858_arthur_tappan' : {
+            'timestamp' : 1619798708,
+            'title'     : 'Arthur Tappan letters to Samuel Fisher AHMC - Tappan, Arthur',
+        },
+        'ms2958_9858_enos_jones' : {
+            'timestamp' : 1619798107,
+            'title'     : 'Enos F. Jones honorable discharge certificates AHMC - Jones, Enos F.',
+        },
+        'ms2958_9859_franklin_jay' : {
+            'timestamp' : 1623621611,
+            'title'     : 'Benjamin Franklin letter to John Jay AHMC-Franklin, Benjamin-Jay',
+        },
+        'ms2958_9860_mumford_lynd' : {
+            'timestamp' : 1623787509,
+            'title'     : 'Lewis Mumford letter to Staughton Lynd, with reprints of Mumford articles AHMC-Mumford, Lewis-Lynd',
+        },
+        'ms2958_9861_emma_ina_thursby' : {
+            'timestamp' : 1625157632,
+            'title'     : 'Emma Thursby and Ina Thursby letters and photographs AHMC - Thursby, Emma & Ina',
+        },
         'ms297_isaac_hicks' : {
             'timestamp' : 1542046809,
             'title'     : 'Isaac Hicks papers MS 297',
         },
         'ms2999_rentschler' : {
-            'timestamp' : 1593540010,
+            'timestamp' : 1598898009,
             'title'     : 'Mary Coolidge Rentschler collection MS 2999',
+        },
+        'ms29_avignone_pharmacy' : {
+            'timestamp' : 1623787810,
+            'title'     : 'Frank Avignone &amp; Co. prescription books MS 29',
         },
         'ms3007_charlotte_zerega' : {
             'timestamp' : 1556559313,
             'title'     : 'Charlotte di Zerega diary and related documents MS 3007',
         },
         'ms3014_henry_luce' : {
-            'timestamp' : 1563291310,
+            'timestamp' : 1616081409,
             'title'     : 'Henry R. Luce papers MS 3014',
         },
         'ms3018_john_zuccotti' : {
-            'timestamp' : 1533312610,
+            'timestamp' : 1613754909,
             'title'     : 'John Zuccotti papers MS 3018',
         },
         'ms3033_horticultural' : {
@@ -10968,11 +11348,11 @@ export default {
             'title'     : 'Horticultural Society of New York records MS 3033',
         },
         'ms3034_holland_dames' : {
-            'timestamp' : 1527184810,
+            'timestamp' : 1625578834,
             'title'     : 'Records of the Society of Daughters of Holland Dames, Descendants of the Ancient and Honorable Families of New Netherland MS 3034',
         },
         'ms3042_ethical_culture_fieldston' : {
-            'timestamp' : 1573768206,
+            'timestamp' : 1624983907,
             'title'     : 'Ethical Culture Fieldston School records MS 3042',
         },
         'ms3045_brenon' : {
@@ -10984,15 +11364,15 @@ export default {
             'title'     : 'James H. Roosevelt financial records MS 3046',
         },
         'ms3047_myron_falk' : {
-            'timestamp' : 1577994607,
-            'title'     : 'Myron S. Falk papers MS 3047',
+            'timestamp' : 1620829509,
+            'title'     : 'Myron S. Falk family papers MS 3047',
         },
         'ms3049_charles_jefferson' : {
             'timestamp' : 1521826809,
             'title'     : 'Charles Edward Jefferson papers MS 3049',
         },
         'ms3050_matz' : {
-            'timestamp' : 1578580207,
+            'timestamp' : 1598882107,
             'title'     : 'Joyce Matz papers MS 3050',
         },
         'ms3051_ratcliffe_laplaza' : {
@@ -11028,7 +11408,7 @@ export default {
             'title'     : 'Oliver Allen papers on the historic preservation of Tribeca MS 3058',
         },
         'ms3059_saram' : {
-            'timestamp' : 1562620808,
+            'timestamp' : 1615302308,
             'title'     : 'Carole De Saram papers MS 3059',
         },
         'ms3060_pomeroy' : {
@@ -11040,15 +11420,15 @@ export default {
             'title'     : 'Josiah Sutherland papers MS 3061',
         },
         'ms3063_alan_greenberg' : {
-            'timestamp' : 1579011307,
-            'title'     : 'Alan C. Greenberg scrapbooks MS 3063',
+            'timestamp' : 1610045408,
+            'title'     : 'Alan C. Greenberg scrapbooks and related material MS 3063',
         },
         'ms3064_raymond_haynes' : {
             'timestamp' : 1535661010,
             'title'     : 'Raymond B. Haynes papers MS 3064',
         },
         'ms3065_accountants_club' : {
-            'timestamp' : 1591198809,
+            'timestamp' : 1624980907,
             'title'     : 'Accountants Club of America records MS 3065',
         },
         'ms3066_cooper_whaling' : {
@@ -11068,7 +11448,7 @@ export default {
             'title'     : 'Grace Avery Lillard papers MS 3069',
         },
         'ms3070_newman' : {
-            'timestamp' : 1545927609,
+            'timestamp' : 1606256109,
             'title'     : 'Lawrence Newman papers MS 3070',
         },
         'ms3071_wednesday' : {
@@ -11103,9 +11483,17 @@ export default {
             'timestamp' : 1562602211,
             'title'     : 'Army and Navy Club of New York records MS 3080',
         },
+        'ms3082_lyman_gracie_mansion' : {
+            'timestamp' : 1615240809,
+            'title'     : 'Susan E. Lyman research notes on Gracie Mansion MS 3082',
+        },
         'ms3085_9threg' : {
             'timestamp' : 1567107909,
             'title'     : 'New York State National Guard, 9th Regiment collection MS 3085',
+        },
+        'ms3090_louise_hill_andre' : {
+            'timestamp' : 1605111906,
+            'title'     : 'Louise B. Hill research notes on John André MS 3090',
         },
         'ms3091_low_fleming_king' : {
             'timestamp' : 1561986014,
@@ -11127,6 +11515,10 @@ export default {
             'timestamp' : 1585581607,
             'title'     : 'Hart, Budd, and Nestell family papers MS 3127',
         },
+        'ms3128_lynne_sagalyn' : {
+            'timestamp' : 1618323008,
+            'title'     : 'Lynne Sagalyn research files for "Power at Ground Zero" MS 3128',
+        },
         'ms3129_lindquist' : {
             'timestamp' : 1554727513,
             'title'     : 'Eric G. Lindquist papers MS 3129',
@@ -11143,8 +11535,12 @@ export default {
             'timestamp' : 1565010914,
             'title'     : 'Blatchford, Potter, and Delano family papers MS 3132',
         },
+        'ms3134_ron_spadafora' : {
+            'timestamp' : 1598377807,
+            'title'     : 'Ronald R. Spadafora papers MS 3134',
+        },
         'ms3136_hopper_gibbons_lamartine' : {
-            'timestamp' : 1568656806,
+            'timestamp' : 1612995008,
             'title'     : 'Records of the Friends of Hopper Gibbons Underground Railroad Site and Lamartine Place Historic District MS 3136',
         },
         'ms3137_bill_cunningham' : {
@@ -11172,7 +11568,7 @@ export default {
             'title'     : 'Laura Shaw Murra collection on feminism MS 3142',
         },
         'ms3143_richards' : {
-            'timestamp' : 1570195509,
+            'timestamp' : 1613754608,
             'title'     : 'David Alan Richards legal papers MS 3143',
         },
         'ms3144_livingston' : {
@@ -11187,28 +11583,64 @@ export default {
             'timestamp' : 1575307807,
             'title'     : 'John David Wolfe memorial book and case MS 3146',
         },
+        'ms3147_billie_jean_king' : {
+            'timestamp' : 1620410411,
+            'title'     : 'Billie Jean King collection MS 3147',
+        },
         'ms3149_charcoals_manuscripts' : {
             'timestamp' : 1578519007,
             'title'     : '"Charcoals of new and old New York" drafts and limited edition published version MS 3149',
         },
         'ms3150_taylor_jack' : {
-            'timestamp' : 1579100106,
+            'timestamp' : 1606773308,
             'title'     : 'Jack Taylor papers MS 3150',
         },
         'ms3151_four_seasons' : {
             'timestamp' : 1582557008,
             'title'     : 'Four Seasons Restaurant collection MS 3151',
         },
+        'ms3152_crane_goetz' : {
+            'timestamp' : 1606749312,
+            'title'     : 'Justice Stephen G. Crane papers on the Bernhard Goetz trial and other cases MS 3152',
+        },
+        'ms3153_samuel_parsons' : {
+            'timestamp' : 1604089811,
+            'title'     : 'Samuel B. Parsons, Jr. papers MS 3153',
+        },
         'ms3155_lost_battalion' : {
             'timestamp' : 1582746608,
             'title'     : 'David Tulchin papers regarding the 77th Division "Lost Battalion" MS 3155',
+        },
+        'ms3156_edgar_baker' : {
+            'timestamp' : 1609771211,
+            'title'     : 'Edgar R. Baker papers MS 3156',
+        },
+        'ms315_hudson_river_dayline' : {
+            'timestamp' : 1601475608,
+            'title'     : 'Hudson River Day Line records MS 315',
+        },
+        'ms3191_sherrill_scrapbooks' : {
+            'timestamp' : 1607113208,
+            'title'     : 'Charles H. Sherrill scrapbooks MS 3191',
+        },
+        'ms3197_bush' : {
+            'timestamp' : 1605542409,
+            'title'     : 'Bush family papers MS 3197',
+        },
+        'ms3198_garrigue' : {
+            'timestamp' : 1608568810,
+            'title'     : 'Alexander Garrigue letters MS 3198',
         },
         'ms319_james_hazen_hyde' : {
             'timestamp' : 1578003007,
             'title'     : 'James Hazen Hyde papers MS 319',
         },
+        'ms3200_teen_coronavirus_diaries' : {
+            'timestamp' : 1618248309,
+            'title'     : 'Teen coronavirus diaries collection MS 3200',
+        },
         'ms325_irving_olds' : {
-            'timestamp' : 1557153014,
+            'timestamp' : 1622742608,
             'title'     : 'Irving S. Olds papers MS 325',
         },
         'ms358_george_kunz' : {
@@ -11218,6 +11650,14 @@ export default {
         'ms438_edgar_nathan' : {
             'timestamp' : 1536346811,
             'title'     : 'Edgar J. Nathan, Jr. papers MS 438',
+        },
+        'ms449_produce_exchange' : {
+            'timestamp' : 1605882908,
+            'title'     : 'New York Produce Exchange records MS 449',
+        },
+        'ms477_1_paltsits' : {
+            'timestamp' : 1608127808,
+            'title'     : 'Victor H. Paltsits papers MS 477.1',
         },
         'ms544_schenectady' : {
             'timestamp' : 1594320608,
@@ -11234,6 +11674,10 @@ export default {
         'ms71_luther_bradish' : {
             'timestamp' : 1565358308,
             'title'     : 'Luther Bradish papers MS 71',
+        },
+        'ms93_georgep_butler' : {
+            'timestamp' : 1607694008,
+            'title'     : 'George P. Butler &amp; Brother records MS 93',
         },
         'mulvehill' : {
             'timestamp' : 1444856111,
@@ -11284,11 +11728,11 @@ export default {
             'title'     : 'New York Exchange for Women\'s Work MS 446',
         },
         'nyhsrg1' : {
-            'timestamp' : 1594143308,
+            'timestamp' : 1625253920,
             'title'     : 'New-York Historical Society management committee records NYHS-RG 1',
         },
         'nyhsrg10' : {
-            'timestamp' : 1528220408,
+            'timestamp' : 1621538708,
             'title'     : 'New-York Historical Society John Watts DePeyster Publication Fund records NYHS-RG 10',
         },
         'nyhsrg11' : {
@@ -11296,15 +11740,15 @@ export default {
             'title'     : 'New-York Historical Society manuscripts of lectures and addresses NYHS-RG 11',
         },
         'nyhsrg12' : {
-            'timestamp' : 1528222210,
+            'timestamp' : 1612979108,
             'title'     : 'New-York Historical Society celebratory and memorial event records NYHS-RG 12',
         },
         'nyhsrg13' : {
-            'timestamp' : 1495476609,
+            'timestamp' : 1612979408,
             'title'     : 'New-York Historical Society Scholarship essay submissions NYHS-RG 13',
         },
         'nyhsrg14' : {
-            'timestamp' : 1528222810,
+            'timestamp' : 1621538708,
             'title'     : 'New-York Historical Society ephemera NYHS-RG 14',
         },
         'nyhsrg15' : {
@@ -11316,35 +11760,35 @@ export default {
             'title'     : 'New-York Historical Society bequests, gifts &amp; related matters NYHS-RG 16',
         },
         'nyhsrg17' : {
-            'timestamp' : 1528312210,
+            'timestamp' : 1612986908,
             'title'     : 'New-York Historical Society publication editorial records NYHS-RG 17',
         },
         'nyhsrg19' : {
-            'timestamp' : 1528397410,
+            'timestamp' : 1612987809,
             'title'     : 'New-York Historical Society Librarian Dorothy C. Barck records NYHS-RG 19',
         },
         'nyhsrg2' : {
-            'timestamp' : 1567100710,
+            'timestamp' : 1607700609,
             'title'     : 'New-York Historical Society general correspondence NYHS-RG 2',
         },
         'nyhsrg20' : {
-            'timestamp' : 1546204511,
+            'timestamp' : 1621628709,
             'title'     : 'New-York Historical Society Museum Department records NYHS-RG 20',
         },
         'nyhsrg21' : {
-            'timestamp' : 1573509311,
+            'timestamp' : 1623351308,
             'title'     : 'New-York Historical Society Library Department records NYHS-RG 21',
         },
         'nyhsrg23' : {
-            'timestamp' : 1485374106,
+            'timestamp' : 1612988707,
             'title'     : 'New-York Historical Society public programs and education records NYHS-RG 23',
         },
         'nyhsrg26' : {
-            'timestamp' : 1495476309,
+            'timestamp' : 1612989908,
             'title'     : 'New-York Historical Society museum store records NYHS-RG 26',
         },
         'nyhsrg28' : {
-            'timestamp' : 1495478108,
+            'timestamp' : 1612991108,
             'title'     : 'New-York Historical Society audiovisual media records NYHS-RG 28',
         },
         'nyhsrg3' : {
@@ -11352,15 +11796,15 @@ export default {
             'title'     : 'New-York Historical Society original buildings planning &amp; construction records NYHS-RG 3',
         },
         'nyhsrg4' : {
-            'timestamp' : 1563561313,
+            'timestamp' : 1602182108,
             'title'     : 'New-York Historical Society building renovations and maintenance records NYHS-RG 4',
         },
         'nyhsrg5' : {
-            'timestamp' : 1528216811,
+            'timestamp' : 1603832709,
             'title'     : 'New-York Historical Society pictorial archive NYHS-RG 5',
         },
         'nyhsrg6' : {
-            'timestamp' : 1527110410,
+            'timestamp' : 1612974609,
             'title'     : 'New-York Historical Society Field Exploration Committee photographs NYHS-RG 6',
         },
         'nyhsrg7' : {
@@ -11368,7 +11812,7 @@ export default {
             'title'     : 'New-York Historical Society press clippings NYHS-RG 7',
         },
         'nyhsrg8' : {
-            'timestamp' : 1528218909,
+            'timestamp' : 1612978210,
             'title'     : 'New-York Historical Society public relations material NYHS-RG 8',
         },
         'nyhsrg9' : {
@@ -11382,6 +11826,10 @@ export default {
         'nystate' : {
             'timestamp' : 1390594418,
             'title'     : 'New York State Legislature Portrait Prints Collection PR 213',
+        },
+        'oh2_columbus_ave_upper_west' : {
+            'timestamp' : 1623255609,
+            'title'     : 'Columbus Avenue and the Upper West Side Oral History Project interviews OH 2',
         },
         'olcott' : {
             'timestamp' : 1390594418,
@@ -11408,7 +11856,7 @@ export default {
             'title'     : 'Jacquelyn A. Ottman Collection of J. Ottmann Lithographing Company PR 281',
         },
         'oversize' : {
-            'timestamp' : 1580759109,
+            'timestamp' : 1624900508,
             'title'     : 'Oversize Manuscripts Collection MS OS',
         },
         'pach' : {
@@ -11436,7 +11884,7 @@ export default {
             'title'     : 'May Petras\'s Lenox Hill School of Nursing yearbook PR 343',
         },
         'photographer' : {
-            'timestamp' : 1581711907,
+            'timestamp' : 1623176708,
             'title'     : 'Photographer File PR 50',
         },
         'pickhardt' : {
@@ -11464,7 +11912,7 @@ export default {
             'title'     : 'Calvin Pollard Architectural Drawing Collection PR 51',
         },
         'portrait' : {
-            'timestamp' : 1588693507,
+            'timestamp' : 1609946709,
             'title'     : 'New-York Historical Society portrait collection PR 52',
         },
         'post' : {
@@ -11476,7 +11924,7 @@ export default {
             'title'     : 'James T. and Rachel Booth Powers Collection PR 105',
         },
         'pr011_carte_de_visite' : {
-            'timestamp' : 1589289608,
+            'timestamp' : 1609270507,
             'title'     : 'New-York Historical Society carte de visite photograph collection PR-011',
         },
         'pr032_lawrence' : {
@@ -11492,7 +11940,7 @@ export default {
             'title'     : 'Harry T. Peters collection of pictorial newspaper illustrations PR 49',
         },
         'pr054_postcard' : {
-            'timestamp' : 1578411607,
+            'timestamp' : 1623872107,
             'title'     : 'New-York Historical Society postcard collection [graphic] PR 54',
         },
         'pr071_trappan' : {
@@ -11512,11 +11960,11 @@ export default {
             'title'     : 'New-York Historical Society theatrical portrait collection PR-104',
         },
         'pr142_durr_print' : {
-            'timestamp' : 1591800608,
+            'timestamp' : 1599854710,
             'title'     : 'Louis Durr print collection PR 142',
         },
         'pr143_bryan_gallery' : {
-            'timestamp' : 1593548409,
+            'timestamp' : 1599657608,
             'title'     : 'Bryan Gallery of Christian Art print collection PR-143',
         },
         'pr179_norman_weisberg' : {
@@ -11527,9 +11975,21 @@ export default {
             'timestamp' : 1551200412,
             'title'     : 'Lewis Hine New York City newsboys album PR 188',
         },
+        'pr193_kerner' : {
+            'timestamp' : 1595253008,
+            'title'     : 'Sidney Kerner photographs PR-193',
+        },
+        'pr196_white' : {
+            'timestamp' : 1594922109,
+            'title'     : 'Lewis F. White photographs PR-196',
+        },
         'pr205_muybridge' : {
             'timestamp' : 1591023909,
             'title'     : 'Eadweard Muybridge photograph collection PR 205',
+        },
+        'pr219_johnston' : {
+            'timestamp' : 1598284508,
+            'title'     : 'J. S. Johnston photographs PR-219',
         },
         'pr225_imbert' : {
             'timestamp' : 1593609909,
@@ -11543,12 +12003,20 @@ export default {
             'timestamp' : 1579905908,
             'title'     : 'New-York Historical Society collection of Currier &amp; Ives prints PR 230',
         },
+        'pr241_voice' : {
+            'timestamp' : 1594923009,
+            'title'     : 'Sidney Voice collection of cigar bands PR-241',
+        },
+        'pr275_schmidt' : {
+            'timestamp' : 1594923908,
+            'title'     : 'Carl W. Schmidt Jr. photographs PR-275',
+        },
         'pr319_picasso_pochoirs' : {
             'timestamp' : 1566565509,
             'title'     : 'Trente-deux reproductions des maquettes en couleurs, d\'après les originaux des costumes &amp; décor par Picasso pour le ballet "Le Tricorne" PR 319',
         },
         'pr325_kalinsky' : {
-            'timestamp' : 1544477710,
+            'timestamp' : 1606256417,
             'title'     : 'George Kalinsky photographs PR 325',
         },
         'pr342_maggie_hopp' : {
@@ -11600,8 +12068,8 @@ export default {
             'title'     : 'Crago-Kramer collection of sugar packets PR 354',
         },
         'pr355_brooklyn_eagle_postcards' : {
-            'timestamp' : 1527696041,
-            'title'     : 'James Olinkiewicz collection of                  Brooklyn Daily Eagle postcards PR 355',
+            'timestamp' : 1597093811,
+            'title'     : 'James Olinkiewicz collection of Brooklyn Daily Eagle postcards PR 355',
         },
         'pr356_boone' : {
             'timestamp' : 1570136406,
@@ -11626,6 +12094,10 @@ export default {
         'pr361_jessica_burstein' : {
             'timestamp' : 1553198711,
             'title'     : 'Jessica Burstein photographs and memorabilia PR 361',
+        },
+        'pr362_stephen_harmon' : {
+            'timestamp' : 1622133012,
+            'title'     : 'Stephen Harmon photographs PR 362',
         },
         'pr363_robert_dana_scott' : {
             'timestamp' : 1527791411,
@@ -11656,11 +12128,11 @@ export default {
             'title'     : 'Rose O\'Neill collection PR 369',
         },
         'pr370_gramercy_neighborhood_associates' : {
-            'timestamp' : 1537377669,
-            'title'     : 'Gramercy Neighborhood Associates collection PR 370',
+            'timestamp' : 1611851708,
+            'title'     : 'Gramercy Neighborhood Associates records PR 370',
         },
         'pr371_saram_posters' : {
-            'timestamp' : 1550586908,
+            'timestamp' : 1615308907,
             'title'     : 'Carole De Saram collection of posters PR 371',
         },
         'pr372_holman_flatiron' : {
@@ -11823,8 +12295,40 @@ export default {
             'timestamp' : 1587667210,
             'title'     : 'Ben Kabakow Photographic Slides PR 413',
         },
+        'pr414_anderson_wall_street' : {
+            'timestamp' : 1598280910,
+            'title'     : 'David Anderson photographs from "On Wall Street" PR-414',
+        },
+        'pr415_adler_neilson' : {
+            'timestamp' : 1604517908,
+            'title'     : 'Adler &amp; Neilson Iron Work Company architectural drawings PR 415',
+        },
+        'pr416_fons_iannelli' : {
+            'timestamp' : 1616704507,
+            'title'     : 'Fons Iannelli photographs PR 416',
+        },
+        'pr417_dewitt_wheeler' : {
+            'timestamp' : 1620765308,
+            'title'     : 'DeWitt C. Wheeler photographs and other material PR 417',
+        },
+        'pr418_gutzeit_qslcards' : {
+            'timestamp' : 1620996908,
+            'title'     : 'Jack Gutzeit amateur radio operator records PR 418',
+        },
+        'pr420_ralph_weiss' : {
+            'timestamp' : 1621622108,
+            'title'     : 'Ralph Weiss photographs PR 420',
+        },
+        'pr421_piera_drawings' : {
+            'timestamp' : 1624653607,
+            'title'     : 'Pier A construction records collection PR 421',
+        },
+        'pr424_bob_gore' : {
+            'timestamp' : 1624889110,
+            'title'     : 'Bob Gore photographs PR 424',
+        },
         'pr_014_certificate' : {
-            'timestamp' : 1576864810,
+            'timestamp' : 1622741709,
             'title'     : 'New-York Historical Society collection of certificates PR 014',
         },
         'pr_36_herman_liberman' : {
@@ -11888,7 +12392,7 @@ export default {
             'title'     : 'Rogers Family Papers MS 523',
         },
         'rohatyn' : {
-            'timestamp' : 1592839509,
+            'timestamp' : 1623448208,
             'title'     : 'Elizabeth and Felix G. Rohatyn papers MS 3015',
         },
         'rosen' : {
@@ -11956,7 +12460,7 @@ export default {
             'title'     : 'Harold Seton Papers AHMC Seton',
         },
         'seventhregimentfund' : {
-            'timestamp' : 1510158937,
+            'timestamp' : 1623162611,
             'title'     : 'Seventh Regiment Fund court case records MS 3032',
         },
         'seventythirdregiment' : {
@@ -12060,7 +12564,7 @@ export default {
             'title'     : 'Civil War Stereographs PR 65-1',
         },
         'stereograph' : {
-            'timestamp' : 1593624310,
+            'timestamp' : 1595445309,
             'title'     : 'New-York Historical Society collection of stereographs PR 65',
         },
         'steuben' : {
@@ -12096,7 +12600,7 @@ export default {
             'title'     : 'Subject File PR 68',
         },
         'subway_therapy' : {
-            'timestamp' : 1495203609,
+            'timestamp' : 1612993508,
             'title'     : 'Subway Therapy collection MS 3025',
         },
         'sydow' : {
@@ -12104,8 +12608,8 @@ export default {
             'title'     : 'Jack Sydow Photographs and Papers Collection PR289',
         },
         'tallmadge' : {
-            'timestamp' : 1390594418,
-            'title'     : 'Matthias B. Tallmadge Papers MS 612',
+            'timestamp' : 1600982108,
+            'title'     : 'Matthias B. Tallmadge papers MS 612',
         },
         'tarzian' : {
             'timestamp' : 1493391609,
@@ -12148,27 +12652,31 @@ export default {
             'title'     : '1914 Time Capsule Collection MS 2995',
         },
         'timeincoverview' : {
-            'timestamp' : 1594650609,
+            'timestamp' : 1624995908,
             'title'     : 'Time Inc. Records Overview MS 3009',
         },
         'timeincrg1' : {
-            'timestamp' : 1574802008,
+            'timestamp' : 1624370106,
             'title'     : 'Time Inc. Subject Files MS 3009-RG 1',
         },
         'timeincrg10' : {
-            'timestamp' : 1578407408,
+            'timestamp' : 1614114307,
             'title'     : 'Time Inc. People Editorial Records MS 3009-RG 10',
         },
         'timeincrg11' : {
-            'timestamp' : 1574804108,
+            'timestamp' : 1614114307,
             'title'     : 'Time Inc. Money Editorial Records: Managing Editor Marshall Loeb Files MS 3009-RG 11',
         },
         'timeincrg12' : {
-            'timestamp' : 1574804108,
+            'timestamp' : 1618512911,
             'title'     : 'Time Inc. Architectural Forum and House &amp; Home Editorial Records: Managing Editor Edgar P. Smith Files MS 3009-RG 12',
         },
         'timeincrg13' : {
-            'timestamp' : 1582571709,
+            'timestamp' : 1615232709,
+            'title'     : 'Time Inc. Time Research Center Files MS 3009-RG 13',
+        },
+        'timeincrg13a' : {
+            'timestamp' : 1605294909,
             'title'     : 'Time Inc. Time Research Center Files MS 3009-RG 13',
         },
         'timeincrg13s3' : {
@@ -12176,15 +12684,15 @@ export default {
             'title'     : 'Time Inc. Time Research Center Files: Subject Files MS 3009-RG 13.Series III',
         },
         'timeincrg14' : {
-            'timestamp' : 1574804407,
+            'timestamp' : 1612456812,
             'title'     : 'Time Inc. Time-Life News Service Records MS 3009-RG 14',
         },
         'timeincrg15' : {
-            'timestamp' : 1579203011,
+            'timestamp' : 1612890010,
             'title'     : 'Time Inc. The March of Time Audiovisual Collection MS 3009-RG 15',
         },
         'timeincrg16' : {
-            'timestamp' : 1594650308,
+            'timestamp' : 1605296714,
             'title'     : 'Time Inc. New Building Department Records MS 3009-RG 16',
         },
         'timeincrg17' : {
@@ -12192,19 +12700,19 @@ export default {
             'title'     : 'Time Inc. Administration, Human Resources and Personnel Records MS 3009-RG 17',
         },
         'timeincrg18' : {
-            'timestamp' : 1574865610,
+            'timestamp' : 1615919107,
             'title'     : 'Time Inc. Staff Organizations MS 3009-RG 18',
         },
         'timeincrg19' : {
-            'timestamp' : 1574865909,
+            'timestamp' : 1618926908,
             'title'     : 'Time Inc. Corporate Public Affairs Department Records MS 3009-RG 19',
         },
         'timeincrg2' : {
-            'timestamp' : 1580313308,
+            'timestamp' : 1614981007,
             'title'     : 'Time Inc. Bio Files MS 3009-RG 2',
         },
         'timeincrg20' : {
-            'timestamp' : 1574865909,
+            'timestamp' : 1605297310,
             'title'     : 'Time Inc. News Clippings MS 3009-RG 20',
         },
         'timeincrg21' : {
@@ -12220,75 +12728,151 @@ export default {
             'title'     : 'Time Inc. Real Estate Division Records MS 3009-RG 23',
         },
         'timeincrg24' : {
-            'timestamp' : 1582659907,
+            'timestamp' : 1624633507,
             'title'     : 'Time Inc. Time Publishing and Business Records MS 3009-RG 24',
         },
         'timeincrg25' : {
-            'timestamp' : 1574866510,
+            'timestamp' : 1614287707,
             'title'     : 'Time Inc. Fortune Publishing and Business Records MS 3009-RG 25',
         },
         'timeincrg26' : {
-            'timestamp' : 1574866510,
+            'timestamp' : 1615322409,
             'title'     : 'Time Inc. Life Publishing and Business Records MS 3009-RG 26',
         },
         'timeincrg27' : {
-            'timestamp' : 1574866510,
+            'timestamp' : 1617731710,
             'title'     : 'Time Inc. People Publishing and Business Records MS 3009-RG 27',
         },
         'timeincrg28' : {
-            'timestamp' : 1573757708,
+            'timestamp' : 1595858411,
             'title'     : 'Time Inc. Books Group Records MS 3009-RG 28',
         },
         'timeincrg29' : {
-            'timestamp' : 1574866510,
+            'timestamp' : 1615584307,
             'title'     : 'Time Inc. Invitational Records MS 3009-RG 29',
         },
         'timeincrg3' : {
-            'timestamp' : 1578415206,
+            'timestamp' : 1615817108,
             'title'     : 'Time Inc. Reference Files MS 3009-RG 3',
         },
         'timeincrg31' : {
-            'timestamp' : 1574866811,
+            'timestamp' : 1605297610,
             'title'     : 'Time Inc. Annual Reports MS 3009-RG 31',
         },
         'timeincrg32' : {
-            'timestamp' : 1574866811,
+            'timestamp' : 1605297610,
             'title'     : 'Time Inc. Time Covers MS 3009-RG 32',
         },
         'timeincrg33' : {
-            'timestamp' : 1574866811,
+            'timestamp' : 1614280508,
             'title'     : 'Time Inc. Oral History Project Records MS 3009-RG 33',
+        },
+        'timeincrg34' : {
+            'timestamp' : 1615584307,
+            'title'     : 'Time Inc. Sports Illustrated Editorial Records MS 3009-RG 34',
+        },
+        'timeincrg35' : {
+            'timestamp' : 1616699710,
+            'title'     : 'Time Inc. Sports Illustrated Publishing and Business Records MS 3009-RG 35',
+        },
+        'timeincrg36' : {
+            'timestamp' : 1610377814,
+            'title'     : 'Time Inc. Production Department Records MS 3009-RG 36',
+        },
+        'timeincrg37' : {
+            'timestamp' : 1611256509,
+            'title'     : 'Time Inc. Comptroller Records MS 3009-RG 37',
         },
         'timeincrg38' : {
             'timestamp' : 1555684809,
             'title'     : 'Time Inc. Time Annotated Bound Issues MS 3009-RG 38',
+        },
+        'timeincrg39' : {
+            'timestamp' : 1624370106,
+            'title'     : 'Time Inc. Annex Files MS 3009-RG 39',
         },
         'timeincrg4' : {
             'timestamp' : 1574802608,
             'title'     : 'Time Inc. Index Cards MS 3009-RG 4',
         },
         'timeincrg40' : {
-            'timestamp' : 1585582806,
+            'timestamp' : 1602610808,
             'title'     : 'Time Inc. Magazine Development Group Records MS 3009-RG 40',
         },
         'timeincrg41' : {
-            'timestamp' : 1574867110,
+            'timestamp' : 1595857508,
             'title'     : 'Time Inc. Video Group Records MS 3009-RG 41',
         },
         'timeincrg42' : {
             'timestamp' : 1574867110,
             'title'     : 'Time Inc. Harry Harding Files on Corporate Identity MS 3009-RG 42',
         },
+        'timeincrg43' : {
+            'timestamp' : 1614180309,
+            'title'     : 'Time Inc. Discover Publishing and Business Records: Publisher Bruce Barnet Files MS 3009-RG 43',
+        },
         'timeincrg44' : {
             'timestamp' : 1574867110,
             'title'     : 'Time Inc. Time Canada Ltd. Records MS 3009-RG 44',
         },
+        'timeincrg45' : {
+            'timestamp' : 1597416608,
+            'title'     : 'Time Inc. New Media Records: Editor Daniel Okrent Files MS 3009-RG 45',
+        },
+        'timeincrg46' : {
+            'timestamp' : 1603476011,
+            'title'     : 'Time Inc. Publicity Files MS 3009-RG 46',
+        },
+        'timeincrg47' : {
+            'timestamp' : 1599069610,
+            'title'     : 'Time Inc. Editorial Services Records MS 3009-RG 47',
+        },
+        'timeincrg48' : {
+            'timestamp' : 1622644809,
+            'title'     : 'Time Inc. Realia Collection MS 3009-RG 48',
+        },
+        'timeincrg49' : {
+            'timestamp' : 1601666708,
+            'title'     : 'Time Inc. TV-Cable Week Publishing and Business Records: Publisher Christopher Meigher Files MS 3009-RG 49',
+        },
         'timeincrg5' : {
-            'timestamp' : 1574802907,
+            'timestamp' : 1624900807,
             'title'     : 'Time Inc. Corporate Administration Records MS 3009-RG 5',
         },
+        'timeincrg50' : {
+            'timestamp' : 1624995908,
+            'title'     : 'Time Inc. Corporate Circulation Records MS 3009-RG 50',
+        },
+        'timeincrg51' : {
+            'timestamp' : 1610138109,
+            'title'     : 'Time Inc. Atlantic Recording Company and Elektra Entertainment Records MS 3009-RG 51',
+        },
+        'timeincrg52' : {
+            'timestamp' : 1610138408,
+            'title'     : 'Time Inc. Travel Services Records MS 3009-RG 52',
+        },
+        'timeincrg53' : {
+            'timestamp' : 1610139008,
+            'title'     : 'Time Inc. Company Services Records MS 3009-RG 53',
+        },
+        'timeincrg54' : {
+            'timestamp' : 1610139609,
+            'title'     : 'Time Inc. Selling Areas-Marketing, Inc. (SAMI) Records MS 3009-RG 54',
+        },
+        'timeincrg55' : {
+            'timestamp' : 1615584307,
+            'title'     : 'Time Inc. Sports Illustrated for Kids Records MS 3009-RG 55',
+        },
+        'timeincrg56' : {
+            'timestamp' : 1624653008,
+            'title'     : 'Time Inc. International Records MS 3009-RG 56',
+        },
+        'timeincrg57' : {
+            'timestamp' : 1620333309,
+            'title'     : 'Time Inc. Postal Rates Records MS 3009-RG 57',
+        },
         'timeincrg6' : {
-            'timestamp' : 1576011007,
+            'timestamp' : 1623866708,
             'title'     : 'Time Inc. Corporate Editorial Records MS 3009-RG 6',
         },
         'timeincrg6test' : {
@@ -12296,15 +12880,15 @@ export default {
             'title'     : 'Time Inc. Corporate Editorial Records TEST MS 3009-RG 6TEST',
         },
         'timeincrg7' : {
-            'timestamp' : 1594745108,
+            'timestamp' : 1622221508,
             'title'     : 'Time Inc. Time Editorial Records MS 3009-RG 7',
         },
         'timeincrg8' : {
-            'timestamp' : 1574803809,
+            'timestamp' : 1614113108,
             'title'     : 'Time Inc. Fortune Editorial Records MS 3009-RG 8',
         },
         'timeincrg9' : {
-            'timestamp' : 1574803809,
+            'timestamp' : 1623424209,
             'title'     : 'Time Inc. Life Editorial Records MS 3009-RG 9',
         },
         'tinnelly_cunningham_suzette' : {
@@ -12316,7 +12900,7 @@ export default {
             'title'     : 'Tontine Coffee-House Records MS 631',
         },
         'travelersaid' : {
-            'timestamp' : 1530642010,
+            'timestamp' : 1614184510,
             'title'     : 'Travelers Aid Society of New York records MS 635',
         },
         'trepp' : {
@@ -12364,8 +12948,8 @@ export default {
             'title'     : 'Harvey Wang Photograph Collection PR 175',
         },
         'washarch' : {
-            'timestamp' : 1390594418,
-            'title'     : 'Washington Arch Records MS 443.30',
+            'timestamp' : 1624898407,
+            'title'     : 'Washington Arch records MS 443.30',
         },
         'wattsjones' : {
             'timestamp' : 1429809049,
@@ -12400,7 +12984,7 @@ export default {
             'title'     : 'Winston Weisman Collection of Architectural Photographs PR 73',
         },
         'weissklau' : {
-            'timestamp' : 1390594418,
+            'timestamp' : 1614182108,
             'title'     : 'Weiss &amp; Klau Co. Records MS 687',
         },
         'wenzel' : {
@@ -12480,14 +13064,18 @@ export default {
             'title'     : 'Claire Yaffa New York Foundling Hospital Photograph Collection PR 299',
         },
         'yonkerspolice' : {
-            'timestamp' : 1470690013,
-            'title'     : 'Yonkers Police Department Records MS 296',
+            'timestamp' : 1601905507,
+            'title'     : 'Yonkers Police Department records MS 296',
         },
     },
     'nyuad' : {
         'ad_mc_001' : {
             'timestamp' : 1522148113,
             'title'     : 'Vardan Hovhannisyan video collection AD.MC.001',
+        },
+        'ad_mc_004' : {
+            'timestamp' : 1623580811,
+            'title'     : 'NYU Abu Dhabi Capstone Archives 12',
         },
         'ad_mc_010' : {
             'timestamp' : 1586336707,
@@ -12501,6 +13089,10 @@ export default {
             'timestamp' : 1576651808,
             'title'     : 'Salwa Mikdadi Papers AD.MC.022',
         },
+        'ad_mc_023' : {
+            'timestamp' : 1612158312,
+            'title'     : 'NYU Abu Dhabi Library Oral History Project AD.MC.023',
+        },
         'ad_mc_035' : {
             'timestamp' : 1543227615,
             'title'     : 'Andrew Eisenberg collection of East African commercial sound recordings AD.MC.035',
@@ -12509,6 +13101,10 @@ export default {
             'timestamp' : 1577360712,
             'title'     : 'Giuliano Garavini collection AD.MC.038',
         },
+        'ad_mc_039' : {
+            'timestamp' : 1597575008,
+            'title'     : 'Ali Akbar Bushiri collection AD.MC.039',
+        },
         'ad_mc_052' : {
             'timestamp' : 1577095812,
             'title'     : 'Graham Anthony Hill papers AD.MC.052',
@@ -12516,6 +13112,30 @@ export default {
         'ad_mc_054' : {
             'timestamp' : 1576846822,
             'title'     : 'Marcel Kurpershoek papers AD.MC.054',
+        },
+        'ad_mc_057' : {
+            'timestamp' : 1599552912,
+            'title'     : 'Emirates Bird Records Committee records AD.MC.057',
+        },
+        'ad_mc_058' : {
+            'timestamp' : 1610967621,
+            'title'     : 'John B. Kelly papers AD.MC.058',
+        },
+        'ad_mc_074' : {
+            'timestamp' : 1618307412,
+            'title'     : 'M.H.G. Bell collection AD.MC.074',
+        },
+        'ad_mc_075' : {
+            'timestamp' : 1618393215,
+            'title'     : 'J.A. Rogers collection on the discovery of oil in Abu Dhabi AD.MC.075',
+        },
+        'ad_mc_076' : {
+            'timestamp' : 1618841712,
+            'title'     : 'Colin Edwards collection on Palestine AD.MC.076',
+        },
+        'ad_mc_079' : {
+            'timestamp' : 1620549014,
+            'title'     : 'Woodman Taylor collection AD.MC.079',
         },
         'adff' : {
             'timestamp' : 1462167612,
@@ -12583,10 +13203,6 @@ export default {
             'timestamp' : 1429809049,
             'title'     : 'Guide to the Frederick Kreiling Papers, 1962-1968 RG.012',
         },
-        'mrireports' : {
-            'timestamp' : 1458076545,
-            'title'     : 'Guide to the Microwave Research Institute Technical Reports RG.031',
-        },
         'nyupolyvideo' : {
             'timestamp' : 1429809049,
             'title'     : 'Guide to the Poly Archives Video Collection, 1975-2007 RG.003',
@@ -12606,10 +13222,6 @@ export default {
         'poly_rg_027' : {
             'timestamp' : 1574883908,
             'title'     : 'Guide to the Poly Archives Memorabilia Collection RG.027',
-        },
-        'poly_rg_031' : {
-            'timestamp' : 1480968608,
-            'title'     : 'Guide to the Microwave Research Institute Technical Reports RG.031',
         },
         'poly_rg_033' : {
             'timestamp' : 1498064136,
@@ -12659,10 +13271,6 @@ export default {
             'timestamp' : 1429809049,
             'title'     : 'Guide to the Samuel Ruben Papers, 1923-1979 RG.015',
         },
-        'testtech' : {
-            'timestamp' : 1456524011,
-            'title'     : 'Guide to the Microwave Research Institute Technical Reports RG.031',
-        },
         'tobias' : {
             'timestamp' : 1429809049,
             'title'     : 'Guide to the Abraham Joel Tobias Collection, 1942-2005 RG.022',
@@ -12673,17 +13281,9 @@ export default {
         },
     },
     'tamwag' : {
-        'OH_087' : {
-            'timestamp' : 1536328509,
-            'title'     : 'George Altomare United Federation of Teachers Audio Collection OH 087',
-        },
-        'PHOTOS_93' : {
-            'timestamp' : 1450512610,
-            'title'     : 'Alexander Lurkis Photographs PHOTOS.093',
-        },
         'aia_001' : {
-            'timestamp' : 1450482610,
-            'title'     : 'Dorothy Hayden Cudahy and John J. Cudahy Family Papers AIA.001',
+            'timestamp' : 1603827911,
+            'title'     : 'Dorothy Hayden Cudahy Papers AIA.001',
         },
         'aia_002' : {
             'timestamp' : 1536611110,
@@ -12694,7 +13294,7 @@ export default {
             'title'     : 'Archives of Irish America County Societies Collection AIA.003',
         },
         'aia_004' : {
-            'timestamp' : 1568732414,
+            'timestamp' : 1616766309,
             'title'     : 'Archives of Irish America Newspapers and Periodicals Collection AIA.004',
         },
         'aia_005' : {
@@ -12730,7 +13330,7 @@ export default {
             'title'     : 'Jane Conlon Muller Oral History Collection AIA.012',
         },
         'aia_013' : {
-            'timestamp' : 1569261308,
+            'timestamp' : 1604502908,
             'title'     : 'Archives of Irish America Vertical Files AIA.013',
         },
         'aia_015' : {
@@ -12762,7 +13362,7 @@ export default {
             'title'     : 'Tracy Family Corporate Towing Minute Books AIA.021',
         },
         'aia_022' : {
-            'timestamp' : 1569261308,
+            'timestamp' : 1604502308,
             'title'     : 'Archives of Irish America Irish Republicanism Collection AIA.022',
         },
         'aia_023' : {
@@ -12886,7 +13486,7 @@ export default {
             'title'     : 'Thomas M. Truxes Microfilm Collection AIA.052',
         },
         'aia_053' : {
-            'timestamp' : 1531323079,
+            'timestamp' : 1614377108,
             'title'     : 'Archives of Irish America Photograph Collection AIA.053',
         },
         'aia_054' : {
@@ -12958,7 +13558,7 @@ export default {
             'title'     : 'Irish Immigration Reform Movement, Boston Chapter Records AIA.073',
         },
         'aia_074' : {
-            'timestamp' : 1592424015,
+            'timestamp' : 1619493990,
             'title'     : 'Charles Laverty Papers AIA.074',
         },
         'aia_075' : {
@@ -12986,7 +13586,7 @@ export default {
             'title'     : 'Irish Repertory Theatre Records AIA.080',
         },
         'aia_081' : {
-            'timestamp' : 1569261609,
+            'timestamp' : 1617740408,
             'title'     : 'Eoin McKiernan and Deirdre McKiernan Hetzler Papers AIA.081',
         },
         'aia_082' : {
@@ -13008,6 +13608,10 @@ export default {
         'aia_087' : {
             'timestamp' : 1583440508,
             'title'     : 'Lena Kelly Collection on the Bronx Gaelic League AIA.087',
+        },
+        'aia_088' : {
+            'timestamp' : 1604341507,
+            'title'     : 'John and Ann Garvey Papers AIA.088',
         },
         'alba_001' : {
             'timestamp' : 1578603307,
@@ -13086,8 +13690,8 @@ export default {
             'title'     : 'Irving Fishgold Papers ALBA.041',
         },
         'alba_043' : {
-            'timestamp' : 1500564008,
-            'title'     : 'Alice Bache Gould Papers ALBA.043',
+            'timestamp' : 1621963209,
+            'title'     : 'Alice Bache Gould Correspondence ALBA.043',
         },
         'alba_044' : {
             'timestamp' : 1504798209,
@@ -13406,8 +14010,8 @@ export default {
             'title'     : 'Felix Kusman Papers ALBA.178',
         },
         'alba_180' : {
-            'timestamp' : 1502305210,
-            'title'     : 'Jay Allen and Barbara Tuchman: Chronology of the Spanish Civil War ALBA.180',
+            'timestamp' : 1604526907,
+            'title'     : 'Jay Allen and Barbara Tuchman Chronology of the Spanish Civil War ALBA.180',
         },
         'alba_181' : {
             'timestamp' : 1504881309,
@@ -13546,7 +14150,7 @@ export default {
             'title'     : 'Abraham Lincoln Brigade Archives Office Files ALBA.237',
         },
         'alba_240' : {
-            'timestamp' : 1592424309,
+            'timestamp' : 1617219592,
             'title'     : 'Mito Kruth Papers ALBA.240',
         },
         'alba_242' : {
@@ -13746,19 +14350,19 @@ export default {
             'title'     : 'Selma Chadwick Papers ALBA.311',
         },
         'alba_audio_001' : {
-            'timestamp' : 1567013707,
+            'timestamp' : 1620673209,
             'title'     : 'Veterans of the Abraham Lincoln Brigade Audio Collection ALBA.AUDIO.001',
         },
         'alba_audio_004' : {
-            'timestamp' : 1504714509,
-            'title'     : 'Carl Geiser Audio Collection ALBA.AUDIO.004',
+            'timestamp' : 1620760510,
+            'title'     : 'Carl Geiser Audio Recordings on Spanish Civil War Prisoners of War ALBA.AUDIO.004',
         },
         'alba_audio_018' : {
             'timestamp' : 1538180710,
             'title'     : 'John Gerassi Oral History Collection ALBA.AUDIO.018',
         },
         'alba_audio_058' : {
-            'timestamp' : 1504720508,
+            'timestamp' : 1620760510,
             'title'     : 'Sidney Kaufman Audio Collection ALBA.AUDIO.058',
         },
         'alba_audio_066' : {
@@ -13766,24 +14370,24 @@ export default {
             'title'     : 'Arthur H. Landis Oral History Collection ALBA.AUDIO.066',
         },
         'alba_audio_071' : {
-            'timestamp' : 1554413111,
-            'title'     : 'David Miller Audio Collection ALBA.AUDIO.071',
+            'timestamp' : 1620760510,
+            'title'     : 'David Miller Oral Histories on American Volunteers in the Spanish Civil War ALBA.AUDIO.071',
         },
         'alba_audio_090' : {
-            'timestamp' : 1504815309,
+            'timestamp' : 1620760510,
             'title'     : 'Albert Prago Audio Collection ALBA.AUDIO.090',
         },
         'alba_audio_101' : {
-            'timestamp' : 1504815908,
-            'title'     : 'Jonathan Solovy: Interviews for "Jewish American Volunteers and the Spanish Civil         War" ALBA.AUDIO.101',
+            'timestamp' : 1620760510,
+            'title'     : 'Jonathan Solovy Oral Histories on Jewish American Volunteers in the Spanish Civil War ALBA.AUDIO.101',
         },
         'alba_audio_104' : {
-            'timestamp' : 1558536010,
-            'title'     : 'Robert Steck Audio Collection ALBA.AUDIO.104',
+            'timestamp' : 1620760510,
+            'title'     : 'Robert Steck Audio Recordings on Spanish Civil War Prisoners of War ALBA.AUDIO.104',
         },
         'alba_audio_131' : {
-            'timestamp' : 1561144812,
-            'title'     : 'Frances Patai Audio Collection ALBA.AUDIO.131',
+            'timestamp' : 1620760510,
+            'title'     : 'Frances Patai Oral Histories on Women Medical Volunteers in the Spanish Civil War ALBA.AUDIO.131',
         },
         'alba_audio_204' : {
             'timestamp' : 1504817409,
@@ -13798,8 +14402,12 @@ export default {
             'title'     : 'Abraham Lincoln Brigade Archives Films. ALBA.FILM.001',
         },
         'alba_graphics_001' : {
-            'timestamp' : 1517259909,
+            'timestamp' : 1608302709,
             'title'     : 'Spanish Civil War Poster Collection  ALBA.GRAPHICS.001',
+        },
+        'alba_graphics_003' : {
+            'timestamp' : 1610639709,
+            'title'     : 'Joseph Vogel Drawings ALBA.GRAPHICS.003',
         },
         'alba_graphics_004' : {
             'timestamp' : 1504795209,
@@ -13889,10 +14497,6 @@ export default {
             'timestamp' : 1500488708,
             'title'     : 'Alvin Warren Photographs ALBA.PHOTO.128',
         },
-        'alba_photo_129' : {
-            'timestamp' : 1500489309,
-            'title'     : 'Herman Rosenstein Photographs ALBA.PHOTO.129',
-        },
         'alba_photo_131' : {
             'timestamp' : 1500489607,
             'title'     : 'Frances Patai Photographs ALBA.PHOTO.131',
@@ -13922,7 +14526,7 @@ export default {
             'title'     : 'John Tisa Photographs ALBA.PHOTO.173',
         },
         'alba_photo_177' : {
-            'timestamp' : 1501101009,
+            'timestamp' : 1604694610,
             'title'     : 'International Brigades Archive, Moscow: Selected Images ALBA.PHOTO.177',
         },
         'alba_photo_178' : {
@@ -14029,12 +14633,16 @@ export default {
             'timestamp' : 1536869411,
             'title'     : 'Bill Andrews Editorial Cartoons and Papers GRAPHICS.038',
         },
+        'graphics_039' : {
+            'timestamp' : 1614175508,
+            'title'     : 'Tamiment Library Artwork Collection GRAPHICS.039',
+        },
         'oh_001' : {
-            'timestamp' : 1594044914,
+            'timestamp' : 1595340908,
             'title'     : 'New Yorkers at Work Oral History Collection OH.001',
         },
         'oh_002' : {
-            'timestamp' : 1555710309,
+            'timestamp' : 1612801512,
             'title'     : 'Oral History of the American Left Collection OH.002',
         },
         'oh_004' : {
@@ -14045,9 +14653,13 @@ export default {
             'timestamp' : 1535734211,
             'title'     : 'New York City Central Labor Council Oral History Collection OH 007',
         },
+        'oh_008' : {
+            'timestamp' : 1621352710,
+            'title'     : 'American Federation of Teachers Oral History Collection OH.008',
+        },
         'oh_009' : {
-            'timestamp' : 1535734211,
-            'title'     : 'United Federation of Teachers Oral History Collection OH 009',
+            'timestamp' : 1620743414,
+            'title'     : 'United Federation of Teachers Oral History Collection OH.009',
         },
         'oh_012' : {
             'timestamp' : 1535734510,
@@ -14058,7 +14670,7 @@ export default {
             'title'     : 'Taxi Rank and File Coalition Oral History Collection OH 013',
         },
         'oh_014' : {
-            'timestamp' : 1572285610,
+            'timestamp' : 1616462411,
             'title'     : 'New York City Immigrant Labor History Project Oral History Collection OH.014',
         },
         'oh_015' : {
@@ -14070,24 +14682,24 @@ export default {
             'title'     : 'Asian Garment Workers in New York City Oral History Collection OH 018',
         },
         'oh_019' : {
-            'timestamp' : 1535734510,
-            'title'     : 'United Automobile Workers of America, District 65 Oral History Collection OH 019',
+            'timestamp' : 1599660308,
+            'title'     : 'United Automobile Workers of America, District 65 Oral History Collection OH.019',
         },
         'oh_021' : {
-            'timestamp' : 1535734510,
-            'title'     : 'International Brotherhood of Sleeping Car Porters Oral History Collection OH 021',
+            'timestamp' : 1620662708,
+            'title'     : 'Brotherhood of Sleeping Car Porters Oral History Collection OH.021',
         },
         'oh_026' : {
-            'timestamp' : 1535734814,
-            'title'     : 'Communications Workers of America Audio Tape Inventory OH 026',
+            'timestamp' : 1619553313,
+            'title'     : 'Communications Workers of America Audio Tape Inventory OH.026',
         },
         'oh_031' : {
             'timestamp' : 1536327063,
             'title'     : 'Tamiment Playhouse Alumni Oral History Collection OH 031',
         },
         'oh_033' : {
-            'timestamp' : 1536327313,
-            'title'     : 'New York University Department of History Oral History Class Collection OH 033',
+            'timestamp' : 1612801512,
+            'title'     : 'New York University Department of History Oral History Class Collection OH.033',
         },
         'oh_034' : {
             'timestamp' : 1536327313,
@@ -14130,11 +14742,11 @@ export default {
             'title'     : 'Daniel Katz - International Ladies\' Garment Workers\' Union Oral History Interviews OH 049',
         },
         'oh_052' : {
-            'timestamp' : 1536327611,
-            'title'     : 'Frederic Ewen Audiotape and Videotape Collection OH 052',
+            'timestamp' : 1621963209,
+            'title'     : 'Frederic Ewen Audiotape and Videotape Collection OH.052',
         },
         'oh_057' : {
-            'timestamp' : 1589382310,
+            'timestamp' : 1621963509,
             'title'     : 'James E. Jackson Audiotapes Collection OH.057',
         },
         'oh_058' : {
@@ -14146,16 +14758,16 @@ export default {
             'title'     : 'Colin Davis Waterfront Workers Oral History Collection OH 060',
         },
         'oh_061' : {
-            'timestamp' : 1578940208,
+            'timestamp' : 1622578509,
             'title'     : 'Professional Staff Congress/City University of New York Oral History Collection OH.061',
-        },
-        'oh_063' : {
-            'timestamp' : 1536327910,
-            'title'     : 'Social Service Employees Union Audio OH.063',
         },
         'oh_065' : {
             'timestamp' : 1536327910,
             'title'     : 'Communist Party of the United States of America Oral History Collection OH 065',
+        },
+        'oh_066' : {
+            'timestamp' : 1620141909,
+            'title'     : 'Tamar Carroll Oral Histories on Women\'s Health Action and Mobilization (WHAM!) OH.066',
         },
         'oh_068' : {
             'timestamp' : 1570733710,
@@ -14172,6 +14784,10 @@ export default {
         'oh_086' : {
             'timestamp' : 1582130408,
             'title'     : 'Communications Workers of America, Local 1109 Oral History Collection OH.086',
+        },
+        'oh_091' : {
+            'timestamp' : 1605709508,
+            'title'     : 'Iraq Veterans Against the War Oral History Collection OH.091',
         },
         'pe_001' : {
             'timestamp' : 1534437010,
@@ -14202,8 +14818,8 @@ export default {
             'title'     : 'Tamiment Library and Robert F. Wagner Labor Archives Printed Ephemera Collection on the United Electrical, Radio and Machine Workers of America PE.007',
         },
         'pe_008' : {
-            'timestamp' : 1535639709,
-            'title'     : 'Tamiment Library and Robert F. Wagner Labor Archives Printed Ephemera Collection on the National Maritime Union of America PE 008',
+            'timestamp' : 1621963209,
+            'title'     : 'Tamiment Library and Robert F. Wagner Labor Archives Printed Ephemera Collection on the National Maritime Union PE.008',
         },
         'pe_009' : {
             'timestamp' : 1534528812,
@@ -14314,7 +14930,7 @@ export default {
             'title'     : 'Tamiment Library and Robert F. Wagner Labor Archives Printed Ephemera Collection on Students for a Democratic Society PE.035',
         },
         'pe_036' : {
-            'timestamp' : 1547052310,
+            'timestamp' : 1616766309,
             'title'     : 'Tamiment Library and Robert F. Wagner Labor Archives Printed Ephemera Collection on Organizations PE.036',
         },
         'pe_037' : {
@@ -14358,7 +14974,7 @@ export default {
             'title'     : 'Tamiment Library Newspapers PERIODICALS.001',
         },
         'photos_001' : {
-            'timestamp' : 1550698510,
+            'timestamp' : 1599659409,
             'title'     : 'Tamiment Library and Robert F. Wagner Labor Archives Labor and Radicalism Photograph Collection PHOTOS.001',
         },
         'photos_002' : {
@@ -14390,11 +15006,11 @@ export default {
             'title'     : 'Harry Laidler Photographs PHOTOS 009',
         },
         'photos_010' : {
-            'timestamp' : 1535659809,
-            'title'     : 'Rose Schneiderman Photographs PHOTOS 010',
+            'timestamp' : 1598906408,
+            'title'     : 'Rose Schneiderman Photographs PHOTOS.010',
         },
         'photos_011' : {
-            'timestamp' : 1558536609,
+            'timestamp' : 1599659409,
             'title'     : 'New York Metro Area Postal Union Photographs PHOTOS.011',
         },
         'photos_012' : {
@@ -14426,12 +15042,12 @@ export default {
             'title'     : 'Elizabeth Gurley Flynn Photographs PHOTOS 018',
         },
         'photos_019' : {
-            'timestamp' : 1536175809,
-            'title'     : 'United Federation of Teachers Photographs PHOTOS 019',
+            'timestamp' : 1607025313,
+            'title'     : 'United Federation of Teachers Photographs PHOTOS.019',
         },
         'photos_019_001' : {
-            'timestamp' : 1536175510,
-            'title'     : 'United Federation of Teachers Hans Weissenstein Negatives PHOTOS 019 001',
+            'timestamp' : 1603998611,
+            'title'     : 'United Federation of Teachers Hans Weissenstein Negatives PHOTOS.019.001',
         },
         'photos_020' : {
             'timestamp' : 1536177011,
@@ -14500,10 +15116,6 @@ export default {
         'photos_039' : {
             'timestamp' : 1536693611,
             'title'     : 'Girolamo Valenti Photographs PHOTOS 039',
-        },
-        'photos_040' : {
-            'timestamp' : 1536694213,
-            'title'     : 'Betsy Wade Photographs PHOTOS 040',
         },
         'photos_041' : {
             'timestamp' : 1536695410,
@@ -14670,12 +15282,12 @@ export default {
             'title'     : 'James E. Jackson and Esther Cooper Jackson Photographs PHOTOS.221',
         },
         'photos_223' : {
-            'timestamp' : 1556906422,
+            'timestamp' : 1598890809,
             'title'     : 'The Daily Worker and The Daily World Photographs Collection PHOTOS.223',
         },
         'photos_223_001' : {
-            'timestamp' : 1537473612,
-            'title'     : 'The Daily Worker and The Daily World Negatives Collection PHOTOS.223.001',
+            'timestamp' : 1621958724,
+            'title'     : 'The Daily Worker and the Daily World Negatives Collection PHOTOS.223.001',
         },
         'photos_233' : {
             'timestamp' : 1537469410,
@@ -14710,8 +15322,8 @@ export default {
             'title'     : 'Walter Rosenblum Photographs of Spanish Refugees PHOTOS.249',
         },
         'photos_256' : {
-            'timestamp' : 1568651110,
-            'title'     : 'Service Employees International Union, Local 32BJ Photographs PHOTOS.256',
+            'timestamp' : 1610048709,
+            'title'     : 'Service Employees International Union, Local 32BJ Photographs and Archived Websites PHOTOS.256',
         },
         'photos_258' : {
             'timestamp' : 1537301110,
@@ -14846,11 +15458,11 @@ export default {
             'title'     : 'Rose Schneiderman Papers TAM.018',
         },
         'tam_019' : {
-            'timestamp' : 1553114409,
+            'timestamp' : 1613066707,
             'title'     : 'Mark Starr Papers TAM.019',
         },
         'tam_020' : {
-            'timestamp' : 1524576310,
+            'timestamp' : 1604519707,
             'title'     : 'Eugene V. Debs Papers TAM.020',
         },
         'tam_021' : {
@@ -14946,7 +15558,7 @@ export default {
             'title'     : 'Congress of American Professors Records TAM.043',
         },
         'tam_044' : {
-            'timestamp' : 1524512410,
+            'timestamp' : 1619533809,
             'title'     : 'New York Bureau of Legal Advice Records TAM.044',
         },
         'tam_045' : {
@@ -15126,7 +15738,7 @@ export default {
             'title'     : 'Joseph Gordon Papers TAM.082',
         },
         'tam_083' : {
-            'timestamp' : 1592424309,
+            'timestamp' : 1617817397,
             'title'     : 'Jay and Si-Lan Chen Leyda Papers TAM.083',
         },
         'tam_084' : {
@@ -15138,7 +15750,7 @@ export default {
             'title'     : 'Henry J. Meyer United States National War Labor Board Files TAM.085',
         },
         'tam_086' : {
-            'timestamp' : 1525294813,
+            'timestamp' : 1612801512,
             'title'     : 'Records of the American Committee for Protection of Foreign Born TAM.086',
         },
         'tam_088' : {
@@ -15170,7 +15782,7 @@ export default {
             'title'     : 'Herman and Conway Associates Records TAM.094',
         },
         'tam_095' : {
-            'timestamp' : 1525711209,
+            'timestamp' : 1621963509,
             'title'     : 'Gil Green Papers TAM.095',
         },
         'tam_097' : {
@@ -15210,7 +15822,7 @@ export default {
             'title'     : 'Democratic Socialists of America Records TAM.105',
         },
         'tam_106' : {
-            'timestamp' : 1572619210,
+            'timestamp' : 1620399307,
             'title'     : 'National Organization for Women: New York City Chapter Records TAM.106',
         },
         'tam_107' : {
@@ -15238,7 +15850,7 @@ export default {
             'title'     : 'John B. Andrews Papers TAM.113',
         },
         'tam_114' : {
-            'timestamp' : 1525892410,
+            'timestamp' : 1623772512,
             'title'     : 'John and Constantine Poulos Papers TAM.114',
         },
         'tam_115' : {
@@ -15254,7 +15866,7 @@ export default {
             'title'     : 'Dorothy Gallagher Research Files on Carlo Tresca TAM.117',
         },
         'tam_118' : {
-            'timestamp' : 1583178907,
+            'timestamp' : 1621001409,
             'title'     : 'Elizabeth Gurley Flynn Papers TAM.118',
         },
         'tam_119' : {
@@ -15266,8 +15878,8 @@ export default {
             'title'     : 'Edward J. Falkowski Papers TAM.120',
         },
         'tam_121' : {
-            'timestamp' : 1535488512,
-            'title'     : 'Ventana Records TAM 121',
+            'timestamp' : 1604500807,
+            'title'     : 'Ventana Records TAM.121',
         },
         'tam_122' : {
             'timestamp' : 1535488512,
@@ -15310,7 +15922,7 @@ export default {
             'title'     : 'Newark Community Union Project Oral History Transcripts TAM 131',
         },
         'tam_132' : {
-            'timestamp' : 1579215311,
+            'timestamp' : 1621971610,
             'title'     : 'Communist Party of the United States of America Records TAM.132',
         },
         'tam_133' : {
@@ -15338,8 +15950,8 @@ export default {
             'title'     : 'Leslie Cagan Papers TAM 138',
         },
         'tam_139' : {
-            'timestamp' : 1535488812,
-            'title'     : 'Greenwich House Records TAM 139',
+            'timestamp' : 1604501408,
+            'title'     : 'Greenwich House Records TAM.139',
         },
         'tam_140' : {
             'timestamp' : 1535488812,
@@ -15489,10 +16101,6 @@ export default {
             'timestamp' : 1583164207,
             'title'     : 'Chalmers K. Stewart Papers TAM.177',
         },
-        'tam_178' : {
-            'timestamp' : 1535549415,
-            'title'     : 'George Washington Polk Papers TAM 178',
-        },
         'tam_179' : {
             'timestamp' : 1526065809,
             'title'     : 'Morris Schappes Papers TAM 179',
@@ -15534,11 +16142,11 @@ export default {
             'title'     : 'Sally Belfrage Papers TAM.189',
         },
         'tam_190' : {
-            'timestamp' : 1529338209,
+            'timestamp' : 1611152709,
             'title'     : 'John Lowenthal Papers TAM.190',
         },
         'tam_191' : {
-            'timestamp' : 1580509208,
+            'timestamp' : 1610048709,
             'title'     : 'National Lawyers Guild Records TAM.191',
         },
         'tam_192' : {
@@ -15548,10 +16156,6 @@ export default {
         'tam_194' : {
             'timestamp' : 1535550614,
             'title'     : 'Herb Lerner World War II Letters to Ruth Lerner TAM 194',
-        },
-        'tam_195' : {
-            'timestamp' : 1535550614,
-            'title'     : 'Arthur Vogel Papers TAM.195',
         },
         'tam_196' : {
             'timestamp' : 1535550614,
@@ -15576,10 +16180,6 @@ export default {
         'tam_201' : {
             'timestamp' : 1535550614,
             'title'     : 'Bernard Goodman Papers TAM.201',
-        },
-        'tam_202' : {
-            'timestamp' : 1535550614,
-            'title'     : 'Sandra Gordon Patrinos Papers TAM.202',
         },
         'tam_203' : {
             'timestamp' : 1535550614,
@@ -15681,10 +16281,6 @@ export default {
             'timestamp' : 1535550913,
             'title'     : 'Elizabeth Danto Collection on the Sarah Lawrence College Strike and Teach-In against the United States\' Invasion of Cambodia TAM 229',
         },
-        'tam_230' : {
-            'timestamp' : 1535550913,
-            'title'     : 'Susan Bondurant Papers TAM 230',
-        },
         'tam_231' : {
             'timestamp' : 1535550913,
             'title'     : 'Communist Workers Party Records TAM 231',
@@ -15702,12 +16298,12 @@ export default {
             'title'     : 'Feminist Organization for Communication, Action and Service (FOCAS) Records TAM 234',
         },
         'tam_235' : {
-            'timestamp' : 1535551215,
-            'title'     : 'Tung Pok Chin and Wing Fong Chin Papers and Photographs TAM 235',
+            'timestamp' : 1623183309,
+            'title'     : 'Tung Pok Chin and Wing Fong Chin Papers TAM.235',
         },
         'tam_236' : {
-            'timestamp' : 1535551215,
-            'title'     : 'Karl Ichiro Akiya Papers TAM 236',
+            'timestamp' : 1612801809,
+            'title'     : 'Karl Ichiro Akiya Papers TAM.236',
         },
         'tam_237' : {
             'timestamp' : 1535551215,
@@ -15758,7 +16354,7 @@ export default {
             'title'     : 'Hertz Burgin History of Jewish Labor Movement Typescript TAM 249',
         },
         'tam_250' : {
-            'timestamp' : 1560780608,
+            'timestamp' : 1612985711,
             'title'     : 'Three Arrows Cooperative Society Records TAM.250',
         },
         'tam_251' : {
@@ -15802,16 +16398,12 @@ export default {
             'title'     : 'Charles Rivers Photographs and Scrapbooks TAM 260',
         },
         'tam_262' : {
-            'timestamp' : 1535551511,
-            'title'     : 'Tamiment Library Scrapbook Collections TAM 262',
+            'timestamp' : 1604525107,
+            'title'     : 'Tamiment Library Scrapbook Collections TAM.262',
         },
         'tam_263' : {
             'timestamp' : 1535551511,
             'title'     : 'Oscar Shaftel Papers TAM 263',
-        },
-        'tam_264' : {
-            'timestamp' : 1535551511,
-            'title'     : 'Paul Buhle Collection on Social Humor TAM 264',
         },
         'tam_265' : {
             'timestamp' : 1535551511,
@@ -15912,10 +16504,6 @@ export default {
         'tam_294' : {
             'timestamp' : 1535551816,
             'title'     : 'Annie Chamberlin Papers TAM 294',
-        },
-        'tam_295' : {
-            'timestamp' : 1535551816,
-            'title'     : 'August Gold Papers TAM 295',
         },
         'tam_296' : {
             'timestamp' : 1535551816,
@@ -16074,8 +16662,8 @@ export default {
             'title'     : 'Abbott Simon Papers TAM 346',
         },
         'tam_347' : {
-            'timestamp' : 1535552713,
-            'title'     : 'James E. Jackson and Esther Cooper Jackson Papers TAM 347',
+            'timestamp' : 1604597108,
+            'title'     : 'James E. Jackson and Esther Cooper Jackson Papers TAM.347',
         },
         'tam_348' : {
             'timestamp' : 1535553014,
@@ -16136,10 +16724,6 @@ export default {
         'tam_366' : {
             'timestamp' : 1572295209,
             'title'     : 'Jerry "The Peddler" Wade Papers on Squatters\' Rights TAM.366',
-        },
-        'tam_367' : {
-            'timestamp' : 1535553312,
-            'title'     : 'Ernest Erber Papers TAM 367',
         },
         'tam_368' : {
             'timestamp' : 1543355709,
@@ -16205,10 +16789,6 @@ export default {
             'timestamp' : 1572352211,
             'title'     : 'Sophie M. Gerson Papers TAM.401',
         },
-        'tam_403' : {
-            'timestamp' : 1535560215,
-            'title'     : 'Moss Roberts Vietnam War Research Files TAM 403',
-        },
         'tam_404' : {
             'timestamp' : 1535560215,
             'title'     : 'Marc Edelman Collection on the North American Congress on Latin America (NACLA) TAM 404',
@@ -16250,7 +16830,7 @@ export default {
             'title'     : 'Leo Hershkowitz Collection of New York Supreme Court Records and Research Material TAM.415',
         },
         'tam_416' : {
-            'timestamp' : 1592852109,
+            'timestamp' : 1620852309,
             'title'     : 'Asian CineVision Records TAM.416',
         },
         'tam_417' : {
@@ -16278,7 +16858,7 @@ export default {
             'title'     : 'Tuli Kupferberg Radical Humor Collection TAM.422',
         },
         'tam_423' : {
-            'timestamp' : 1550700010,
+            'timestamp' : 1612801809,
             'title'     : 'Norman Thomas Papers TAM.423',
         },
         'tam_424' : {
@@ -16342,20 +16922,16 @@ export default {
             'title'     : 'Gerhart Eisler Scrapbook TAM 438',
         },
         'tam_439' : {
-            'timestamp' : 1579803308,
+            'timestamp' : 1599659107,
             'title'     : 'Camp Kinderland Records TAM.439',
-        },
-        'tam_440' : {
-            'timestamp' : 1535560818,
-            'title'     : 'Jerome Greenfield Research Files on Wilhelm Reich TAM 440',
         },
         'tam_441' : {
             'timestamp' : 1535560818,
             'title'     : 'American Workers Party Records TAM 441',
         },
         'tam_442' : {
-            'timestamp' : 1535560818,
-            'title'     : 'George Yuzawa Papers TAM 442',
+            'timestamp' : 1614786909,
+            'title'     : 'George Yuzawa Papers TAM.442',
         },
         'tam_443' : {
             'timestamp' : 1535560818,
@@ -16394,8 +16970,8 @@ export default {
             'title'     : 'Benjamin Harris FOIA Requests on Walter Scott Neff TAM 451',
         },
         'tam_453' : {
-            'timestamp' : 1535560818,
-            'title'     : 'Mitch Miller Papers on Anarchism and Libertarianism TAM 453',
+            'timestamp' : 1616766309,
+            'title'     : 'Mitch Miller Papers on Anarchism and Libertarianism TAM.453',
         },
         'tam_454' : {
             'timestamp' : 1535560818,
@@ -16438,8 +17014,8 @@ export default {
             'title'     : 'Liggett Family Papers TAM 463',
         },
         'tam_464' : {
-            'timestamp' : 1535561113,
-            'title'     : 'Michael Letwin Papers TAM 464',
+            'timestamp' : 1598899808,
+            'title'     : 'Michael Letwin Papers TAM.464',
         },
         'tam_465' : {
             'timestamp' : 1535561113,
@@ -16470,12 +17046,12 @@ export default {
             'title'     : 'Neil Basen Socialist Women Research Collection TAM 476',
         },
         'tam_501' : {
-            'timestamp' : 1535561415,
-            'title'     : 'John Penley Photographs and Papers TAM 501',
+            'timestamp' : 1599073210,
+            'title'     : 'John Penley Photographs and Papers TAM.501',
         },
         'tam_502' : {
-            'timestamp' : 1535561415,
-            'title'     : 'Andree Aelion Brooks Research Files on Bluet Rabinoff TAM 502',
+            'timestamp' : 1621963209,
+            'title'     : 'Andree Aelion Brooks Research Files on Bluet Rabinoff TAM.502',
         },
         'tam_504' : {
             'timestamp' : 1450541109,
@@ -16526,7 +17102,7 @@ export default {
             'title'     : 'Time\'s Up Records TAM 522',
         },
         'tam_523' : {
-            'timestamp' : 1581368706,
+            'timestamp' : 1612473907,
             'title'     : 'Marvin Gettleman Papers TAM.523',
         },
         'tam_524' : {
@@ -16586,7 +17162,7 @@ export default {
             'title'     : 'Henrietta Scherer Papers TAM 539',
         },
         'tam_542' : {
-            'timestamp' : 1576009507,
+            'timestamp' : 1614786909,
             'title'     : 'Howard Zinn Papers TAM.542',
         },
         'tam_543' : {
@@ -16649,6 +17225,14 @@ export default {
             'timestamp' : 1535636711,
             'title'     : 'Lawrence Maxwell Papers TAM 561',
         },
+        'tam_562' : {
+            'timestamp' : 1608129307,
+            'title'     : 'Socialist Party (U.S.) Membership Index Card Collection TAM.562',
+        },
+        'tam_563' : {
+            'timestamp' : 1608129307,
+            'title'     : 'American Friends of Russian Freedom Records TAM.563',
+        },
         'tam_564' : {
             'timestamp' : 1535636711,
             'title'     : 'Amerikai Magyar Szó Records TAM 564',
@@ -16660,10 +17244,6 @@ export default {
         'tam_567' : {
             'timestamp' : 1535636711,
             'title'     : 'Max Blechman Papers TAM 567',
-        },
-        'tam_570' : {
-            'timestamp' : 1535637013,
-            'title'     : 'Edward Gold Papers TAM 570',
         },
         'tam_571' : {
             'timestamp' : 1535637013,
@@ -16734,7 +17314,7 @@ export default {
             'title'     : 'James W. Ford Papers and Photographs TAM 588',
         },
         'tam_589' : {
-            'timestamp' : 1568321409,
+            'timestamp' : 1610048108,
             'title'     : 'Center for Constitutional Rights Records TAM.589',
         },
         'tam_590' : {
@@ -16754,8 +17334,12 @@ export default {
             'title'     : 'Victor S. Navasky Papers TAM 594',
         },
         'tam_596' : {
-            'timestamp' : 1535637311,
-            'title'     : 'Midori Shimanouchi Lederer Papers TAM 596',
+            'timestamp' : 1604954709,
+            'title'     : 'Midori Shimanouchi Lederer Papers TAM.596',
+        },
+        'tam_598' : {
+            'timestamp' : 1608043207,
+            'title'     : 'Occupy Wall Street Audio Collection TAM.598',
         },
         'tam_602' : {
             'timestamp' : 1535637311,
@@ -16798,7 +17382,7 @@ export default {
             'title'     : 'Judith Papachristou Research Files on Alger Hiss TAM 615',
         },
         'tam_616' : {
-            'timestamp' : 1589911810,
+            'timestamp' : 1612895109,
             'title'     : 'Estela and Ernesto Bravo Film and Video Collection TAM.616',
         },
         'tam_620' : {
@@ -16813,13 +17397,17 @@ export default {
             'timestamp' : 1535637613,
             'title'     : 'Anna and Max Sherover Scrapbooks TAM 624',
         },
+        'tam_626' : {
+            'timestamp' : 1608129307,
+            'title'     : 'Roberta Wood Collection 5653',
+        },
         'tam_627' : {
             'timestamp' : 1535637613,
             'title'     : 'Mitchell Loeb Papers TAM 627',
         },
         'tam_629' : {
-            'timestamp' : 1535637613,
-            'title'     : 'Asia Pacific Forum Records TAM 629',
+            'timestamp' : 1614786909,
+            'title'     : 'Asia Pacific Forum Records TAM.629',
         },
         'tam_630' : {
             'timestamp' : 1553109012,
@@ -16918,7 +17506,7 @@ export default {
             'title'     : 'Jane Hood Collection of Video Oral Histories of New England Area Leaders of the Communist Party of the United States TAM 655',
         },
         'tam_657' : {
-            'timestamp' : 1539805871,
+            'timestamp' : 1602621911,
             'title'     : 'Daniel Rubin Papers TAM.657',
         },
         'tam_659' : {
@@ -16930,15 +17518,15 @@ export default {
             'title'     : 'Cora Weiss Newspapers and Research Materials on the Vietnam War TAM 660',
         },
         'tam_661' : {
-            'timestamp' : 1535646309,
-            'title'     : 'Penina Coopersmith Collection on Student Radicalism TAM 661',
+            'timestamp' : 1611606611,
+            'title'     : 'Penina Coopersmith Collection on Student Radicalism TAM.661',
         },
         'tam_662' : {
             'timestamp' : 1535646309,
             'title'     : 'June Nash Papers on Bolivia TAM 662',
         },
         'tam_663' : {
-            'timestamp' : 1574805007,
+            'timestamp' : 1624479608,
             'title'     : 'Pauline Park Papers TAM.663',
         },
         'tam_664' : {
@@ -16953,12 +17541,16 @@ export default {
             'timestamp' : 1535646309,
             'title'     : 'Daniel J. Walkowitz Papers TAM 671',
         },
+        'tam_672' : {
+            'timestamp' : 1608129607,
+            'title'     : 'Tamiment Library and Robert F. Wagner Labor Archives Collection on Hugo Gellert 5884',
+        },
         'tam_674' : {
             'timestamp' : 1535646611,
             'title'     : 'Debevoise &amp; Plimpton Records on Alger Hiss TAM 674',
         },
         'tam_675' : {
-            'timestamp' : 1582130107,
+            'timestamp' : 1621974307,
             'title'     : 'GAPIMNY Records TAM.675',
         },
         'tam_676' : {
@@ -16972,6 +17564,10 @@ export default {
         'tam_678' : {
             'timestamp' : 1535646611,
             'title'     : 'Dan La Botz Papers TAM 678',
+        },
+        'tam_679' : {
+            'timestamp' : 1608132307,
+            'title'     : 'Marc Kagan Papers TAM.679',
         },
         'tam_680' : {
             'timestamp' : 1535646611,
@@ -16990,7 +17586,7 @@ export default {
             'title'     : 'Edith Segal Collection on Labor Activism TAM 684',
         },
         'tam_685' : {
-            'timestamp' : 1536592549,
+            'timestamp' : 1624479608,
             'title'     : 'Q-Wave Costumes and Posters from Lunar New Year for All Parades TAM.685',
         },
         'tam_687' : {
@@ -17022,7 +17618,7 @@ export default {
             'title'     : 'John Vago Papers TAM 695',
         },
         'tam_697' : {
-            'timestamp' : 1556552713,
+            'timestamp' : 1605886811,
             'title'     : 'Michi Kobi Papers TAM.697',
         },
         'tam_701' : {
@@ -17066,7 +17662,7 @@ export default {
             'title'     : 'Sofia Sequenzia Papers on Hugo Gellert TAM 717',
         },
         'tam_718' : {
-            'timestamp' : 1581080706,
+            'timestamp' : 1599921607,
             'title'     : 'Beyond the Pale Records TAM.718',
         },
         'tam_719' : {
@@ -17082,7 +17678,7 @@ export default {
             'title'     : 'Eliot Katz Papers TAM 722',
         },
         'tam_723' : {
-            'timestamp' : 1567779907,
+            'timestamp' : 1614786909,
             'title'     : 'Takako Wada Papers TAM.723',
         },
         'tam_724' : {
@@ -17186,7 +17782,7 @@ export default {
             'title'     : 'Tamiment Library and Robert F. Wagner Labor Archives Collection of War and Peace Movements Serials TAM.757',
         },
         'tam_758' : {
-            'timestamp' : 1552564513,
+            'timestamp' : 1604517908,
             'title'     : 'Tamiment Library and Robert F. Wagner Labor Archives Collection of Local and Underground Press Serials TAM.758',
         },
         'tam_759' : {
@@ -17282,7 +17878,7 @@ export default {
             'title'     : 'Jules Kirsch Collection on Art Young TAM.787',
         },
         'tam_788' : {
-            'timestamp' : 1579791609,
+            'timestamp' : 1623180307,
             'title'     : 'William Gropper Drawings TAM.788',
         },
         'tam_789' : {
@@ -17300,6 +17896,22 @@ export default {
         'tam_792' : {
             'timestamp' : 1572270906,
             'title'     : 'Bill Koehnlein Papers TAM.792',
+        },
+        'tam_794' : {
+            'timestamp' : 1608323409,
+            'title'     : 'Mollie Siegel Collection on Anti-Nuclear and Peace Movement Activism TAM.794',
+        },
+        'tam_795' : {
+            'timestamp' : 1608323707,
+            'title'     : 'Joseph Siegel Collection on the Brotherhood of Railroad Trainmen TAM.795',
+        },
+        'tam_802' : {
+            'timestamp' : 1624291807,
+            'title'     : 'Kevin Keating Manuscripts TAM.802',
+        },
+        'tam_803' : {
+            'timestamp' : 1624291807,
+            'title'     : 'Christine Bose Collection on Marxist-Feminist Group 1 TAM.803',
         },
         'videos_001' : {
             'timestamp' : 1478898608,
@@ -17322,7 +17934,7 @@ export default {
             'title'     : 'Compressed Air and Free Air, Shaft, Tunnel, Foundation, Caisson, Subway, Cofferdam, Sewer Construction Workers, of New York and New Jersey States and Vicinity Records WAG.002',
         },
         'wag_003' : {
-            'timestamp' : 1587153307,
+            'timestamp' : 1610048409,
             'title'     : 'Social Service Employees Union Records WAG.003',
         },
         'wag_004' : {
@@ -17338,7 +17950,7 @@ export default {
             'title'     : 'United Automobile Workers of America, District 65 Records WAG.006',
         },
         'wag_006_001' : {
-            'timestamp' : 1526046049,
+            'timestamp' : 1622140508,
             'title'     : 'Cleveland Robinson Papers WAG.006.001',
         },
         'wag_007' : {
@@ -17350,7 +17962,7 @@ export default {
             'title'     : 'Josephine Colby Papers WAG.008',
         },
         'wag_009' : {
-            'timestamp' : 1594045210,
+            'timestamp' : 1612986309,
             'title'     : 'Professional Staff Congress/City University of New York Records WAG.009',
         },
         'wag_010' : {
@@ -17394,15 +18006,15 @@ export default {
             'title'     : 'Sol Gorelick Papers WAG.019',
         },
         'wag_020' : {
-            'timestamp' : 1526315709,
-            'title'     : 'Betsy Wade Files on the Coalition of Labor Union Women WAG.020',
+            'timestamp' : 1614613510,
+            'title'     : 'Betsy Wade Papers WAG.020',
         },
         'wag_021' : {
             'timestamp' : 1526316909,
             'title'     : 'Sidney Jonas Papers WAG.021',
         },
         'wag_022' : {
-            'timestamp' : 1586802909,
+            'timestamp' : 1610048409,
             'title'     : 'United Federation of Teachers Records WAG.022',
         },
         'wag_023' : {
@@ -17438,7 +18050,7 @@ export default {
             'title'     : 'Joel Shufro Papers WAG.028',
         },
         'wag_029' : {
-            'timestamp' : 1554734709,
+            'timestamp' : 1612986009,
             'title'     : 'New York Committee for Occupational Safety and Health (NYCOSH) Records WAG.029',
         },
         'wag_030' : {
@@ -17446,7 +18058,7 @@ export default {
             'title'     : 'Bernard and Jewel Bellush Papers WAG.030',
         },
         'wag_031' : {
-            'timestamp' : 1526484908,
+            'timestamp' : 1605278409,
             'title'     : 'New York State AFL-CIO Records WAG.031',
         },
         'wag_033' : {
@@ -17466,7 +18078,7 @@ export default {
             'title'     : 'Ad Hoc Committee on the Human Rights and Genocide Treaties Records WAG.037',
         },
         'wag_038' : {
-            'timestamp' : 1552593308,
+            'timestamp' : 1610048709,
             'title'     : 'American Federation of Musicians, Local 802 Records WAG.038',
         },
         'wag_039' : {
@@ -17492,10 +18104,6 @@ export default {
         'wag_044' : {
             'timestamp' : 1526574909,
             'title'     : 'Jesse Simons Papers WAG.044',
-        },
-        'wag_045' : {
-            'timestamp' : 1526580610,
-            'title'     : 'Betsy Wade Files on the Newspaper Guild of New York WAG.045',
         },
         'wag_046' : {
             'timestamp' : 1526581509,
@@ -17605,10 +18213,6 @@ export default {
             'timestamp' : 1527885609,
             'title'     : 'National Association of Broadcast Employees and Technicians, Local 15 Records WAG.076',
         },
-        'wag_077' : {
-            'timestamp' : 1528130709,
-            'title'     : 'White Lung Association, New York Chapter Records WAG.077',
-        },
         'wag_078' : {
             'timestamp' : 1528131309,
             'title'     : 'Max Manes Papers WAG.078',
@@ -17649,13 +18253,9 @@ export default {
             'timestamp' : 1528217409,
             'title'     : 'Eleanore Collins Papers WAG.089',
         },
-        'wag_090' : {
-            'timestamp' : 1528218608,
-            'title'     : 'Council of Motion Picture and Television Unions Records WAG.090',
-        },
         'wag_091' : {
-            'timestamp' : 1534360509,
-            'title'     : 'Italian-American Labor Council Records WAG 091',
+            'timestamp' : 1619533809,
+            'title'     : 'Italian-American Labor Council Records WAG.091',
         },
         'wag_092' : {
             'timestamp' : 1528311950,
@@ -17726,7 +18326,7 @@ export default {
             'title'     : 'Associated Actors and Artistes of America Records WAG.110',
         },
         'wag_112' : {
-            'timestamp' : 1528477509,
+            'timestamp' : 1604613907,
             'title'     : 'Women\'s Trade Union League of New York Records WAG.112',
         },
         'wag_114' : {
@@ -17742,16 +18342,12 @@ export default {
             'title'     : 'Julius Bernstein Papers WAG.116',
         },
         'wag_117' : {
-            'timestamp' : 1528747809,
+            'timestamp' : 1610048409,
             'title'     : 'Communications Workers of America, District 1 Records WAG.117',
         },
         'wag_118' : {
             'timestamp' : 1562610011,
             'title'     : 'International Union of Bricklayers and Allied Craftsmen, Local 1 Records WAG.118',
-        },
-        'wag_119' : {
-            'timestamp' : 1528810257,
-            'title'     : 'International Typographical Union, Local 6, Benefit Board Records WAG.119',
         },
         'wag_120' : {
             'timestamp' : 1528830909,
@@ -17770,7 +18366,7 @@ export default {
             'title'     : 'New York Hotel and Motel Trades Council Records WAG.123',
         },
         'wag_124' : {
-            'timestamp' : 1576005610,
+            'timestamp' : 1610048709,
             'title'     : 'Communications Workers of America Records WAG.124',
         },
         'wag_124_001' : {
@@ -17846,11 +18442,11 @@ export default {
             'title'     : 'Elaine Harger and John Bennett Collection on the Harry Van Arsdale Jr. School of Labor Studies WAG.143',
         },
         'wag_144' : {
-            'timestamp' : 1529081109,
+            'timestamp' : 1621963509,
             'title'     : 'United Telegraph Workers Records WAG.144',
         },
         'wag_145' : {
-            'timestamp' : 1529081409,
+            'timestamp' : 1621963509,
             'title'     : 'James Geoghegan Papers WAG.145',
         },
         'wag_146' : {
@@ -17870,8 +18466,8 @@ export default {
             'title'     : 'International Brotherhood of Painters and Allied Trades, District Council 9: Trusteeship Records WAG.149',
         },
         'wag_150' : {
-            'timestamp' : 1529352609,
-            'title'     : 'International Brotherhood of Painters and Allied Trades, District Council 9 Records WAG.150',
+            'timestamp' : 1621963509,
+            'title'     : 'International Union of Painters and Allied Trades, District Council 9 Records WAG.150',
         },
         'wag_152' : {
             'timestamp' : 1529353209,
@@ -18058,7 +18654,7 @@ export default {
             'title'     : 'New Yorkers at Work: Project Files WAG.207',
         },
         'wag_209' : {
-            'timestamp' : 1576005610,
+            'timestamp' : 1604003109,
             'title'     : 'American Guild of Musical Artists Records WAG.209',
         },
         'wag_212' : {
@@ -18126,7 +18722,7 @@ export default {
             'title'     : 'Transport Workers Union of America: Locals Records WAG.234',
         },
         'wag_235' : {
-            'timestamp' : 1576168207,
+            'timestamp' : 1612986309,
             'title'     : 'Transport Workers Union of America Records WAG.235',
         },
         'wag_237' : {
@@ -18148,10 +18744,6 @@ export default {
         'wag_245' : {
             'timestamp' : 1532020210,
             'title'     : 'Evelyn Davis Papers and Photographs WAG.245',
-        },
-        'wag_246' : {
-            'timestamp' : 1532025309,
-            'title'     : 'Horace Rairdon Scrapbook and Oral History Transcript WAG.246',
         },
         'wag_249' : {
             'timestamp' : 1532026811,
@@ -18202,7 +18794,7 @@ export default {
             'title'     : 'Gary Huck and Mike Konopacki Labor Cartoons Collection WAG.264',
         },
         'wag_265' : {
-            'timestamp' : 1568651110,
+            'timestamp' : 1600266008,
             'title'     : 'American Federation of State, County, and Municipal Employees (AFSCME), District Council 37 Records WAG.265',
         },
         'wag_266' : {
@@ -18278,12 +18870,8 @@ export default {
             'title'     : 'Stephen C. Vladeck Papers WAG.284',
         },
         'wag_285' : {
-            'timestamp' : 1532723710,
+            'timestamp' : 1612986009,
             'title'     : 'United Automobile Workers of America, Local 2110, New York University Graduate Student Organizing Committee (GSOC) Records WAG.285',
-        },
-        'wag_286' : {
-            'timestamp' : 1532724308,
-            'title'     : 'Ray Markey Files on the American Federation of State, County, and Municipal Employees (AFSCME), Local 1930 WAG.286',
         },
         'wag_287' : {
             'timestamp' : 1532976310,
@@ -18337,10 +18925,6 @@ export default {
             'timestamp' : 1533152108,
             'title'     : 'Association for Union Democracy Files on New York City Labor Disputes WAG.302',
         },
-        'wag_303' : {
-            'timestamp' : 1533153008,
-            'title'     : 'Mae and Harry Millstone Papers WAG.303',
-        },
         'wag_304' : {
             'timestamp' : 1533153909,
             'title'     : 'Josie Simon Papers WAG.304',
@@ -18374,7 +18958,7 @@ export default {
             'title'     : 'Jane LaTour Papers WAG.317',
         },
         'wag_319' : {
-            'timestamp' : 1533309610,
+            'timestamp' : 1614722408,
             'title'     : 'New York Taxi Workers Alliance Records WAG.319',
         },
         'wag_320' : {
@@ -18394,7 +18978,7 @@ export default {
             'title'     : 'Asian Pacific American Labor Alliance (APALA) Records WAG.324',
         },
         'wag_325' : {
-            'timestamp' : 1583161507,
+            'timestamp' : 1614786909,
             'title'     : 'Rocky Chin Papers WAG.325',
         },
         'wag_326' : {
@@ -18469,9 +19053,17 @@ export default {
             'timestamp' : 1534431011,
             'title'     : 'Gail R. Levine Research Papers WAG.352',
         },
+        'wag_354' : {
+            'timestamp' : 1617739807,
+            'title'     : 'Andolan (Organizing South Asian Workers) Records WAG.354',
+        },
         'wag_357' : {
             'timestamp' : 1569261024,
             'title'     : 'Noah Karvelis Papers on Arizona Teachers Organizing WAG.357',
+        },
+        'wag_358' : {
+            'timestamp' : 1616766608,
+            'title'     : 'Brendan Muckian-Bates Posters on the 2018 West Virginia Teachers\' Strike WAG.358',
         },
         'wag_359' : {
             'timestamp' : 1548793213,
@@ -18502,7 +19094,7 @@ export default {
             'title'     : 'Tamiment Library Web Collection on Labor Unions and Organizations WEB.ARC.002',
         },
         'web_arc_003' : {
-            'timestamp' : 1579199410,
+            'timestamp' : 1625580308,
             'title'     : 'Tamiment Library Web Collection on Organizations WEB.ARC.003',
         },
     },

@@ -1,0 +1,61 @@
+{
+    "results": [
+        {
+            "ID": "nyupolyvideo",
+            "Repository": "Poly Archives at Bern Dibner Library of Science and Technology (poly)",
+            "Timestamp": "3/26/2015 12:45 pm"
+        },
+        {
+            "ID": "faker_fake",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "4/22/2021 10:29 am"
+        },
+        {
+            "ID": "tam_007_005",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 1:54 pm"
+        },
+        {
+            "ID": "tam_107",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 2:24 pm"
+        },
+        {
+            "ID": "tam_273",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 1:47 pm"
+        },
+        {
+            "ID": "tam_403",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 4:08 pm"
+        },
+        {
+            "ID": "tam_520",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 2:21 pm"
+        },
+        {
+            "ID": "tam_694",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "4/22/2021 9:24 am"
+        },
+        {
+            "ID": "wag_273",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "3/25/2021 3:42 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n…\n4\n5\n6\n7\n›\n»",
+        "pageNumber": 7,
+        "repositoryFilter": "All",
+        "resultStats": "69 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

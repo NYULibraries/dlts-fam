@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "ms3202_bernfeld_puppet",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "7/8/2021 10:59 am"
+        },
+        {
+            "ID": "tam_403",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 4:08 pm"
+        },
+        {
+            "ID": "rg_35",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:31 pm"
+        },
+        {
+            "ID": "rg_2_0_2",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:28 pm"
+        },
+        {
+            "ID": "mc_139",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:24 pm"
+        },
+        {
+            "ID": "tam_107",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 2:24 pm"
+        },
+        {
+            "ID": "tam_520",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 2:21 pm"
+        },
+        {
+            "ID": "mc_41",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:07 pm"
+        },
+        {
+            "ID": "mc_3",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:01 pm"
+        },
+        {
+            "ID": "tam_007_005",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 1:54 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "69 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "descending",
+            "field": "timestamp"
+        }
+    }
+}

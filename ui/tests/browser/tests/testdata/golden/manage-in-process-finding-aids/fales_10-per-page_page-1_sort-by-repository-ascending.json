@@ -1,0 +1,26 @@
+{
+    "results": [
+        {
+            "ID": "lapietra",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "3/1/2021 11:53 am"
+        },
+        {
+            "ID": "mss_221",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "6/21/2021 4:32 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "Fales Library and Special Collections",
+        "resultStats": "2 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

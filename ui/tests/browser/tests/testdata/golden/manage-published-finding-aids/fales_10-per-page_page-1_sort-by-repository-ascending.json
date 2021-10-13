@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "0to9",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "6/16/2017 9:55 am"
+        },
+        {
+            "ID": "acker",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "2/24/2020 3:00 pm"
+        },
+        {
+            "ID": "adimari",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "10/16/2018 10:21 am"
+        },
+        {
+            "ID": "afflick",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "4/23/2015 1:10 pm"
+        },
+        {
+            "ID": "air",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "1/8/2016 2:20 pm"
+        },
+        {
+            "ID": "albee",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "8/8/2019 10:50 am"
+        },
+        {
+            "ID": "amfamily",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "1/24/2014 3:13 pm"
+        },
+        {
+            "ID": "amfar",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "11/4/2020 3:45 pm"
+        },
+        {
+            "ID": "amitin",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "11/8/2017 3:00 pm"
+        },
+        {
+            "ID": "angelhair",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "5/16/2017 11:45 am"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "Fales Library and Special Collections",
+        "resultStats": "424 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

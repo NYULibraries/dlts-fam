@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "kimball_2003",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "2/2/2018 1:50 pm"
+        },
+        {
+            "ID": "mc163",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "12/19/2015 2:00 am"
+        },
+        {
+            "ID": "mc_103",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "8/6/2019 4:05 pm"
+        },
+        {
+            "ID": "mc_113",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "5/14/2021 10:15 am"
+        },
+        {
+            "ID": "mc_132",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "12/19/2015 2:00 am"
+        },
+        {
+            "ID": "mc_183",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "12/4/2018 3:50 pm"
+        },
+        {
+            "ID": "mc_234",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "2/13/2019 11:50 am"
+        },
+        {
+            "ID": "mc_237",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "12/19/2015 2:00 am"
+        },
+        {
+            "ID": "mc_273",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "12/21/2017 3:50 pm"
+        },
+        {
+            "ID": "mc_283",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "1/9/2018 4:45 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": "3",
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "New York University Archives",
+        "resultStats": "60 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "results": [
+        {
+            "ID": "grey_gallery",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "2/24/2020 1:40 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": "grey_gallery",
+        "pageNavigation": "«\n‹\n1\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "1 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

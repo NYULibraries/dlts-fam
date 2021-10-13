@@ -1,0 +1,141 @@
+{
+    "results": [
+        {
+            "ID": "ad_mc_012",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "5/21/2020 7:09 am"
+        },
+        {
+            "ID": "ad_mc_041",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/28/2020 5:40 am"
+        },
+        {
+            "ID": "alwan",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/26/2018 8:28 am"
+        },
+        {
+            "ID": "1979_008",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/12/2018 5:09 pm"
+        },
+        {
+            "ID": "2018_006",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "8/10/2020 5:48 pm"
+        },
+        {
+            "ID": "arms_2009_011_lapc",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "12/29/2020 3:10 pm"
+        },
+        {
+            "ID": "bcms_0002",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "3/24/2021 11:54 am"
+        },
+        {
+            "ID": "bcms_0007",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "5/20/2021 1:54 pm"
+        },
+        {
+            "ID": "bcms_0031",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "3/3/2021 11:50 am"
+        },
+        {
+            "ID": "bcms_0037",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "4/30/2021 5:34 pm"
+        },
+        {
+            "ID": "bcms_0041",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "4/30/2021 5:53 pm"
+        },
+        {
+            "ID": "lapietra",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "3/1/2021 11:53 am"
+        },
+        {
+            "ID": "mss_221",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "6/21/2021 4:32 pm"
+        },
+        {
+            "ID": "apaimport2",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "6/23/2021 1:24 pm"
+        },
+        {
+            "ID": "cullen",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "12/21/2020 4:25 pm"
+        },
+        {
+            "ID": "eagle",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "5/19/2021 11:40 am"
+        },
+        {
+            "ID": "mc_139",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:24 pm"
+        },
+        {
+            "ID": "mc_3",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:01 pm"
+        },
+        {
+            "ID": "mc_354",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "4/8/2021 4:50 pm"
+        },
+        {
+            "ID": "mc_41",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:07 pm"
+        },
+        {
+            "ID": "rg_2_0_2",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:28 pm"
+        },
+        {
+            "ID": "rg_35",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:31 pm"
+        },
+        {
+            "ID": "rg_39_178",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "1/7/2021 11:57 am"
+        },
+        {
+            "ID": "fadesign_116_changed",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "9/9/1999 9:09 am"
+        },
+        {
+            "ID": "fadesign_116_deleted",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "9/9/1999 9:09 am"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "69 finding aids found",
+        "resultsPerPage": "25",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

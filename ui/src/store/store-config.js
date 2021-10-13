@@ -36,12 +36,12 @@ const state = function () {
                 organization : 'NYU',
                 loadTime     : 0.101 * TOTAL_LOAD_TIME_FOR_ALL_REPOSITORIES,
             },
-            bhs      : {
+            cbh      : {
                 archivists   : [
                     'archivist',
                 ],
                 name         : 'Center for Brooklyn History',
-                organization : 'BHS',
+                organization : 'CBH',
                 loadTime     : 0.062 * TOTAL_LOAD_TIME_FOR_ALL_REPOSITORIES,
             },
             fales    : {
