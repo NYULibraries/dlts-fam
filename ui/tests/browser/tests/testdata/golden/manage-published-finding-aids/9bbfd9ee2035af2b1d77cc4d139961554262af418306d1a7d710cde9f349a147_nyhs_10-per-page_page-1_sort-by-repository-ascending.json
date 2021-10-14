@@ -1,0 +1,21 @@
+{
+    "results": [
+        {
+            "ID": "bible",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "1/21/2020 12:25 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": "bible",
+        "pageNavigation": "«\n‹\n1\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "New-York Historical Society",
+        "resultStats": "1 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

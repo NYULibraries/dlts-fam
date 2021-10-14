@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "0to9",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "6/16/2017 9:55 am"
+        },
+        {
+            "ID": "7threg",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "9/12/2019 2:40 pm"
+        },
+        {
+            "ID": "123",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "1/21/2016 10:50 am"
+        },
+        {
+            "ID": "1974_002",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 8:53 pm"
+        },
+        {
+            "ID": "1974_003",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 8:53 pm"
+        },
+        {
+            "ID": "1974_065",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 8:53 pm"
+        },
+        {
+            "ID": "1974_131",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 8:53 pm"
+        },
+        {
+            "ID": "1979_008",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 8:53 pm"
+        },
+        {
+            "ID": "1984",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
+        },
+        {
+            "ID": "1985_093",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 8:53 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "4,770 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "id"
+        }
+    }
+}

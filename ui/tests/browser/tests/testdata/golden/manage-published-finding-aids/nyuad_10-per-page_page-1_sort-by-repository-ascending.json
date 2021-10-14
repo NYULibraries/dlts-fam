@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "ad_mc_001",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "3/27/2018 6:55 am"
+        },
+        {
+            "ID": "ad_mc_004",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "6/13/2021 6:40 am"
+        },
+        {
+            "ID": "ad_mc_010",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "4/8/2020 5:05 am"
+        },
+        {
+            "ID": "ad_mc_018",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "4/1/2020 11:15 am"
+        },
+        {
+            "ID": "ad_mc_022",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "12/18/2019 1:50 am"
+        },
+        {
+            "ID": "ad_mc_023",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "2/1/2021 12:45 am"
+        },
+        {
+            "ID": "ad_mc_035",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "11/26/2018 5:20 am"
+        },
+        {
+            "ID": "ad_mc_038",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "12/26/2019 6:45 am"
+        },
+        {
+            "ID": "ad_mc_039",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "8/16/2020 6:50 am"
+        },
+        {
+            "ID": "ad_mc_052",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "12/23/2019 5:10 am"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "NYU Abu Dhabi, Archives and Special Collections",
+        "resultStats": "19 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "results": [
+        {
+            "ID": "mc_3",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:01 pm"
+        },
+        {
+            "ID": "mc_354",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "4/8/2021 4:50 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": "mc_3",
+        "pageNavigation": "«\n‹\n1\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "2 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

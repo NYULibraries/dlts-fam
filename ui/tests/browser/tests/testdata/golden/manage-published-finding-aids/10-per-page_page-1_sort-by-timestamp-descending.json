@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "arms_1973_107_north_hempstead_tax",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 9:27 pm"
+        },
+        {
+            "ID": "arms_1973_259_classon_avenue_presbyterian",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 9:27 pm"
+        },
+        {
+            "ID": "arms_1974_018_robert_livingston",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 9:27 pm"
+        },
+        {
+            "ID": "arms_1978_178_newtown_poll",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 9:27 pm"
+        },
+        {
+            "ID": "1984",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
+        },
+        {
+            "ID": "benet",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
+        },
+        {
+            "ID": "bolivia",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
+        },
+        {
+            "ID": "cannabis",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
+        },
+        {
+            "ID": "ganja",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
+        },
+        {
+            "ID": "haiti",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "4,770 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "descending",
+            "field": "timestamp"
+        }
+    }
+}

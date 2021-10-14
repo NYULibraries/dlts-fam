@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "rg_2_0_2",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:28 pm"
+        },
+        {
+            "ID": "rg_35",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "7/7/2021 2:31 pm"
+        },
+        {
+            "ID": "rg_39_178",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "1/7/2021 11:57 am"
+        },
+        {
+            "ID": "fadesign_116_changed",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "9/9/1999 9:09 am"
+        },
+        {
+            "ID": "fadesign_116_deleted",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "9/9/1999 9:09 am"
+        },
+        {
+            "ID": "fadesign_117_changed",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "9/9/1999 9:09 am"
+        },
+        {
+            "ID": "fadesign_117_deleted",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "9/9/1999 9:09 am"
+        },
+        {
+            "ID": "fineart",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "3/16/2016 3:41 pm"
+        },
+        {
+            "ID": "gilbert",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "10/5/2020 4:22 pm"
+        },
+        {
+            "ID": "gilbertdrawings",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "9/16/2019 9:45 am"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 3,
+        "repositoryFilter": "All",
+        "resultStats": "69 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "repository"
+        }
+    }
+}

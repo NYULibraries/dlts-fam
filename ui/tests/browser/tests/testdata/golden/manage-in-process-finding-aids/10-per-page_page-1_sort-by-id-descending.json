@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "wag_273",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "3/25/2021 3:42 pm"
+        },
+        {
+            "ID": "timeincrg24new",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "5/16/2019 3:03 pm"
+        },
+        {
+            "ID": "timeincrg17",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "6/30/2021 1:15 pm"
+        },
+        {
+            "ID": "timeincrg2",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "4/13/2017 10:34 am"
+        },
+        {
+            "ID": "timeincnewtest",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "12/5/2017 2:08 pm"
+        },
+        {
+            "ID": "tam_694",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "4/22/2021 9:24 am"
+        },
+        {
+            "ID": "tam_520",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 2:21 pm"
+        },
+        {
+            "ID": "tam_403",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 4:08 pm"
+        },
+        {
+            "ID": "tam_273",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 1:47 pm"
+        },
+        {
+            "ID": "tam_107",
+            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
+            "Timestamp": "7/7/2021 2:24 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "69 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "descending",
+            "field": "id"
+        }
+    }
+}

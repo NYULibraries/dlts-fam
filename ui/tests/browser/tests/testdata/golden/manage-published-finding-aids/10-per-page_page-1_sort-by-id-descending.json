@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "zinsser",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "2/14/2018 5:00 pm"
+        },
+        {
+            "ID": "zedd",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "12/14/2018 10:50 am"
+        },
+        {
+            "ID": "zackheim",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "10/15/2018 5:55 pm"
+        },
+        {
+            "ID": "yungee",
+            "Repository": "Fales Library and Special Collections (fales)",
+            "Timestamp": "3/22/2017 9:15 am"
+        },
+        {
+            "ID": "yonkerspolice",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "10/5/2020 9:45 am"
+        },
+        {
+            "ID": "yaffafoundling",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "1/24/2014 3:13 pm"
+        },
+        {
+            "ID": "yaffa",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "3/21/2016 1:05 pm"
+        },
+        {
+            "ID": "wyatt",
+            "Repository": "Poly Archives at Bern Dibner Library of Science and Technology (poly)",
+            "Timestamp": "4/23/2015 1:10 pm"
+        },
+        {
+            "ID": "wwiposters",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "7/6/2016 4:10 pm"
+        },
+        {
+            "ID": "wwiiposters",
+            "Repository": "New-York Historical Society (nyhs)",
+            "Timestamp": "9/26/2018 1:55 pm"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "4,770 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "descending",
+            "field": "id"
+        }
+    }
+}

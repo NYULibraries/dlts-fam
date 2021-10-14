@@ -1,0 +1,66 @@
+{
+    "results": [
+        {
+            "ID": "1979_008",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/12/2018 5:09 pm"
+        },
+        {
+            "ID": "2018_006",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "8/10/2020 5:48 pm"
+        },
+        {
+            "ID": "ad_mc_001",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "3/27/2018 7:19 am"
+        },
+        {
+            "ID": "ad_mc_004",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "6/13/2021 7:01 am"
+        },
+        {
+            "ID": "ad_mc_012",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "5/21/2020 7:09 am"
+        },
+        {
+            "ID": "ad_mc_015",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "4/2/2020 1:22 pm"
+        },
+        {
+            "ID": "ad_mc_041",
+            "Repository": "Akkasah: Center for Photography (NYU Abu Dhabi) (akkasah)",
+            "Timestamp": "4/28/2020 5:40 am"
+        },
+        {
+            "ID": "ad_rg_2_1",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "1/30/2020 10:36 am"
+        },
+        {
+            "ID": "ad_rg_9_001",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "3/25/2021 1:28 am"
+        },
+        {
+            "ID": "ad_rg_24_1",
+            "Repository": "NYU Abu Dhabi, Archives and Special Collections (nyuad)",
+            "Timestamp": "7/4/2021 7:23 am"
+        }
+    ],
+    "ui": {
+        "idFilter": null,
+        "pageNavigation": "«\n‹\n1\n2\n3\n4\n…\n›\n»",
+        "pageNumber": 1,
+        "repositoryFilter": "All",
+        "resultStats": "69 finding aids found",
+        "resultsPerPage": "10",
+        "sort": {
+            "direction": "ascending",
+            "field": "id"
+        }
+    }
+}
