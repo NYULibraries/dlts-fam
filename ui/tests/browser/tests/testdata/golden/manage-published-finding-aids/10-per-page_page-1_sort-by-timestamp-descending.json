@@ -1,54 +1,54 @@
 {
     "results": [
         {
-            "ID": "web_arc_003",
-            "Repository": "Tamiment Library and Robert F. Wagner Labor Archives (tamwag)",
-            "Timestamp": "7/6/2021 10:05 am"
+            "ID": "arms_1973_107_north_hempstead_tax",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 9:27 pm"
         },
         {
-            "ID": "rism_vf_1",
+            "ID": "arms_1973_259_classon_avenue_presbyterian",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 9:27 pm"
+        },
+        {
+            "ID": "arms_1974_018_robert_livingston",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 9:27 pm"
+        },
+        {
+            "ID": "arms_1978_178_newtown_poll",
+            "Repository": "Center for Brooklyn History (cbh)",
+            "Timestamp": "10/13/2021 9:27 pm"
+        },
+        {
+            "ID": "1984",
             "Repository": "New York University Archives (archives)",
-            "Timestamp": "7/6/2021 10:00 am"
+            "Timestamp": "10/13/2021 9:09 pm"
         },
         {
-            "ID": "ms3034_holland_dames",
-            "Repository": "New-York Historical Society (nyhs)",
-            "Timestamp": "7/6/2021 9:40 am"
+            "ID": "benet",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
         },
         {
-            "ID": "nyhsrg1",
-            "Repository": "New-York Historical Society (nyhs)",
-            "Timestamp": "7/2/2021 3:25 pm"
+            "ID": "bolivia",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
         },
         {
-            "ID": "ms2958_9861_emma_ina_thursby",
-            "Repository": "New-York Historical Society (nyhs)",
-            "Timestamp": "7/1/2021 12:40 pm"
+            "ID": "cannabis",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
         },
         {
-            "ID": "timeincoverview",
-            "Repository": "New-York Historical Society (nyhs)",
-            "Timestamp": "6/29/2021 3:45 pm"
+            "ID": "ganja",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
         },
         {
-            "ID": "timeincrg50",
-            "Repository": "New-York Historical Society (nyhs)",
-            "Timestamp": "6/29/2021 3:45 pm"
-        },
-        {
-            "ID": "ms2958_9845_gutfreund",
-            "Repository": "New-York Historical Society (nyhs)",
-            "Timestamp": "6/29/2021 12:35 pm"
-        },
-        {
-            "ID": "ms3042_ethical_culture_fieldston",
-            "Repository": "New-York Historical Society (nyhs)",
-            "Timestamp": "6/29/2021 12:25 pm"
-        },
-        {
-            "ID": "ms3065_accountants_club",
-            "Repository": "New-York Historical Society (nyhs)",
-            "Timestamp": "6/29/2021 11:35 am"
+            "ID": "haiti",
+            "Repository": "New York University Archives (archives)",
+            "Timestamp": "10/13/2021 9:09 pm"
         }
     ],
     "ui": {
