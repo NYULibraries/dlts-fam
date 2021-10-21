@@ -31,6 +31,9 @@ func initRouter() *gin.Engine {
 		context.String(http.StatusOK, "{ \"username\": \"archivist\" }" )
 	} )
 
+	// In-process finding aids and EAD files
+	router.Use(static.Serve("/in-process", static.LocalFile("/data/fam/in-process", true)))
+
 	return router
 }
 
