@@ -39,5 +39,5 @@ func initRouter() *gin.Engine {
 
 func main() {
 	r := initRouter()
-	r.Run(":8081")
+	r.Run(":8080")
 }
